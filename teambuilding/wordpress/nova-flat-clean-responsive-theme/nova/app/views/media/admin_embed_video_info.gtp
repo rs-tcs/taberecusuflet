@@ -1,0 +1,29 @@
+<h5><?php _e('Video data:', 'gummfw'); ?></h5>
+<?php
+if ($data['error']) echo '<p class="error-wrapper"><span class="error-message">' . __('We did not manage to retrieve relevant data for the code above.', 'gummfw') . '</span><br /><span>' . __('Still you can click ok to embed the video below. ') . '</span></p>';
+?>
+<div class="embed-video-stats">
+    <table class="middle-oriented">
+        <tbody>
+        <tr>
+            <td class="label"><?php _e('id:', 'gummfw'); ?></td>
+            <td><?php echo ($data['id']) ? $data['id']: __('no id retrieved', 'gummfw'); ?></td>
+        </tr>
+        <tr>
+            <td class="label"><?php _e('provider:', 'gummfw'); ?></td>
+            <td><?php echo ($data['provider']) ? $data['provider']: __('no provider retrieved', 'gummfw'); ?></td>
+        </tr>
+        <tr>
+            <td class="label"><?php _e('url:', 'gummfw'); ?></td>
+            <td><?php echo ($data['guid']) ? $data['guid']: __('no url retrieved', 'gummfw'); ?></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="embed-video-preview">
+    <?php
+    if ($data['error']) echo $data['embedCode'];
+    else echo $this->Media->display($data['embedCode']);
+    
+    ?>
+</div>

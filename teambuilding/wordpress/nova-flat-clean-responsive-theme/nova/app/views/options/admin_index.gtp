@@ -1,0 +1,233 @@
+<?php
+$this->Layout = GummRegistry::get('Helper', 'Layout');
+$cookieHelper = GummRegistry::get('Helper', 'Cookie');
+
+$isAjax = GummRegistry::get('Component', 'RequestHandler')->isAjax();
+
+$currentTabId = $cookieHelper->read('admin.selectedTabId');
+$currentToolbarTabId = $cookieHelper->read('admin.selectedToolbarTabId');
+
+if (!$currentTabId) {
+    $firstTab = reset($adminOptions['tabs']);
+    $currentTabId = $firstTab['id'];
+}
+
+$optionTabIds = array_unique(Set::extract('/options/tab_id', $adminOptions));
+$optionsByTab = array();
+foreach ($optionTabIds as $tabId) {
+    if (!isset($adminOptions['tabs'][$tabId])) {
+        continue;
+    }
+    $optionsForTab = Set::classicExtract(Set::extract('/options[tab_id='.$tabId.']', $adminOptions), '{n}.options');
+    if ($optionsForTab) {
+        $optionsByTab[$tabId] = $optionsForTab;
+    }
+}
+
+?>
+
+<?php if (!$isAjax): ?>
+<div id="bluebox-admin" class="bluebox-admin">
+<?php
+// We need to init wp_editor to use from ajax generated content
+echo $this->Form->input(false, array(
+    'id' => 'gumm_wp_editor_helper',
+    'type' => 'text-editor',
+), array(),
+array(
+    'div' => 'gumm-wp-editor-helper'
+));
+?>
+<?php endif; ?>
+    <div style="margin: 20px 20px 20px 5px; height:90%;">
+        <div id="admin-wrap">
+            
+            <!-- menu -->
+            <div id="admin-menu-back"></div>
+            <div id="admin-menu-wrap">
+                <div id="admin-menu-shadow"></div>
+                <ul id="admin-menu">
+                    <?php foreach ($adminOptions['tabs'] as $tabItem): ?>
+                    <?php
+                        $liAttributes = array(
+                            'data-tab-id' => $tabItem['id'],
+                            'class' => $tabItem['id'] === $currentTabId ? 'current-item' : null,
+                        );
+                    ?>
+                    <li<?php echo $this->Html->_constructTagAttributes($liAttributes); ?>>
+                        <a href="#gumm-tab-<?php echo $tabItem['id']; ?>"><?php echo $tabItem['title']; ?><div class="admin-arrow"><span></span></div></a>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <!-- END menu -->
+
+            <!-- content -->
+        	<div id="admin-content">
+                <div style=" padding:20px 20px 0px 20px;">
+                <div class="row-fluid">
+                	<div class="span12">
+                    <?php
+                    echo $this->Form->create(array(
+                        'id' => 'gumm-options-form',
+                        'action' => array('admin' => true, 'controller' => 'options', 'action' => 'save'),
+                        '_wpnonce' => OptionsController::WPNONCE,
+                    ));
+
+                    // tabbed options loop start
+                    foreach ($optionsByTab as $tabId => $optionsForTab):
+                        $optionsByGroup = Set::group($optionsForTab, 'group', 'home');
+                        $containerAttributes = array(
+                            'id' => 'gumm-tab-' . $tabId,
+                            'class' => array(
+                                $tabId === $currentTabId ? 'current' : 'hidden',
+                                'gumm-options-container',
+                                'gumm-will-trigger-visible',
+                            ),
+                            'data-for-tab-id' => $tabId,
+                        );
+                    ?>
+                        <div<?php echo $this->Html->_constructTagAttributes($containerAttributes); ?>>
+                            <?php
+                            $toolbarTabs = array_intersect_key($this->Layout->adminToolbarSettings, $optionsByGroup);
+                            $tabIds = array_keys($toolbarTabs);
+                            $firstTabId = reset($tabIds);
+                            $_currentToolbarTabId = $firstTabId;
+                            
+                            if ($tabId === $currentTabId && $currentToolbarTabId && isset($toolbarTabs[$currentToolbarTabId])) {
+                                $_currentToolbarTabId = $currentToolbarTabId;
+                            }
+                            if (count($optionsByGroup) > 1):
+                            ?>
+                            
+                            <div class="inner-toolbar-menu">
+                                <ul>
+                                    <?php
+                                    $counter = 0;
+                                    foreach ($toolbarTabs as $tab => $tabSettings) {
+                                        $isCurrent = false;
+                                        if ($_currentToolbarTabId === $tab) {
+                                            $isCurrent = true;
+                                        }
+                                        echo '<li' . $this->Html->_constructTagAttributes(array(
+                                            'class' => ($isCurrent) ? 'current-item' : null,
+                                            'data-option-group-id' => $tab,
+                                        )) . '>';
+                                        echo '<a href="#">';
+                                            echo '<strong class="' . $tabSettings['class'] . '"></strong>';
+                                            echo '<span>' . $tabSettings['title'] . '</span>';
+                                        echo '</a>';
+                                    
+                                        echo '</li>';
+                                    
+                                        $counter ++;
+                                    }
+                                    ?>
+                                </ul>
+                            </div>
+                            
+                            <?php endif; ?>
+                            <div class="gumm-options-groups-container">
+                            <?php foreach ($optionsByGroup as $group => $options): ?>
+                                <?php
+                                $optionsByAdminGroup = array();
+                                foreach ($options as $option) {
+                                    if (isset($option['group_id']) && $option['group_id']) {
+                                        $optionsByAdminGroup[$option['group_id']][] = $option;
+                                    } else {
+                                        $optionsByAdminGroup[] = array($option);
+                                    }
+                                }
+                                
+                                $divAttributes = array(
+                                    'class' => array(
+                                        'gumm-option-group-' . $group,
+                                        $group === $_currentToolbarTabId ? 'current' : 'hidden',
+                                        'gumm-will-trigger-visible',
+                                    ),
+                                );
+                                ?>
+                                <div<?php echo $this->Html->_constructTagAttributes($divAttributes); ?>>
+                                    
+                                    <?php foreach ($optionsByAdminGroup as $adminGroupId => $adminGroupOptions): ?>
+                                        <?php
+                                        if (!$adminGroupData = Configure::read('admin.options.groups.' . $adminGroupId)) {   
+                                            $adminGroupData = reset($adminGroupOptions);
+                                        }
+                                        $divGroupAtts = array(
+                                            'id' => 'option-group-' . Inflector::slug($adminGroupOptions[0]['id'], '-'),
+                                            'class' => 'admin-options-group',
+                                        );
+                                        if (isset($adminGroupOptions[0]['dependsOn']) && $adminGroupOptions[0]['dependsOn']) {
+                                            $divGroupAtts['data-depends-on'] = 'option-group-' . Inflector::slug($adminGroupOptions[0]['dependsOn'], '-');
+                                        }
+                                        if (isset($adminGroupOptions[0]['dependant']) && $adminGroupOptions[0]['dependant']) {
+                                            $divGroupAtts['data-dependant'] = 'option-group-' . Inflector::slug($adminGroupOptions[0]['dependant'], '-');
+                                        }
+                                        ?>
+                                        <div<?php echo $this->Html->_constructTagAttributes($divGroupAtts); ?>>
+                                            <h4>
+                                                <?php echo ($adminGroupData['name']) ?>
+                                                <!-- <a href="#">?</a> -->
+                                            </h4>
+                                            <div class="row-fluid">
+                                            <?php
+                                            foreach ($adminGroupOptions as $option) {
+                                                if (isset($option['requestAction']) && $option['requestAction']) {
+                                                    array_push($option['requestAction'], $option['id']);
+                                                    $this->requestAction($option['requestAction']);
+                                                } else {
+                                                    
+                                                    $attributes = array();
+                                                    if (isset($adminGroupData['inputAttributes']) && $adminGroupData['inputAttributes']) {
+                                                        $attributes = $adminGroupData['inputAttributes'];
+                                                    }
+                                                    
+                                                    $settings = array('label' => false);
+                                                    if (isset($adminGroupData['inputSettings']) && $adminGroupData['inputSettings']) {
+                                                        $settings = array_merge($settings, $adminGroupData['inputSettings']);
+                                                    }
+                                                    
+                                                    echo $this->Form->input($option['model'], $option, $attributes, $settings);
+                                                }
+                                            }
+                                            ?>
+                                            </div>
+                                            <?php
+                                            if (isset($adminGroupData['adminActions'])) {
+                                                echo $this->Layout->getAdminActionsHtmlForOption($option);
+                                            }
+                                            ?>
+                                        </div>
+                                        
+                                    <?php endforeach; ?>
+                                </div>
+                            
+                            <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php
+                    // tabbed options loop end
+                    endforeach;
+                    ?>
+                    <div class="buttons-container">
+                        <a href="#" class="btn btn-large btn-primary save save-all"><?php _e('Save All', 'gummfw'); ?></a>
+                    </div>
+                    <?php echo $this->Form->end(); ?>
+                	</div>
+                </div>
+            </div>
+            <!-- END content -->
+
+            <!-- footer -->
+            <div id="admin-footer">
+                <p><?php _e('Thank you for purchasing!', 'gummfw'); ?></p>
+                <div class="clear"></div>
+            </div>
+            <!-- END footer -->
+            <div class="clear"></div>
+        </div>
+    </div>
+<?php if (!$isAjax): ?>
+</div>
+<?php endif; ?>

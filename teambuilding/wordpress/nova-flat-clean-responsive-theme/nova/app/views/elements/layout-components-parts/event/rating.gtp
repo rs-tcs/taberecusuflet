@@ -1,0 +1,12 @@
+<?php
+$rating = (isset($rating)) ? (int) $rating : 0;
+$maxRating = 5;
+if (!$rating) return;
+?>
+<ul class="event-rate-list">
+    <?php
+    for ($i=1; $i<=$rating; $i++) {
+        echo '<li class="icon-star"></li>';
+    }
+    ?>
+</ul>

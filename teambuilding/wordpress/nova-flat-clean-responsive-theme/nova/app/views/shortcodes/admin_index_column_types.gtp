@@ -1,0 +1,10 @@
+<?php
+$quickLaunchItems = $this->QuickLaunch->prepareForQuickLaunchDisplay($columnTypes, array(
+    // 'url' => array('ajax' => true, 'admin' => true, 'controller' => 'shortcodes', 'action' => 'admin_view'),
+    // 'urlParams' => array('shortcodeId' => 'id'),
+    'contentCallback' => array('controller' => 'shortcodes', 'action' => 'admin_edit_column_type'),
+    // 'showContent' => false,
+));
+
+echo $this->QuickLaunch->quickLaunch($quickLaunchItems, array('title' => __('Column Types', 'gummfw')));
+?>

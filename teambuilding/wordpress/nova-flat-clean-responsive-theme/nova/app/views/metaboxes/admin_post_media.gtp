@@ -1,0 +1,37 @@
+<div class="bluebox-admin">
+<?php
+
+$uploadedMedia = '';
+if ($post->Media) {
+    foreach ($post->Media as $attachmentMedia) {
+        $uploadedMedia .= View::renderElement('media/admin_add', array(
+            // 'optionId' => $option['id'],
+            'attachmentPost' => $attachmentMedia,
+        ), false);
+    }
+}
+// if (is_array($this->value)) {
+//     foreach ($this->value as $attachmentId) {
+//         if (is_numeric($attachmentId)) {
+//             $uploadedMedia .= View::renderElement('admin_media_upload', array(
+//                 'optionId' => $option['id'],
+//                 'attachmentPost' => get_post($attachmentId),
+//             ), false);
+//         }
+//     }
+// }
+
+echo $this->Media->mediaManager(array(
+    'name' => $metabox['id'],
+    'scriptData' => array(
+        'gummcontroller' => 'media',
+        'action' => 'gumm_add_to_library',
+        'gummadmin' => true,
+        'postId' => $post->ID,
+        // 'optionId' => $option['id'],
+        'auth_cookie' => $_COOKIE[AUTH_COOKIE],
+    ),
+    'content' => $uploadedMedia,
+));
+?>
+</div>

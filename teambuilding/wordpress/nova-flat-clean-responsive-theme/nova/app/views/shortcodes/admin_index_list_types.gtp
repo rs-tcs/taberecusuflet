@@ -1,0 +1,11 @@
+<?php
+
+$quickLaunchItems = $this->QuickLaunch->prepareForQuickLaunchDisplay($listTypes, array(
+    // 'url' => array('ajax' => true, 'admin' => true, 'controller' => 'shortcodes', 'action' => 'admin_view'),
+    // 'urlParams' => array('shortcodeId' => 'id'),
+    'contentCallback' => array('controller' => 'shortcodes', 'action' => 'admin_edit_list_type'),
+));
+
+echo $this->QuickLaunch->quickLaunch($quickLaunchItems, array('title' => __('List Types', 'gummfw')));
+
+?>

@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+html, body {
+	min-width:100%;
+	min-height:100%;
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color:#F2F2F2;
+	
+}
+
+
+#page {
+	position:relative;
+	top:15px;
+	width:1250px;
+	min-height:700px;
+	min-width:1000px;
+	overflow:hidden;
+	background-color:;
+	margin:auto;
+}
+
+#text_top{
+	width:100%;
+	height:auto;
+	background-color:;
+	border:none;
+	text-align:center;
+	font-size:28px;
+	color:#484848;
+}
+
+
+
+#admin{
+	margin:10px 0px 10px 10px;
+}
+
+
+#breadcrumbs{
+	float:left;
+	width:100%;
+	height:auto;
+	font-size:12px;
+}
+
+#breadcrumbs ul {
+	width:100%;
+	padding-left:10px;
+	margin:0px;
+}
+
+#breadcrumbs ul li{
+	float:left;
+	list-style:none;
+	padding-right:10px;
+}
+
+#breadcrumbs ul li a{
+	color:#006AD5;
+	text-decoration:none;
+}
+
+
+#breadcrumbs ul li active{
+	color:#333;
+}
+
+#meniu_stanga{
+	float:left;
+	width:150px;
+	min-height:200px;
+	height:auto;
+	position:absolute;
+	top:150px;
+	left:10px;
+	background-color:;
+}
+
+#lista_meniu tr td{
+	width:150px;
+	height:30px;
+	font-size:18px;
+	background-color:#333;
+}
+
+#lista_meniu tr td:hover{
+	background-color:#0F87FF;
+
+}
+
+#lista_meniu tr td a{
+	text-decoration:none;
+	color:white;		
+}
+
+
+.main_content{
+	float:left;
+	position:relative;
+	left:200px;
+	top:20px;
+	min-width:900px;
+	width:auto;
+	height:auto;
+	-moz-box-shadow: 0px 1px 8px #CCC;
+  	-webkit-box-shadow: 0px 1px 8px #CCC;
+ 	 box-shadow: 0px 1px 8px #030303;
+	background-color: #F8F8F8;
+	overflow:auto;
+	margin-bottom:40px;
+}
+
+#main_content_data{
+	width:auto;
+	margin:auto;
+	height:auto;
+	margin:20px auto 20px auto;
+	
+	}

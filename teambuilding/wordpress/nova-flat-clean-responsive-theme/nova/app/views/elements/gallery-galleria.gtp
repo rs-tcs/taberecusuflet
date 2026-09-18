@@ -1,0 +1,29 @@
+<div class="gallery-slider">
+<div class="design-details">
+	<div style="position: relative; width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;" class="galleryGalleria">
+		<?php
+		foreach ($galleryMedia as $galleryItem) {
+			// d($galleryItem);
+			echo $gummMediaHelper->display($galleryItem['url'], array('width' => $width, 'height' => $height), array('alt' => $galleryItem['caption']));
+		}
+		?>
+	</div>                                   
+</div>
+</div>
+
+<script>
+	Galleria.loadTheme('<?php echo GUMM_THEME_JS_URL; ?>galleria/themes/classic/galleria.classic.min.js');
+	jQuery(".galleryGalleria").galleria({
+		width: <?php echo $width; ?>,
+		height: <?php echo $height; ?>,
+		initialTransition: 'fade',
+		transition: 'fadeslide',
+		queue: false,
+		imageCrop: true,
+		imagePan: true,
+		debug: false
+		// _toggleInfo: false
+		// showImagenav: false,
+		// imagePan: true
+	});
+</script>

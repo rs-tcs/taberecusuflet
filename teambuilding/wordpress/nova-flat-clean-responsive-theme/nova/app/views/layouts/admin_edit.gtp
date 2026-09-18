@@ -1,0 +1,72 @@
+<?php
+App::import('Helper', 'Layout');
+$gummLayoutHelper = new LayoutHelper;
+
+$layoutsAvailable = array(
+    array(
+        'label' => __('No Sidebar', 'gummfw'),
+        'value' => 'none',
+    ),
+    array(
+        'label' => __('Right Sidebar', 'gummfw'),
+        'value' => 'c-r'
+    ),
+    array(
+        'label' => __('Left Sidebar', 'gummfw'),
+        'value' => 'l-c'
+    ),
+);
+
+$optionId = $this->constructOptionId('layoutSchema', $optionId);
+
+?>
+
+<div id="<?php echo Inflector::slug($optionId); ?>" class="gumm-layout-manager span12">
+    
+    <div class="layout-preview-container gumm-radio-fields row-fluid">
+        <?php foreach ($layoutsAvailable as $layoutData): ?>
+            <div class="<?php echo $context; ?>">
+                <div class="admin-layout-demo gumm-radio-input <?php echo $layoutData['value'] == $currentSchema ? 'current' : ''; ?>">
+                	<div class="layout-preview">
+                        <?php
+                        switch($layoutData['value']) {
+                         case 'none':
+                            echo '<div class="content-wrap-demo full-demo"><span></span></div>';
+                            break;
+                         case 'l-c':
+                            echo '<div class="sidebar-wrap-demo"><span style="margin-right:4px;"></span></div>
+                                  <div class="content-wrap-demo"><span></span></div>';
+                            break;
+                         case 'c-r':
+                            echo '<div class="content-wrap-demo"><span style="margin-right:4px;"></span></div>
+                                  <div class="sidebar-wrap-demo"><span></span></div>';
+                            break;
+                        }
+                        ?>
+                    </div>
+                    <label><?php echo $layoutData['label']; ?></label>
+                    <a href="#" class="admin-radio"><span></span></a>
+                    <?php
+                    echo $this->Form->input($model, array(
+                        'id' => $this->gummOptionId($optionId),
+                        'type' => 'radio',
+                        'inputOptions' => array(
+                            $layoutData['value'] => $layoutData['value']
+                        ),
+                    ), array(
+                        'value' => $currentSchema,
+                        'style' => 'display:none',
+                        'class' => 'gumm-layout-structure-input',
+                        // 'disabled' => 'disabled',
+                    ), array(
+                        'div' => false,
+                        'label' => false,
+                        'fieldLabel' => false,
+                    ));
+                    ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+<div class="clearfix"></div>

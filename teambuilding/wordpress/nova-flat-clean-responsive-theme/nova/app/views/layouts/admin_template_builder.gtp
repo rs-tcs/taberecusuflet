@@ -1,0 +1,24 @@
+<div class="bluebox-admin">
+<?php
+$leftSidebar = $layoutSidebars['left'];
+$rightSidebar = $layoutSidebars['right'];
+
+$PageBuilderHelper = GummRegistry::get('Helper', 'PageBuilder');
+echo $PageBuilderHelper->editor(array(
+    'leftSidebar' => $layoutSidebars['left'],
+    'rightSidebar' => $layoutSidebars['right'],
+    'layoutSchema' => $layoutSchema,
+    'elementsEnabled' => $elementsEnabled,
+    'elementsAvailable' => $elementsAvailable,
+    'schemaInputsContainerSelector' => '#' . $schemaInputsContainerSelector,
+    'builderAttributes' => array(
+        // 'id' => Inflector::slug($optionId),
+    ),
+    'editorMode' => $mode,
+    'model' => $model,
+    'optionId' => $templateId,
+    'postId' => ($post) ? $post->ID : null,
+    'metaKey' => ($model === 'Option') ? $this->constructOptionId('layoutComponents', $templateId) : null,
+));
+?>
+</div>

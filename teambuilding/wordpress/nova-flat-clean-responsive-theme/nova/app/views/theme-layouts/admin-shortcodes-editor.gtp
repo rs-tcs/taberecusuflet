@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Insert Shortcodes</title>
+	<?php echo $gummJsHelper->script('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'); ?>
+    <script language="javascript" type="text/javascript" src="<?php echo get_option('siteurl') ?>/wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script language="javascript" type="text/javascript">
+    window.onload = function() {
+		// console.log(jQuery('body'));
+		// console.log(tinyMCEPopup.editor);
+	}
+	</script>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<?php echo $gummHtmlHelper->css('/js/shortcodes-editor/shortcode-editor.css'); ?>
+</head>
+<body>
+	<?php echo $content_for_layout; ?>
+</body>
+</html>

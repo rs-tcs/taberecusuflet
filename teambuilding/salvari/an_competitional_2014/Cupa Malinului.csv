@@ -1,0 +1,16 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,categoria,experienta,adresa,pachet_vip,tricou,print_vip,locul,puncte,total,timp,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+4,70DM99,Davidoni,Marius,44,seniori,masculin,Snowboard,"Da am expe","Davidoni Lucian 0756 619 023",,,,6,82,22.95,,40,,,,,achitata,mariusdavidoni@gmail.com,0000000000,2014-04-26
+6,86DS4P,Dragan,Sonia,28,adulti,feminin,Schi,Da,"Dragan Elena 0724 364 374",,,,1,140,32.05,,23,,48,TBC,,achitata,sonja.dragan@gmail.com,0000000000,2014-04-26
+9,83GA1S,Gheorghe,Andrei,31,adulti,masculin,Snowboard,"Da - Valea","Cristina Foarfa 0721267607",,,,7,77,21.2,,22,,,,,achitata,andrei@artechsoft.ro,0000000000,2014-04-26
+10,80TS8C,Tiberiu,Stoian,34,adulti,masculin,Snowboard,"destula :)","Iulia STOIAN 0724319833",,,,4,96,26.25,,24,,50,,,achitata,stoiantiberiu@yahoo.com,0000000000,2014-04-26
+11,80NM5O,NICULA,MariusOctavian,34,adulti,masculin,Snowboard,DA,"Delean Adina - 0742142939Badescu Ioana - 0723737621Radu Catalin - 0741333611",,,,,,0,,,,,,,neachitata,octaviusconsulting@gmail.com,0000000000,2014-04-26
+12,75DGB5,DODO,GABOR,39,adulti,masculin,Snowboard,da,"0365806478 mama mea Dodo Eva",vip,S,litoraal,,,0,,,,,,,neachitata,dog_hock@yahoo.com,0000000000,2014-04-26
+13,84NSCT,Nicolau,Sonia-Ana,30,adulti,feminin,Snowboard,da,"Nicolau Anca ",,,,1,140,28.55,,13,BikeN,50,chit,,achitata,ns_justdoit@yahoo.com,0000000000,2014-04-26
+14,69IM4A,Iancu,Mihai,45,seniori,masculin,Schi,"Medie. Participari la Cupa Malinului 2011 si 2012","Simona Iancu, 0755111766",,,,,,0,,,,,,,neachitata,mihai@trustvision.ro,0000000000,2014-04-26
+15,77PI85,Pogar,Ica,37,adulti,feminin,Snowboard,da,"Doina Popescu, 0744268958",,,,3,105,21.65,,17,,,,,achitata,ica@cuantica.ro,0000000000,2014-05-24
+17,73PC4J,Popescu,Catalin,41,seniori,masculin,Snowboard,da,"Doina Popescu, 0744268958",,,,5,88,25.5,,14,,,,,achitata,cat@cuantica.ro,0000000000,2014-05-24
+18,98FM84,Fricosu,Mihaela,16,tineri,feminin,Snowboard,da,"Doina Popescu, 0744268958",,,,2,120,25.9,,16,,,,,achitata,ica@cuantica.ro,0000000000,2014-05-24
+19,68CL4K,Csenteri,Levente,46,seniori,masculin,Schi,"Am ceva experienta.","Bakó Zsóka",,,,,,0,,,,,,,neachitata,csenteri.levente@combridge.ro,0000000000,2014-05-24
+20,71GT3M,Gindu,Tiberiu,43,seniori,masculin,Schi,"am mai fost in cupa Malinului","Gându Gheorghe 0766 690 518",,,,5,88,24.65,,17,OP,48,,,achitata,tiberiu.gindu@gmail.com,0000000000,2014-05-24
+21,90PP1G,Popescu,Paul,24,adulti,masculin,Schi,da,"Anca Tandea 0755 224 196",,,,1,140,36.95,,50,,,,,achitata,pogo.paul8125@yahoo.com,0000000000,2014-05-24
+22,77SG1A,Sbarcea,Gabriel,37,adulti,masculin,Schi,Da,"Ruxandra Valeriu 0721044220",,,,6,82,24.25,,19,OP,50,"Op 300770",TBC,achitata,sbarceag@yahoo.com,0000000000,2014-05-24

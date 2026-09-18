@@ -1,0 +1,5 @@
+<div id="page-schema-metabox" class="gumm-admin-metabox dependant-gummbase_page_builder bluebox-admin">
+    <div class="row-fluid">
+        <?php $this->requestAction(array('controller' => 'layouts', 'action' => 'admin_edit', 'post-' . $post->post_type . '-' . $post->ID, 'GummPostMeta', 'span4')); ?>
+    </div>
+</div>

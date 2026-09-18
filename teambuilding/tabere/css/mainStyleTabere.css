@@ -1,0 +1,467 @@
+/*   
+Theme Name: Tabere cu Suflet
+Author:
+Author URI: https://www.dibusoft.com/
+Version: 1.0
+Description: Site proiect Tabere cu Suflet - www.taberecusuflet.ro
+*/
+
+/* Neutralizamos los Estilos */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+html {
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, address {
+	font-weight:normal;
+	margin:10px 0 10px 0;
+}
+
+h1 {font-size:32px;}
+h2 {font-size:22px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+h5 {font-size:12px;}
+h6 {font-size:10px;}
+
+blockquote {
+	font-style:italic;
+	padding:5px 0 5px 30px;
+}
+
+/* Algunos ajustes basicos */
+sup {
+	position:relative;
+	bottom:0.3em;
+	vertical-align:baseline;
+}
+
+sub {
+	position:relative;
+	bottom:-0.2em;
+	vertical-align:baseline;
+}
+
+li, dd, blockquote {
+	margin-left:1em;
+}
+
+/* Algunas clases útiles */
+.clear {
+	clear:both;
+}
+
+.float-left {
+	float:left;
+}
+
+.float-right {
+	float:right;
+}
+
+/* Links Bases */
+a img {
+	border:none;
+	text-decoration:none;
+}
+
+img {
+	border:none;
+	text-decoration:none;
+/*Si ponemos un background aparecerá como fondo de la imagen, sirve para simular imágenes de carga*/
+}
+
+/* Links */
+a, a:visited{
+	color:#B291AC;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover, a:active {
+	color:#BCD62B;
+	text-decoration:underline;
+}
+
+#copyright a, #copyright a:visited{
+	color:#B291AC;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#copyright a:hover, #copyright a:active {
+	color:#BCD62B;
+	text-decoration:underline;
+}
+
+/* Structura */
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#ffffff;
+}
+
+#logo-tabere {
+	margin:0px auto;
+	width:1100px;
+	text-align:center;
+	color:#333333;
+}
+
+#copyright {
+	margin:0px auto;
+	width:760px;
+	text-align:center;
+	color:#43A5D4;
+}
+
+#parteneri {
+	margin:0px auto;
+	width:1000px;
+	text-align:center;
+	color:#43A5D4;
+}
+
+#lista-parteneri {
+	position: absolute;
+	top: 50px; 
+	left: 600px;
+	margin: 0px auto;
+	width: 530px;
+	text-align: center;
+}
+
+#dibusoft{
+	margin:0px auto;
+	width:760px;
+	text-align:center;
+}
+
+/* Meniu */
+#menu {
+	margin:5px auto;
+	padding:5px 0;
+	width:800px;
+	text-align:center;
+	color:#6E6E6E;
+}
+
+#menu span{
+	padding:0px 5px 0px 5px;
+}
+
+#continut {
+	margin:0px;
+	overflow:hidden; 
+	/*height:387px; 
+	width:99,9%;*/
+	border:none;
+	position:relative;
+}
+
+#continut-bg {
+	width:9999px;
+	height:387px;
+	background-image:url(../images/tabere-bg.png);
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:#E6E6E4;
+	position:relative;
+}
+
+.scrolling-content {
+	width:990px;
+	height:380px;
+	position:absolute;
+	left:7380px;
+	top: 0px;
+}
+
+#content1 {
+	left:0px; 
+	top:0px;
+}
+
+#content2 {
+	left:1570px; 
+	top:0px;
+}
+
+#content3 {
+	left:2880px; 
+	top:0px;
+}
+
+#content4 {
+	left:4380px;
+	top:0px;
+}
+
+#content5 {
+	left:5880px;
+	top:0px;
+}
+
+#content6 {
+	left:7380px;
+	top:0px;
+}
+
+#content7 {
+	left:8800px;
+	top:0px;
+}
+
+/* Despre noi */
+#despre-noi {
+	float:right;
+	margin-top:80px;
+	margin-right:30px;
+	width:300px;
+	text-align:right;
+}
+
+#titlu-despre-noi {
+	color:#43A5D4;
+}
+
+
+/* Portflio */
+#portfolio {
+	float:right;
+	width:474px;
+}
+
+#galerie {
+	float: right;
+	width:474px;
+}
+
+#portfolio-titulo {
+	right:10px;
+	position:absolute;
+	color:#43A5D4;
+}
+
+#galerie-titlu {
+	right:10px;
+	position:absolute;
+	color:#43A5D4;
+}
+
+#portfolio-works {
+	margin-left:20px;
+	position: relative; /* important */
+	overflow: hidden; /* important */
+	width: 550px; /* important */
+	height: 378px; /* important */
+}
+
+#portfolio-galerie {
+	margin-left:0px;
+	position: relative; /* important */
+	overflow: hidden; /* important */
+	width: 550px; /* important */
+	height: 378px; /* important */
+}
+
+.section {
+	right:10px;
+	position:absolute;
+	width:590px;
+	top:50px;
+}
+
+#example_4_frame {position: relative}
+#example_4_frame img {position: absolute; cursor:pointer;}
+
+#portfolio-arriba {position: relative;  z-index:3;}
+#portfolio-arriba img {position: absolute;}
+
+#portfolio-abajo {top: 336px; position: relative; z-index:3;}
+#portfolio-abajo img {position: absolute;}
+
+#portfolio_anteriores {top: 120px; right: 0px;}
+#portfolio_siguientes {top: 200px; right: 0px;}
+
+#tabere-anterior {top: 120px; right: 0px;}
+#tabere-urmator {top: 200px; right: 0px;}
+
+#recomandari-anterior {top: 120px; right: 0px;}
+#recomandari-urmator {top: 200px; right: 0px;}
+
+#tabere-de-iarna {
+	left:100px;
+	position: absolute;
+	width:450px;
+}
+
+#tabere-de-vara {
+	left:100px;
+	position: absolute;
+	width:450px;
+}
+
+#recomandari {
+	left: 100px;
+	position: absolute;
+	width: 450px;
+}
+
+#galerie-foto {
+	left:0px;
+	position:absolute;
+	width:450px;
+}
+
+.work{
+	clear:both;
+	padding-top:10px;
+	padding-bottom:16px;
+	width:450px;
+	height:100px;
+}
+
+.work p{
+	font-weight:bold;
+}
+
+.work-img{
+	float:left;
+}
+
+.work-txt{
+	float:left;
+	margin-top:40px;
+	margin-left:10px;
+}
+
+.tv-lista{
+	clear:both;
+	padding-top:10px;
+	padding-bottom:16px;
+	width:450px;
+	height:100px;
+}
+
+.tv-lista p{
+	font-weight:bold;
+}
+
+.tv-lista-img{
+	float:left;
+}
+
+.tv-lista-txt{
+	float:left;
+	margin-top:40px;
+	margin-left:10px;
+}
+
+.lista-recomandari-txt {
+	float:left;
+	margin-top:50px;
+	margin-left:10px;
+	color: #43A5D4;
+}	
+
+
+.txt-iarna {
+	color: #43A5D4;
+}
+
+.txt-vara {
+	color: #9AB228;
+}
+
+.txt-recomandari {
+	color: #B192AC;
+}
+
+/* Contact */
+#contact{
+	color:#000000;
+	float:left;
+	margin-top:50px;
+	margin-left:700px;
+	margin-right:10px;
+	width:230px;
+}
+#raspuns{
+	color:#000000;
+	display:none;
+	float:left;
+	margin-top:50px;
+	margin-left:700px;
+	margin-right:70px;
+	width:230px;
+}
+.loading{
+	color:#000000;
+	background-image:url(../images/incarcare.gif);
+	background-position:50% 30%;
+	background-repeat:no-repeat;
+	height:250px;
+}
+
+
+/* Formulario */
+input, textarea {
+	width:220px;
+	border:none;
+	background-color:#E6E7E8;
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:5px;
+	margin:5px;
+	/*filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	-khtml-opacity:0.7;
+	opacity:0.7;*/
+}
+input:focus, textarea:focus {
+}
+#trimite {
+	cursor:pointer;
+	width:auto;
+	font-weight:bold;
+}
+
+/* Tooltips */
+.tool-tip {
+	color:#ffffff;
+	font-size:11px;
+	background:#222222;
+	z-index:13000;
+}
+
+.tool-title {display:none;}
+
+.tool-text {padding:8px;}
+
+/* Galerie foto */
+
+.thumbnail{
+	padding: 3px 3px 8px 3px;
+	background-color: #eeeeee;
+	border: 1px solid #d5d4d4;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+
+#text-recomandari {
+	position:absolute;
+	left:600px;
+	width:450px;
+	padding:30px;
+	text-align:left;
+}

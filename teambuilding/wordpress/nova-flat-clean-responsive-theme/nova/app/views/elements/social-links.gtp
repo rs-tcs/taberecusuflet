@@ -1,0 +1,116 @@
+<?php
+if (!isset($networks)) $networks = $this->Wp->getOption('social_networks_enabled');
+$networks = Set::filter(Set::booleanize($networks));
+if (!$networks) return '';
+if (!isset($additionalClass)) $additionalClass = '';
+else $additionalClass = ' ' . $additionalClass;
+
+$socialData = (array) $this->Wp->getOption('social');
+$socialData = Set::merge(array(
+    'target_blank' => 'true',
+    'mode' => 'share',
+    'twitter' => array(
+        'username' => '',
+    ),
+    'fb' => array(
+        'url' => '',
+    ),
+    'printerest' => array(
+        'url' => '',
+    ),
+    'youtube' => array(
+        'url' => '',
+    ),
+    'linkedin' => array(
+        'url' => '',
+    ),
+    'instagram' => array(
+        'url' => '',
+    ),
+    'rss' => array(
+        'url' => get_bloginfo('rss_url'),
+    ),
+), $socialData);
+
+if (isset($accountMode)) {
+    $socialData['mode'] = $accountMode;
+}
+
+if (!isset($targetAttribute)) {
+    $targetAttribute = $this->Wp->getOption('social.target_blank');
+}
+$permalink = get_permalink();
+$title = the_title('', '', false);
+
+$fbLink         = 'http://www.facebook.com/sharer.php?u=' . $permalink . '&amp;t=' . $title;
+$twitterLink    = 'http://twitthis.com/twit?url=' . $permalink;
+$linkedInLink   = 'http://linkedin.com/shareArticle?mini=true&amp;url=' . $permalink . '&amp;title=' . $title;
+$printerestLink = 'http://pinterest.com/pin/create/button?url=' . $permalink . '&amp;title=' . $title;
+$googlePlusLink = 'http://google.com/bookmarks/mark?op=edit&amp;bkmk=' . $permalink . '&amp;title=' . $title;
+$youtubeLink    = $this->Html->url($socialData['youtube']['url']);
+$instagramLink  = $this->Html->url($socialData['instagram']['url']);
+
+if ($socialData['mode'] === 'account') {
+    $fbLink         = $this->Html->url($socialData['fb']['url']);
+    $twitterLink    = $this->Html->url('twitter.com/' . str_replace('@', '', $socialData['twitter']['username']));
+    $linkedInLink   = $this->Html->url($socialData['linkedin']['url']);
+    $printerestLink = $this->Html->url($socialData['printerest']['url']);
+}
+
+$networksAvailable = array(
+    'instagram' => array(
+        'href' => $instagramLink,
+        'class' => 'icon-instagram tooltip-link' . $additionalClass,
+        'data-original-title' => __('Instagram', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'facebook' => array(
+        'href' => $fbLink,
+        'class' => ' icon-facebook tooltip-link' . $additionalClass,
+        'data-original-title' => __('Facebook', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'twitter' => array(
+        'href' => $twitterLink,
+        'class' => ' icon-twitter tooltip-link' . $additionalClass,
+        'data-original-title' => __('Twitter', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'linkedin' => array(
+        'href' => $linkedInLink,
+        'class' => ' icon-linkedin tooltip-link' . $additionalClass,
+        'data-original-title' => __('LinkedIn', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'printerest' => array(
+        'href' => $printerestLink,
+        'class' => ' icon-pinterest tooltip-link' . $additionalClass,
+        'data-original-title' => __('Pinterest', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'googleplus' => array(
+        'href' => $googlePlusLink,
+        'class' => ' icon-google-plus tooltip-link' . $additionalClass,
+        'data-original-title' => __('Google +', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'youtube' => array(
+        'href' => $youtubeLink,
+        'class' => 'icon-youtube-play tooltip-link' . $additionalClass,
+        'data-original-title' => __('YouTube', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+    'rss' => array(
+        'href' => $socialData['rss']['url'],
+        'class' => 'icon-rss tooltip-link' . $additionalClass,
+        'data-original-title' => __('RSS', 'gummfw'),
+        'target' => $targetAttribute === 'true' ? '_blank' : null,
+    ),
+);
+$networksEnabled = array_intersect_key($networksAvailable, $networks);
+if ($networksEnabled) {
+    foreach ($networksEnabled as $networkAttributes) {
+        echo '<a' . $this->Html->_constructTagAttributes($networkAttributes) . '></a>';
+    }
+}
+?>

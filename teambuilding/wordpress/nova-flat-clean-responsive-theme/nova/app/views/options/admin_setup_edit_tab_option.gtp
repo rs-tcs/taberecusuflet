@@ -1,0 +1,45 @@
+<div class="tab-option">
+    <div class="tab-option-heading">
+        <a class="remove-option" href="#">X</a>
+        <h6><span class="tab-option-title"><?php echo $option['name'];?></span> (<span class="tab-option-id">#<?php echo $option['id']; ?></span>)</h6>
+        <span class="edit-option"><?php _e('edit', 'gummfw'); ?></span>
+    </div>
+    <div class="tab-option-settings hidden">
+        <?php
+        $textareaFields = array('adminActions', 'inputOptions', 'inputAttribtues', 'inputSettings', 'data', 'default');
+        $indexKey = uniqid();
+        foreach ($option as $field => $value) {
+            
+            $inputOptions = array();
+            $type = 'text';
+            if (in_array($field, $textareaFields)) {
+                $type = 'textarea';
+            } elseif ($field == 'requestAction') {
+                // d($value);
+                $type = 'requestAction';
+            } elseif ($field == 'group') {
+                $type = 'select';
+                $adminToolbarSettings = GummRegistry::get('Helper', 'Layout')->adminToolbarSettings;
+                $inputOptions = array_combine(array_keys($adminToolbarSettings), array_keys($adminToolbarSettings));
+            }
+            
+            if (is_array($value) && $type !== 'requestAction') {
+                $value = GummRegistry::get('Controller', 'Options')->parseArrayToString($value);
+                // d($value);
+            }
+            
+            echo $this->Form->input('GummOptionSetup', array(
+                'name' => $field,
+                'id' => 'options.' . $indexKey . '.' . $field,
+                'type' => $type,
+                'default' => (is_string($value)) ? stripslashes($value) : $value,
+                'inputOptions' => $inputOptions,
+            ), array(
+                'class' => $field
+            ), array(
+                'div' => false
+            ));
+        }
+        ?>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<?php
+$this->extend('posts/index_related');
+
+$this->start('entries');
+while(have_posts()): the_post();
+    global $post;
+    View::renderElement('layout-components-parts/video/index-single-item', array('post' => $post));
+endwhile;
+$this->end();
+
+?>

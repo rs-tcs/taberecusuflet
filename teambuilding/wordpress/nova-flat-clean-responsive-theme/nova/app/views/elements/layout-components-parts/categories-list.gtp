@@ -1,0 +1,24 @@
+<?php
+$termName = $postType == 'post' ? 'category' : $postType . '_category';
+if ($categoriesList = wp_list_categories(array(
+    'taxonomy' => $termName,
+    'title_li' => null,
+    'show_option_none' => null,
+    'hide_empty' => 1,
+    'echo' => 0,
+))):
+?>
+
+<div class="tagline">
+    <ul class="categories-list filter-buttons">
+        <?php
+        $permalink = get_permalink();
+        $permalink .= (isset($_GET['gummpreview'])) ? '&' . http_build_query(array('gummpreview' => $_GET['gummpreview'])) : '';
+        ?>
+        <li class="current cat-item-0"><a href="<?php echo $permalink; ?>"><?php _e('All'); ?></a></li>
+        <?php echo $categoriesList; ?>
+    </ul>
+</div>
+<div class="bluebox-clear"></div>
+
+<?php endif; ?>

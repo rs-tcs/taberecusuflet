@@ -1,0 +1,68 @@
+<?php
+if (!isset($post)) global $post;
+if (!isset($displayMetaInfo)) $displayMetaInfo = true;
+if (!isset($lightBoxLinkDisplay)) $lightBoxLinkDisplay = true;
+if (!isset($elementId)) $elementId = $post->ID;
+
+$enableEffects = $this->Wp->getOption('enable_effects') === 'true';
+
+$divClass = 'list-item';
+if ($enableEffects) {
+    $divClass .= ' not-initialized gumm-scrollr-item';
+}
+
+$atts = array(
+    'href' => get_permalink(),
+    'class' => array('image-details-link'),
+);
+
+if ($lightBoxLinkDisplay) {
+    $atts['class'][] = 'image-wrap-mask';
+    if ($post->Thumbnail) {
+        $atts['href'] = $post->Thumbnail->permalink;
+        $atts['rel'] = 'prettyPhoto[' . $elementId . ']';
+    }
+}
+?>
+
+<div class="<?php echo $divClass; ?>">
+    <?php if ($post->Thumbnail): ?>
+        <div class="image-wrap">
+            <div class="image-details">
+                <?php
+                echo $this->Media->display($post->Thumbnail->guid, array(
+                    'width' => 100,
+                    'height' => 100,
+                ));
+                ?>
+                <a<?php echo $this->Html->_constructTagAttributes($atts); ?>>
+                <?php
+                if ($lightBoxLinkDisplay) {
+                    echo '<i class="icon-search"></i>';
+                }
+                ?>
+                </a>
+            </div>
+        </div>
+    <?php endif; ?>
+    <div class="list-wrap">
+    	<a href="<?php the_permalink(); ?>" class="head-link"><h4><?php the_title(); ?></h4></a>
+        <span class="bluebox-date">
+            <?php
+            echo trim($this->Html->postDetails(array(
+                'date', 'comments',
+            ), array(
+                'beforeDetail' => '',
+                'afterDetail' => ' /',
+                'prefixes' => array(
+                    'author' => '',
+                    'date' => '',
+                    'category' => '',
+                    'comments' => '',
+                ),
+            )), ' /');
+            ?>
+        </span>
+    </div>
+    <div class="clearfix"></div>
+</div>

@@ -1,0 +1,8 @@
+<?php
+$quickLaunchItems = $this->QuickLaunch->prepareForQuickLaunchDisplay($shortcodes, array(
+    'contentCallback' => array('controller' => 'shortcodes', 'action' => 'admin_edit'),
+));
+
+echo $this->QuickLaunch->quickLaunchView($quickLaunchItems, array('title' => $title));
+
+?>

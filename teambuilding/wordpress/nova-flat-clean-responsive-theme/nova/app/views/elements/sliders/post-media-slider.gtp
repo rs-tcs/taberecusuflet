@@ -1,0 +1,20 @@
+<?php
+if (!isset($media)) return;
+if (!isset($dimensions)) $dimensions = array();
+?>
+
+<div class="flexslider">
+
+	<ul class="slides">
+	    <?php
+	    foreach ($media as $item) {
+	        echo '<li>' . $this->Media->display($item->guid, $dimensions) . '<span></span></li>';
+	    }
+        ?>
+    </ul>
+</div>
+<div class="image-slide-wrap slider-nav-wrap">
+	<h3></h3>
+    <a href="#" class="nav-arrow prev"><span></span></a>
+    <a href="#" class="nav-arrow next"><span></span></a>
+</div>

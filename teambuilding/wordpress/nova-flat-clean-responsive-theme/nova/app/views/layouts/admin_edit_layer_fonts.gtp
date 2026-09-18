@@ -1,0 +1,46 @@
+<?php if ($fontSettings['font-family'] && $fontSettings['vendor'] == 'google'): ?>
+    <?php $this->scriptBlockStart(); ?>
+        loadGoogleWebFonts(["<?php echo $fontSettings['font-family']; ?>"]);
+    <?php $this->scriptBlockEnd(); ?>
+<?php endif;?>
+
+<div class="span4">
+    <?php
+    echo $this->Html->link(__('Google Directory', 'gummfw'), array(
+    	'controller' => 'options', 
+    	'action' => 'font_manager',
+    	'admin' => true, 
+    	'ajax' => true,
+    	'fontSource' => 'google',
+    ), array(
+        'style' => 'margin:0 10px 10px 0;',
+        'class' => 'btn btn-success gumm-browse-fonts',
+    ));
+    
+    echo $this->Html->link(__('Browser Fonts', 'gummfw'), array(
+    	'controller' => 'options', 
+    	'action' => 'font_manager',
+    	'admin' => true, 
+    	'ajax' => true,
+    ), array(
+        'style' => 'margin:0 10px 10px 0;',
+        'class' => 'btn btn-success gumm-browse-fonts',
+    ));
+    
+    echo $this->Form->input('Option', array(
+        'type' => 'hidden',
+        'id' => $optionId . '.font-family',
+        'name' => '',
+    ));
+    ?>
+</div>
+<div class="span8">
+    <div class="admin-fieldset">
+        <span class="font-family-preview" style="font-size:36px;font-family:<?php echo $fontSettings['font-family']; ?>;line-height:36px;">
+            <?php echo $fontSettings['font-family']; ?>
+        </span>
+        <span class="after-detail">
+            <?php _e('Current', 'gummfw'); ?>
+        </span>
+    </div>
+</div>

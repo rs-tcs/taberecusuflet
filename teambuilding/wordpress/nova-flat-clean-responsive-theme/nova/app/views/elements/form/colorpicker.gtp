@@ -1,0 +1,19 @@
+<div class="image-upload-container layout-block-bgcolor-editor">
+    <div class="bg-layer-wrap bg-layer-wrap bg-color">
+        <div class="prop-wrap" style="margin-left:0; border:none;">
+            <div class="prop-input">
+                <h3>Bg Color</h3>
+            </div>
+        </div>
+        
+        <div class="prop-wrap">
+            <div class="prop-input">
+                <a class="remove-bg-color link-button cancel" href="#"><span><?php _e('Clear', 'gummfw'); ?></span></a>
+            </div>
+        </div>
+
+        <div class="prop-wrap">
+            <?php echo $content_for_element; ?>
+        </div>
+    </div>
+</div>

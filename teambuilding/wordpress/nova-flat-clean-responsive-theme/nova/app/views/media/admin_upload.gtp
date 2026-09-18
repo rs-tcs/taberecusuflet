@@ -1,0 +1,16 @@
+<?php if (isset($mediaFile['error'])): ?>
+<p class="error"><?php echo $mediaFile['error']; ?></p>
+<?php else: ?>
+<?php
+    $width = 74;
+    $height = 74;
+    $dims = explode('x', $render);
+    if (count($dims) === 2) {
+        list($width, $height) = $dims;
+    }
+?>
+<?php if (strpos($render, 'x')) ?>
+<a href="#" class="uploaded-media-thumb" title="<?php echo $mediaFile['url']; ?>">
+    <?php echo $this->Media->display($mediaFile['url'], array('width' => $width, 'height' => $height), array('alt' => $mediaFile['url'])); ?>
+</a>
+<?php endif; ?>

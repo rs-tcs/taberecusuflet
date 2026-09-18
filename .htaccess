@@ -1,0 +1,65 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} =on
+RewriteRule ^ - [E=PROTO:https]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ - [E=PROTO:http]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{SERVER_ADDR} !=127.0.0.1
+RewriteCond %{SERVER_ADDR} !=::1
+RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#then when NOT www
+#redirect to www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+Options +FollowSymLinks
+RewriteEngine On
+
+
+
+Redirect 301 /images/doc/formularSanatateTS18.pdf /images/doc/formularSanatate.pdf
+Redirect 301 /images/ctr/ctrSpons.TabereCuSuflet2019.pdf /images/ctr/ctrSpons.TabereCuSuflet.pdf
+
+Redirect 301 https://taberecusuflet.ro/m.index.html https://taberecusuflet.ro/0index.html
+Redirect 301 https://taberecusuflet.ro/0Coronavirus.html https://taberecusuflet.ro/0WeCareTotulVaFiBine.html
+Redirect 301 https://taberecusuflet.ro/Coronavirus.html https://taberecusuflet.ro/WeCareTotulVaFiBine.html
+Redirect 301 https://taberecusuflet.ro/doilasuta.html https://taberecusuflet.ro/0Daruieste.html
+Redirect 301 https://taberecusuflet.ro/0doilasuta.html https://taberecusuflet.ro/Daruieste.html
+Redirect 301 https://taberecusuflet.ro/0LumeMaiBunaDisclaimer.html https://taberecusuflet.ro/LumeMaiBunaDisclaimer.html
+Redirect 301 https://taberecusuflet.ro/0MiciiSuporteri.html https://taberecusuflet.ro/Rezerva.html
+Redirect 301 https://taberecusuflet.ro/MiciiSuporteri.html https://taberecusuflet.ro/Rezerva.html
+Redirect 301 https://taberecusuflet.ro/0TSClabucet.html https://taberecusuflet.ro/0TSOlimpiada.html
+Redirect 301 https://taberecusuflet.ro/TSClabucet.html https://taberecusuflet.ro/TSOlimpiada.html
+Redirect 301 https://taberecusuflet.ro/ConditiiParticipare.html https://taberecusuflet.ro/Termeni.html
+Redirect 301 https://taberecusuflet.ro/indexChildren.html https://taberecusuflet.ro/index.html
+Redirect 301 https://taberecusuflet.ro/RezervariWeekend.html https://taberecusuflet.ro/Rezerva.html
+Redirect 301 https://taberecusuflet.ro/Vara.html https://taberecusuflet.ro/VaraTabere.html
+Redirect 301 https://taberecusuflet.ro/0TVHotelMare.html https://taberecusuflet.ro/TVHotelMare.html
+Redirect 301 https://taberecusuflet.ro/TV.Cerna.html https://www.taberecusuflet.ro/TV.Cave.html
+Redirect 301 https://taberecusuflet.ro/WeCareOther.html https://taberecusuflet.ro/WeCare.html
+Redirect 301 https://taberecusuflet.ro/TV>Pictura.html https://taberecusuflet.ro/TV.Pictura.html
+
+ErrorDocument 401 /Er500.html
+ErrorDocument 403 /Er500.html
+ErrorDocument 404 /Lucru.html
+ErrorDocument 500 /Er500.html
+ErrorDocument 504 /Er500.html
+RewriteCond %{HTTP_HOST} ^taberecusuflet\.ro$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.taberecusuflet\.ro$
+RewriteRule ^Antrenament\.html\ $ "https\:\/\/taberecusuflet\.ro\/Activitati\.html\ " [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

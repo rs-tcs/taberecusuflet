@@ -1,0 +1,44 @@
+<?php if (!$attachmentPost) return; ?>
+
+<div class="media-upload-item">
+    <div class="thumb-div">
+        <?php
+        
+        echo $gummHtmlHelper->link('',
+            array(
+                'admin' => true,
+                'ajax' => true,
+                'controller' => 'media',
+                'action' => 'delete',
+                'mediaId' => $attachmentPost->ID
+            ), array(
+                'class' => 'close-button close-parent parent-2 remove-on-close gumm-ajax-delete'
+            ), array(
+                // 'confirm' => __('Are you sure you want to delete this media item?', 'gummfw'),
+            )
+        );
+        
+        echo $gummMediaHelper->display(wp_get_attachment_url($attachmentPost->ID), array('width' => 74, 'height' => 74));
+        
+        echo $gummHtmlHelper->link('<span>' . __('Edit', 'gummfw') . '</span>',
+            array(
+                'admin' => true,
+                'ajax' => true,
+                'controller' => 'media',
+                'action' => 'edit',
+                'mediaId' => $attachmentPost->ID
+            ),
+            array(
+                'class' => 'link-button edit media-edit-button gumm-open-popup popup-height-420 popup-width-350 popup-onok-submit'
+            )
+        );
+        
+        if (isset($optionId) && $optionId) {
+            echo $form->input('', array('id' => $optionId . '.{n}', 'type' => 'hidden'), array('value' => $attachmentPost->ID));
+        }
+        
+        ?>
+    </div>
+
+    <div class="clear"></div>
+</div>

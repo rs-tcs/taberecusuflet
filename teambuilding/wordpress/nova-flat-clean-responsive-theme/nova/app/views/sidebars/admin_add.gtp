@@ -1,0 +1,40 @@
+<?php
+if (!isset($id)) {
+    $id = 'sidebar-' . uniqid();
+}
+// $existingSidebars = $gummWpHelper->getOption('_sidebars');
+// $sidebarIndex = 1;
+// if ($existingSidebars) $sidebarIndex = count($existingSidebars) + 1;
+
+echo $this->Form->create(array(
+    'id' => 'gumm-sidebars-add-form',
+    'action' => array('admin' => true, 'controller' => 'sidebars', 'action' => 'save'),
+    'ajax' => true,
+    '_wpnonce' => SidebarsController::WPNONCE,
+));
+
+echo $this->Form->input('', array(
+    'id' => 'Sidebar.' . GUMM_THEME_PREFIX . '__sidebars.' . $id . '.name',
+    'type' => 'text',
+), array(
+    'class' => 'text-input span12',
+), array(
+    'label' => __('Name', 'gummfw'),
+));
+echo $this->Form->input('', array(
+    'id' => 'Sidebar.' . GUMM_THEME_PREFIX . '__sidebars.' . $id . '.description',
+    'type' => 'text',
+), array(
+    'class' => 'text-input span12',
+), array(
+    'label' => __('Description', 'gummfw'),
+));
+echo $this->Form->input('', array(
+    'id' => 'Sidebar.' . GUMM_THEME_PREFIX . '__sidebars.' . $id . '.id',
+    'type' => 'hidden',
+), array(
+    'value' => $id
+));
+
+echo $this->Form->end();
+?>

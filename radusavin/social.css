@@ -1,0 +1,130 @@
+ul#navigation_social {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+ul#navigation_social li {
+    width: 65px;
+}
+ul#navigation_social li a {
+    display: block;
+    margin-left: -10px;
+    width: 65px;
+    height: 50px;
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.6;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+ul#navigation_social .home_social a{
+    background-image: url(https://www.radusavin.ro/images/facebook.png);
+}
+ul#navigation_social .home_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+ul#navigation_social .about_social a      {
+    background-image: url(https://www.radusavin.ro/images/twitter.png);	
+}
+ul#navigation_social .about_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+ul#navigation_social .search_social a      {
+    background-image: url(https://www.radusavin.ro/images/mail.png);
+}
+ul#navigation_social .search_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+ul#navigation_social .professional_social a      {
+    background-image: url(https://www.radusavin.ro/images/linkedin.png);
+}
+ul#navigation_social .professional_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+ul#navigation_social .video_social a   {
+    background-image: url(https://www.radusavin.ro/images/youtube.png);
+}
+ul#navigation_social .video_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+
+ul#navigation_social .plus_social a     {
+    background-image: url(https://www.radusavin.ro/images/google.png);
+}
+ul#navigation_social .plus_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+
+
+ul#navigation_social .press_social a    {
+    background-image: url(https://www.radusavin.ro/images/wordpress.png);
+}
+ul#navigation_social .press_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+ul#navigation_social .pinteres_social a     {
+    background-image: url(https://www.radusavin.ro/images/pinterest.png);
+}
+ul#navigation_social .pinteres_social a:hover{
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+ul#navigation_castig {
+    right: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+}
+ul#navigation_castig li {
+    width: 85px;
+}
+ul#navigation_castig .home_castig a {
+    background-image: url("https://www.radusavin.ro/images/img_contact1.png");
+}
+ul#navigation_castig li a {
+    background-color: #CFCFCF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #AFAFAF;
+    display: block;
+    height: 70px;
+    margin-left: 44%;
+    opacity: 0.6;
+    width: 85px;
+}

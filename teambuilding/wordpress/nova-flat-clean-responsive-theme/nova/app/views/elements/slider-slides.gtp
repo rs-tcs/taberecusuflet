@@ -1,0 +1,52 @@
+<?php
+    if (!isset($media) || !isset($size)) return;
+
+    $beforeSlides =  (isset($beforeSlides)) ? $beforeSlides : '';
+    $afterSlides = (isset($afterSlides)) ? $afterSlides : '';
+
+    $defaultControls = array(
+        'nav' => true,
+        'link' => true,
+    );
+    
+    if (!isset($controls)) $controls = $defaultControls;
+    else $controls = array_merge($defaultControls, (array) $controls);
+    
+    $defaultClass = 'slider-slides flexslider';
+    if (!isset($class)) $class = $defaultClass;
+    else $class .= ' ' . $defaultClass;
+    
+    if (isset($autoheight) && $autoheight) $class .= ' autoheight';
+?>
+    <div class="slider-slides flexslider">
+    
+    <?php echo $beforeSlides; ?>
+    
+    <ul class="slides">
+        <?php
+        foreach ($media as $mediaItem) {
+            echo '<li>' . $gummMediaHelper->display($mediaItem->guid, $size, array('preload' => false)) . '</li>';
+        }
+        ?>
+    </ul>
+    
+    <div class="loop-slider-wrap">
+        
+        <?php if ($controls['nav']): ?>
+        <div class="slider-nav-wrap">
+            <a class="prev"><span></span></a>
+            <a class="next"><span></span></a>
+        </div>
+        <?php endif; ?>
+        
+        <?php if ($controls['link']): ?>
+        <div class="slider-popup-wrap">
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="popup"><span></span></a>
+        </div>
+        <?php endif; ?>
+        
+    </div>
+    
+    <?php echo $afterSlides; ?>
+
+</div>

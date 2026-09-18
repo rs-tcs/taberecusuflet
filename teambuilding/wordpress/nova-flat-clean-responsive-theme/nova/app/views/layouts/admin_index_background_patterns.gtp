@@ -1,0 +1,11 @@
+<?php
+$quickLaunchHelper = GummRegistry::get('Helper', 'QuickLaunch');
+
+$qlItems = $quickLaunchHelper->prepareForQuickLaunchDisplay($backgroundPatternTypes, array(
+    'url' => array('ajax' => true, 'admin' => true, 'controller' => 'layouts', 'action' => 'view_background_pattern'),
+    'urlParams' => array('backgroundPatternType' => 'name'),
+));
+
+echo $quickLaunchHelper->quickLaunch($qlItems, array('title' => __('Background Patterns', 'gummfw')));
+
+?>

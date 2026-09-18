@@ -1,0 +1,9 @@
+<?php
+$popupWindowContent = '';
+foreach ($libraryItems as $mediaUrl) {
+	$popupWindowContent .= '<a href="admin-ajax.php?action=gumm_add_media&option_id='.$optionId.'&url='.urlencode($mediaUrl).'" class="thumb-holder">';
+	$popupWindowContent .= $gummMediaHelper->display($mediaUrl, array('width' => 75, 'height' => 75));
+	$popupWindowContent .= '</a>';
+}
+echo $gummHtmlHelper->popupWindow($popupWindowContent, array('windowClass' => 'gumm-wp-media-library-browser'));
+?>

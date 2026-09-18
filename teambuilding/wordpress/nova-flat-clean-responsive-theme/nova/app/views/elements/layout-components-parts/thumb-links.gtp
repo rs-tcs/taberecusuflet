@@ -1,0 +1,20 @@
+<?php
+global $post;
+$linksDisplay = isset($post->GummOption['hover_icons_enabled']) ? $post->GummOption['hover_icons_enabled'] : 'both';
+
+if (!isset($permalink)) $permalink = false;
+if (!isset($lightBoxLink)) $lightBoxLink = false;
+if (!isset($rel)) $rel = false;
+if (!$permalink && !$lightBoxLink || $linksDisplay === 'none') return '';
+
+if ($linksDisplay === 'magnify') $permalink = false;
+if ($linksDisplay === 'link') $lightBoxLink = false;
+?>
+<ul class="roki-thumb-links">
+    <?php if ($permalink): ?>
+    <li><a href="<?php echo $permalink; ?>" class="icon-plus"></a></li>
+    <?php endif; ?>
+    <?php if ($lightBoxLink): ?>
+    <li><a href="<?php echo $lightBoxLink; ?>" class="icon-search" rel="prettyPhoto[<?php echo $rel; ?>]"></a></li>
+    <?php endif; ?>
+</ul>

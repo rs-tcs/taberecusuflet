@@ -1,0 +1,17 @@
+<?php
+if (!$posts) return '';
+
+request_action(array(
+    'controller' => 'layout_elements',
+    'action' => 'display',
+    'Portfolio',
+    array(
+        'headingText' => __('Related Projects', 'gummfw'),
+        'postsNumber' => 8,
+        'postType' => 'portfolio',
+        'postColumns' => 4,
+        'layout' => 'slider',
+        'posts' => $posts,
+    )
+));
+?>

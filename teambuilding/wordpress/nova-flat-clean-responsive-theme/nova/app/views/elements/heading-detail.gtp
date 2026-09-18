@@ -1,0 +1,15 @@
+<?php
+$title = (isset($title)) ? $title : '';
+$flat = !$title;
+$color = (isset($color)) ? $color : false;
+?>
+
+
+<div class="hr <?php if ($flat) echo 'flat'; ?>" style="<?php if ($color) echo 'background-color:#' . $color; ?>">
+    <div>
+        <div style="<?php if ($color) echo 'border-color:#' . $color; ?>">
+            <h3 style="<?php if ($color) echo 'color:#' . $color; ?>"><?php echo $title; ?></h3>
+            <span class="heading-detail"></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div id="gumm-simple-content-importer">
+    <?php
+    if ($sampleData = $this->Wp->getOption('_sample_content_data')) {
+        echo '<p id="sample-data-text" class="sample-data-installed" data-action-text="' . __('Removing sample data...', 'gummfw') . '" data-action-complete-text="' . __('OK. Sample data removed.', 'gummfw') . '"><span>' . __('Sample data is installed', 'gummfw') . '</span><i id="sample-data-icon" class="sample-data-icon icon-ok"></i></p>';
+    } else {
+        echo '<p id="sample-data-text" class="sample-data-not-installed" data-action-text="' . __('Sample data is installing...', 'gummfw') . '" data-action-complete-text="' . __('OK. Sample data installed.', 'gummfw') . '"><span>' . __('Sample data is not installed', 'gummfw') . '</span><i id="sample-data-icon" class="sample-data-icon"></i></p>';
+    }
+    echo '<div class="buttons-container">';
+    
+    $class = array('btn');
+    if ($sampleData) {
+        $link = array(
+            'admin' => true,
+            'ajax' => true,
+            'controller' => 'layouts',
+            'action' => 'import_sample_data',
+            'takeAction' => 'delete',
+        );
+    } else {
+        $class[] = 'inactive';
+        $link = '#';
+    }
+    echo $this->Html->link('<span>' . __('Remove', 'gummfw') . '</span>', $link, array(
+        'id' => 'gumm-delete-sample-content',
+        'class' => $class,
+    ));
+    
+    
+    $class = array('btn', 'btn-success');
+    if ($sampleData) {
+        $link = '#';
+        $class[] = 'inactive';
+    } else {
+        $link = array(
+            'admin' => true,
+            'ajax' => true,
+            'controller' => 'layouts',
+            'action' => 'import_sample_data',
+            'takeAction' => 'import'
+        );
+    }
+    echo $this->Html->link('<span>' . __('Import', 'gummfw') . '</span>', $link, array(
+        'id' => 'gumm-import-sample-content',
+        'class' => implode(' ', $class),
+        'style' => 'margin-left:10px;',
+    ));
+    
+    echo '</div>';
+?>
+</div>
+
+<?php
+    $this->scriptBlockStart();
+?>
+    $(document).on('click', '#gumm-import-sample-content, #gumm-delete-sample-content', function(e){
+        e.preventDefault();
+        if ($(this).attr('href') === '#') return false;
+        
+        $.ajax({
+            method: 'get',
+            url: $(this).attr('href'),
+            beforeSend: function(jqXHR, settings) {
+                $('#sample-data-text').children('span').text($('#sample-data-text').data('action-text'));
+                $('#sample-data-icon').removeClass('icon-ok').addClass('loading');
+            },
+            success: function(data, textStatus, jqXHR) {
+                $('#sample-data-text').children('span').text($('#sample-data-text').data('action-complete-text'));
+                $('#sample-data-icon').removeClass('loading').addClass('icon-ok');
+                
+                setTimeout(function(){
+                    $('#gumm-simple-content-importer').html($(data).html());                    
+                }, 1000);
+                
+            }
+        });
+    });
+
+
+<?php    
+    $this->scriptBlockEnd();
+?>

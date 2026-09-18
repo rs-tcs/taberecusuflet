@@ -1,0 +1,51 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu,insotitor,pachet_vip,tricou,print_vip,locul,puncte,timp,ture,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+1,96BL45,Barbu,Leonard,18,tineri,masculin,Veseliei,,,,,1,100,0:45:10,2,22,,,,,neachitata,leo.barbu@hotmail.com,0769297460,2014-10-25
+2,95CE8U,Cotea??,Estera,19,tineri,feminin,Veseliei,,,,,1,100,0:55:10,2,25,,,,,neachitata,estera_ana_maria@yahoo.com,0736052602,2014-10-25
+3,95VC5D,Vornicu,Constantin,19,tineri,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,komy_komy13@yahoo.com,0764772688,2014-10-25
+5,09BAA5,BOBOCEA,Anais,5,piticoti,feminin,Copiilor,,,,,0,0,,0,,,,,,gratuit,adrianbobocea@gmail.com,0724150370,2014-10-25
+6,73GC6D,Gligorea,Calin,41,seniori,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,cgligorea@hotmail.com,0728700700,2014-10-25
+7,08GN26,Gligorea,Nadia,6,pitici,feminin,Copiilor,,,,,0,0,,0,,,,,,gratuit,cgligorea@hotmail.com,0728700700,2014-10-25
+8,76GG3K,Gligorea,Gabriela,38,adulti,feminin,Veseliei,,,,,0,0,,0,,,,,,neachitata,gabriela.gligorea@yahoo.com,0722595484,2014-10-25
+9,04TCBS,Toth,"Cristian Andrei",10,spiridusi,masculin,Copiilor,,vip,S,,0,0,,0,,,,,,neachitata,office@montajprofesional.ro,0765533906,2014-10-25
+10,02CM5U,Ciufu,"Mihai Stefan",12,uriasi,masculin,Copiilor,,,,,0,0,,0,,,,,,gratuit,ciufu.lidia@yahoo.ro,0749058878,2014-10-25
+11,74CLBA,Ciufu,Lidia,40,seniori,feminin,Veseliei,,,,,0,0,,0,,OP,10,lbr,tbc,achitata,ciufu.lidia@yahoo.ro,0772254207,2014-10-25
+12,71CMBO,Ciufu,Marius-Alexandru,43,seniori,masculin,Veseliei,,,,,0,0,,0,,OP,10,lbr,tbc,achitata,ciufu.lidia@yahoo.ro,0745134076,2014-10-25
+13,97SM9H,Stan,Miriam,17,tineri,feminin,Veseliei,,,,,0,0,,0,,,,,,neachitata,miriamstan17@gmail.com,0758080298,2014-10-25
+14,83MI58,Mihaiescu,Ionut,31,adulti,masculin,Veseliei,,,,,0,0,,0,,OP,,Abonament,ok,achitata,ionut.mihaiescu@gmail.com,0729290763,2014-10-25
+15,01PG5C,Porumb,George-Andrei,13,uriasi,masculin,Copiilor,da,,,,0,0,,0,,,,,,neachitata,george.porumb@electrosoftgrup.ro,0742140697,2014-10-25
+16,05PD6I,POPESCU,DAVID,9,copii,masculin,Copiilor,,,,,0,0,,0,,,,,,gratuit,simonapopes@gmail.com,0722303027,2014-10-25
+17,08PAAX,POPESCU,ALBERT,6,pitici,masculin,Copiilor,da,,,,0,0,,0,,,,,,neachitata,simonapopes@gmail.com,0722303027,2014-10-25
+19,76VM7B,Vincze,Marius,38,adulti,masculin,Veseliei,,vip,XL,,0,0,,0,,,,,,neachitata,vczcamelia@yahoo.co.uk,0744440475,2014-10-25
+20,09VLB8,VINCZE,"LUCA GABRIEL",5,piticoti,masculin,Copiilor,da,vip,XL,,0,0,,0,,,,,,neachitata,vczcamelia@yahoo.co.uk,0744440475,2014-10-25
+21,53GP7V,Giuseppe,Paffoni,61,forever_young,masculin,Veseliei,,vip,XL,,0,0,,0,,,,,,neachitata,beppe@cromplastic.ro,0726283781,2014-10-25
+22,72GO5A,"Gheorghe ",Orlando,42,seniori,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,orlandogheorghe72@yahoo.com,0721680392,2014-10-25
+23,09SSAN,Sideri,Sophia,5,piticoti,feminin,Copiilor,da,vip,M,,0,0,,0,,,,,,neachitata,aurelian_sideri@yahoo.com,0722633923,2014-10-25
+24,81CD91,Carstina,Dan-Andrei,33,adulti,masculin,Veseliei,,,,,6,60,1:15:30,2,80,OP,10,,ok,achitata,andrei.carstina@gmail.com,0725938085,2014-10-25
+25,85CA25,Carstina,Andreea,29,adulti,feminin,Veseliei,,,,,2,85,1:20:10,2,79,OP,10,,ok,achitata,andreea.carstina@gmail.com,0766519988,2014-10-25
+26,84ERCU,Epure,Radu,30,adulti,masculin,Veseliei,,,,,0,0,,0,,OP,10,,tbc,achitata,ina.strugaru@gmail.com,0740547268,2014-10-25
+27,85EI37,Epure,Ina,29,adulti,feminin,Veseliei,,,,,0,0,,0,,OP,10,,tbc,achitata,ina.strugaru@gmail.com,0740547268,2014-10-25
+28,85BM5K,Boerescu,Mihai,29,adulti,masculin,Veseliei,,vip,S,,0,0,,0,,,,,,neachitata,popeeeye18@yahoo.com,0736366426,2014-10-25
+29,78CR9O,Clim,Rigoleto,36,adulti,masculin,Veseliei,,vip,S,,0,0,,0,,,,,,neachitata,rigoleto.clim@yahoo.com,0725481010,2014-10-25
+30,78DN52,"Dragoi Alexandrescu",Narcis,36,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,narcisdragoi@gmail.com,0769694737,2014-10-25
+31,81RR6S,radu,razvan,33,adulti,masculin,Veseliei,,vip,M,,0,0,,0,,,,,,neachitata,radurazvanpaul@gmail.com,0724227798,2014-10-25
+32,81MA12,Mirea,Aurelian,33,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,mireaaurelian@yahoo.com,0721867695,2014-10-25
+33,80SM1P,SANDU,MARC,34,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,marcsandu@yahoo.com,0745083191,2014-10-25
+34,80RR65,Roxana,Radu,34,adulti,feminin,Veseliei,,,,,0,0,,0,,,,,,neachitata,blog@roxanaradu.com,0748087022,2014-10-25
+35,75BM2N,Briceag,Marin,39,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,marin.briceag@alvorada.ro,0722653730,2014-10-25
+36,71SM33,Suditu,Marius,43,seniori,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,mariussuditu71@gmail.com,0729105747,2014-10-25
+38,72CA7F,CONSTANTIN,ADRIAN,42,seniori,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,adictin72@gmail.com,0722649134,2014-10-25
+39,97MI3A,Marcoci,Ionut,17,tineri,masculin,Veseliei,,,,,4,70,1:04:50,2,29,OP,10,,tbc,achitata,nicolaegirimea@gmail.com,0730256287,2014-10-25
+40,91DCAV,"Dumitrana ",Constantin,23,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,dumitrana.constantin@yahoo.com,0727741695,2014-10-25
+41,02SDAE,Stoica,"Diana Alexandra",12,uriasi,feminin,Copiilor,,,,,1,80,0:40:10,1,283,,,,,gratuit,foxnoname@yahoo.com,0744558483,2014-10-25
+42,06SR3X,Stoica,"Robert Alexandru",8,copii,masculin,Copiilor,,,,,2,80,0:41:50,1,276,,,,,gratuit,foxnoname@yahoo.com,0744558483,2014-10-25
+43,08SD6I,"Stoica ","David Gabriel",6,pitici,masculin,Copiilor,da,,,,5,80,1:20:50,1,292,,,,,neachitata,foxnoname@yahoo.com,0744558483,2014-10-25
+44,07BTCA,Bucur,Toma,7,pitici,masculin,Copiilor,da,,,,0,0,,0,,,,,,neachitata,mbucur@sagafilm.ro,0741100741,2014-10-25
+45,84DS92,Dalina,Stefanescu,30,adulti,feminin,Veseliei,,,,,3,76,1:23:20,2,65,,,,,neachitata,aladina.ms02@yahoo.com,0742945392,2014-10-25
+46,67CL7I,Ciobanu,"Lazar Cristian",47,seniori,masculin,Veseliei,,,,,9,48,0:36:00,1,62,,,,,neachitata,ciobanu_lazar_cristian@yahoo.com,0723785728,2014-11-01
+47,07GD31,Gheorghe,Daria Elena ,7,pitici,feminin,Copiilor,,,,,0,0,,0,,,,,,gratuit,florialina@yahoo.com,0721415478,2014-11-01
+48,85UV8I,Urzica,Vlad,29,adulti,masculin,Veseliei,,,,,0,0,,0,,,,,,neachitata,urzik_2005@yahoo.com,0727863081,2014-11-01
+49,79TSA2,Traistaru,Sorin-Alexandru,35,adulti,masculin,Veseliei,,,,,5,65,1:06:40,2,49,,,,,neachitata,sorin.traistaru@gmail.com,0723159766,2014-11-01
+50,81AS89,Andrei,Strambu,33,adulti,masculin,Veseliei,,,,,2,80,0:59:20,2,58,,,,,neachitata,Strcelrau@gmail.com,0721291338,2014-11-01
+51,87RBAX,Roman,Bogdan,27,adulti,masculin,Veseliei,,,,,3,76,1:04:20,2,57,,,,,achitata,dacia1108@yahoo.com,0000000000,
+52,04TP2J,Tanase,"Paul Florin",10,spiridusi,masculin,Copiilor,,,,,3,80,0:46:00,1,265,,,,,gratuit,gabriela.elena.stinga@gmail.com,0000000000,
+53,07SSCH,Savin,Sara,7,copii,feminin,Copiilor,,,,,4,80,1:20:10,1,266,,,,,gratuit,radusavin@gmail.com,0000000000,

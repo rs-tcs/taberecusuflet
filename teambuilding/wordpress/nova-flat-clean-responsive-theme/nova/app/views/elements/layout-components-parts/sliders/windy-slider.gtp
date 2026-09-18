@@ -1,0 +1,28 @@
+<?php
+$controlNav = (isset($controlNav)) ? (int) $controlNav : 1;
+$directionNav = (isset($directionNav)) ? (int) $directionNav : 1;
+?>
+
+<div class="image-wrap gallery-slide wi-slider"
+    data-control-nav="<?php echo (int) $controlNav; ?>"
+    data-direction-nav="<?php echo (int) $directionNav; ?>">
+    
+    <div class="wi-container">
+        <?php foreach ($media as $mediaItem): ?>
+            <div class="slide wi-item">
+                <?php
+                echo $this->Media->display($mediaItem->guid, $dimensions, array(
+                    'alt' => $mediaItem->post_title,
+                ));
+                ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    
+    <?php if ($directionNav): ?>
+    <div class="prev-next-links" style="z-index:99;">
+    	<a class="icon-chevron-left prev" href="#"></a>
+        <a class="icon-chevron-right next" href="#"></a>
+    </div>
+    <?php endif; ?>
+</div>

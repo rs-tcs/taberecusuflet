@@ -1,0 +1,29 @@
+<?php
+if (!$mediaPost) return;
+
+$mediaFields = $this->Media->getMediaFields($mediaPost);
+
+// d($this->Html);
+
+echo $this->Form->create(array(
+    'id' => 'gumm-media-meta-form',
+    'class' => 'gumm-ajax-save',
+    'action' => array('controller' => 'media', 'action' => 'edit'),
+    'admin' => true,
+    'ajax' => true,
+    '_wpnonce' => MediaController::WPNONCE,
+));
+
+foreach ($mediaFields as $fieldName => $fieldValues) {
+    $fieldValues['id'] = 'Media.' . $mediaPost->ID . '.' . $fieldName;
+        
+    $fieldValues['default'] = isset($fieldValues['value']) ? $fieldValues['value'] : '';
+    
+    $inputAttributes = array();
+    if ($fieldValues['type'] == 'text') $inputAttributes['class'] = 'text-input';
+    
+    echo $this->Form->input('', $fieldValues, $inputAttributes, array());
+}
+
+echo $this->Form->end();
+?>

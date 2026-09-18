@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /oldsite/
+Noindex: /oldsite/
+Disallow: /CupaMalinului/
+Noindex: /CupaMalinului/
+Disallow: /RS/
+Noindex: /RS/
+Sitemap: https://taberecusuflet.ro/sitemap.xml

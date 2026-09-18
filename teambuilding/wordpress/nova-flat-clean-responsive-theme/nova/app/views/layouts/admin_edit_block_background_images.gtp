@@ -1,0 +1,19 @@
+<div class="block-background-images-editor span12">
+    <?php
+    echo $this->Html->link(__('Add New Image', 'gummfw'),
+        array(
+            'admin' => true,
+            'ajax' => true,
+            'controller' => 'layouts',
+            'action' => 'admin_edit_layer_background_image',
+            'optionId' => $optionId,
+            'modelName' => $model,
+        ), array(
+            'style' => 'margin:20px 0 40px 0;',
+            'class' => 'add-new-layer-background btn btn-large btn-primary btn-success',
+        )
+    );
+    
+    echo GummRegistry::get('Helper', 'Layout')->blockBackgroundImagesEditor($optionId, $model);
+    ?>
+</div>

@@ -1,0 +1,39 @@
+<?php
+$uuid = uniqid();
+$id = 'gumm-filterable-content-' . $uuid;
+$outputHtml = '';
+$outputHtml .= '<div class="gumm-icons-manager">';
+$outputHtml .= '<input type="hidden" class="icon-value" value="' . $activeIcon . '" />';
+$counter = 0;
+foreach ($icons as $groupId => $groupData) {
+    $outputHtml .= '<div class="row-fluid">';
+    $outputHtml .= '<h5>' . $groupData['title'] . '</h5>';
+    $chunks = array_chunk( $groupData['icons'], ceil(count($groupData['icons']) / 3) );
+
+    $outputHtml .= '<div class="row-fluid">';
+    foreach ($chunks as $chunk) {
+        $outputHtml .= '<ul class="span4">';
+        foreach ($chunk as $iconClass) {
+            $iconName = str_replace('icon-', '', $iconClass);
+            $liAtts = array(
+                'class' => 'searchable gumm-select-icon',
+                'data-search-value' => $iconName,
+                'data-icon-value' => $iconClass,
+            );
+            if ($iconClass == $activeIcon) {
+                $liAtts['class'] .= ' selected';
+            }
+            $outputHtml .= '<li' . $this->Html->_constructTagAttributes($liAtts) . '><i data-icon-name="' . $iconName . '" class="' . $iconClass . '"></i><span>' . Inflector::humanize(Inflector::slug($iconClass, '_')) . '</span>';
+            $outputHtml .= '</li>';
+            $counter++;
+        }
+        $outputHtml .= '</ul>';
+    }
+    // $outputHtml .= '<div class="clear"></div>';
+    $outputHtml .= '</div>';
+    $outputHtml .= '</div>';
+}
+$outputHtml .= '</div>';
+echo $outputHtml;
+
+?>

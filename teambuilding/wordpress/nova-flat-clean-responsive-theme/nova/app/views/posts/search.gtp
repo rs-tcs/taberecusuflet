@@ -1,0 +1,23 @@
+<?php if ($posts): ?>
+<table class="gumm-autocomple-search-results">
+    <?php
+    foreach ($posts as $postType => $postsForType) {
+        $postTypeLabel = $postType === 'bestMatch' ? __('Top Hit', 'gummfw') : ucwords(Inflector::pluralize($postType));
+        foreach ($postsForType as $c => $post) {
+            echo '<tr>';
+                if ($c === 0) {
+                echo '<td class="group-label">';
+                    echo $postTypeLabel;
+                } else {
+                    echo '<td></td>';
+                }
+                echo '</td>';
+                echo '<td class="search-match"><a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a></td>';
+            echo '<tr>';
+        }
+    }
+    ?>
+</table>
+<?php else: ?>
+<p class="no-results"><?php _e('No results found.', 'gumfw'); ?>
+<?php endif; ?>

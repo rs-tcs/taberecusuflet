@@ -1,0 +1,17 @@
+<?php
+if (!$posts) return '';
+
+request_action(array(
+    'controller' => 'layout_elements',
+    'action' => 'display',
+    'Gallery',
+    array(
+        'headingText' => __('Related Photos', 'gummfw'),
+        'postsNumber' => 8,
+        'postType' => 'gallery',
+        'postColumns' => 4,
+        'layout' => 'slider',
+        'posts' => $posts,
+    )
+));
+?>

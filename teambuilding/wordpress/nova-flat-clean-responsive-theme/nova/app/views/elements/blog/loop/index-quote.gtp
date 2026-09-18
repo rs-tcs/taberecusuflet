@@ -1,0 +1,48 @@
+<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+	<div class="blog-post-pointer-detail"></div>
+    <div class="post-content-wrap">
+        <?php
+        $quote = $this->Wp->getPostMeta($post->ID, 'post_quote');
+        echo $this->Text->paragraphize($quote['content']);
+        echo '<span class="quote-author">~ ' . $quote['author'] . '</span>';
+        ?>
+	</div>
+    <div class="post-content-meta">
+    	<p>
+    	    <span class="author">
+    	        <?php the_author_posts_link(); ?>
+    	    </span>
+    	</p>
+        <div class="comments">
+            <span class="comment-count">
+                <?php
+                echo $gummHtmlHelper->postDetails('comments', array(
+                    'beforeDetail' => '',
+                    'afterDetail' => '',
+                    'prefixes' => '',
+                    'formats' => array(
+                        'comments' => array(0, 1, '% '),
+                    ),
+                ));
+                ?>
+            </span>
+        </div>
+	</div>
+    <div class="date-n-post-format">
+    	<div class="post-format-details">
+        	<div class="format-icon-wrap"></div>
+        </div>
+        <div class="date-details">
+            <?php
+            echo $gummHtmlHelper->postDetails('date', array(
+                'beforeDetail' => '',
+                'afterDetail' => '',
+                'prefixes' => '',
+                'formats' => array(
+                    'date' => '\<\s\p\a\n \c\l\a\s\s\=\"\d\a\y\"\>j\<\/\s\p\a\n\>\<\s\p\a\n \c\l\a\s\s\=\"\m\o\n\t\h\"\>M\<\/\s\p\a\n\>'
+                ),
+            ));
+            ?>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<?php
+$liAtts = array(
+    'class' => 'builder-toolbar-element element-sidebar',
+    'data-layout-position' => 'sidebar',
+    'data-element-group' => 'sidebar',
+    'data-element-id' => $sidebar['id'],
+    'data-element-title' => $sidebar['name'],
+);
+echo '<li' . $this->Html->_constructTagAttributes($liAtts) . '>';
+echo $sidebar['name'];
+if ($sidebar['custom']) {
+    echo $this->Html->link('×', array('ajax' => true, 'admin' => true, 'controller' => 'sidebars', 'action' => 'delete', 'sidebarId' => $sidebar['id']), array('class' => 'admin-close-button'));
+}
+echo '</li>';
+?>

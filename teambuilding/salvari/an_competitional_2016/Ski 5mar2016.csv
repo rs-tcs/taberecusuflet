@@ -1,0 +1,3 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,categoria,pachet_vip,tricou,print_vip,locul,puncte,timp,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,oras,data_competitiei
+1,06BV4M,Brinza,Victor,10,spiridusi,masculin,Schi,,,,0,0,,,,0.00,,,neachitata,brinzadragos@yahoo.com,0723601874,Cernavoda,2016-03-05
+2,08BM55,Brinza,Mihai,8,copii,masculin,Schi,,,,0,0,,,,0.00,,,neachitata,brinzadragos@yahoo.com,0723601874,Cernavoda,2016-03-05

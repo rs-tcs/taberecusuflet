@@ -1,0 +1,13 @@
+<div class="heading-wrap">
+<img src="<?php echo GUMM_THEME_IMG_URL ?>heading-bullet.png" alt="Categories" /><span>Categories</span>
+</div>
+<ul>
+<?php
+	wp_list_categories(array(
+		'use_desc_for_title' => 0,
+		'title_li' => false,
+		'taxonomy' => (isset($taxonomy)) ? $taxonomy : 'category',
+		'current_category' => get_query_var('cat'),
+	));
+?> 
+</ul>

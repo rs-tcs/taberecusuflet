@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body {
+	min-width:100%;
+	min-height:100%;
+	padding:0px;
+	border:0px;
+	margin:0px;
+	background-color:#F2F2F2;
+	
+}
+
+
+#page {
+	position:relative;
+	top:15px;
+	width:1250px;
+	min-height:650px;
+	height:auto;
+	min-width:1000px;
+	overflow:hidden;
+	background-color:;
+	margin:auto;
+	margin-bottom:50px;
+}
+
+#text_top{
+	width:100%;
+	height:auto;
+	background-color:;
+	border:none;
+	text-align:center;
+	font-size:28px;
+	color:#484848;
+}
+
+
+#admin{
+	margin:10px 0px 10px 10px;
+}
+
+#meniu_stanga{
+	float:left;
+	width:150px;
+	min-height:200px;
+	height:auto;
+	position:absolute;
+	top:150px;
+	left:10px;
+	background-color:;
+}
+
+#lista_meniu tr td{
+	width:150px;
+	height:30px;
+	font-size:18px;
+	background-color:#333;
+}
+
+#lista_meniu tr td:hover{
+	background-color:#0F87FF;
+
+}
+
+#lista_meniu tr td a{
+	text-decoration:none;
+	color:white;		
+}
+
+
+.main_content{
+	float:left;
+	position:relative;
+	left:200px;
+	top:20px;
+	min-width:900px;
+	width:auto;
+	min-height:500px;
+	height:auto;
+	-moz-box-shadow: 0px 1px 8px #CCC;
+  	-webkit-box-shadow: 0px 1px 8px #CCC;
+ 	 box-shadow: 0px 1px 8px #030303;
+	background-color:;
+	overflow:auto;
+	margin-bottom:50px;
+}
+
+ul{
+	list-style:none;
+	padding-left:40px;
+	margin:0;
+	left:10px;
+	
+}
+
+
+ul li{
+	float:left;
+	margin-right:10px;
+	display:block;
+	width:auto;
+	height:auto;
+	background-color:gray;
+	color:#FFF;
+	font-weight:bold;	
+	padding:3px;
+	border-top-right-radius:4px;
+	border-top-left-radius:4px;
+	
+}
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	text-align:center;
+}
+
+ul li a:hover{
+	
+	color: #141414;
+}
+
+
+.activ{
+	color:white;
+	background-color:#0F87FF;
+}
+
+#continut{
+	width:100%;
+	height:100%;	
+	background-color:;
+}
+
+
+#mesaje{
+	width:90%;
+	margin:20px;
+	margin-left:40px;
+	border:1px solid black;
+}
+
+#mesaje th{
+	color:white;
+	background-color:black;
+}
+
+#mesaje td{
+	text-align:center;
+	border:1px solid black;
+	font-size:12px;
+}
+
+#mesaje .cap_tabel th{
+	background-color: #666;
+}
+
+#new_mail{
+	position:relative;
+	left:40px;
+	
+}
+
+#new_message{
+	width:90%;
+	margin:20px;
+	margin-left:40px;
+	border:1px solid black;	
+	display:none;
+}
+
+
+#new_message #mail{
+	width: 100%;
+}
+
+#new_message #mail td{
+	width:50%;
+	text-align:center;
+	border:1px solid black;	
+	
+}
+
+#new_message .cap{	
+	background-color: #666;
+	color:white;
+	font-size:18px;
+	font-weight:800;
+}
+
+#new_message #mail td input[type=text]{
+	width:98%;
+	
+}
+
+#new_message #mail td textarea{
+	width:98%;
+	height:450px;
+	resize:none;
+	
+}
+
+/** mesaj succes **/
+
+.succes{
+	width:70%;
+	height:auto;
+	border:solid 1px #C6D880;
+	border-radius:2px;
+	background:#E6EFC2;
+	color:#264409;
+	padding:0 2px;
+	margin:auto;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.succes img{
+	padding-left:20px;
+	padding-right:20px;
+	font-size:14px;
+	color:green;
+}
+
+/** mesaj eroare **/
+
+.eroare{
+	width:70%;
+	height:auto;
+	background-color:#FBE3E4;
+	color:red;
+	padding:0 2px;
+	border-radius:2px;
+	border: solid 1px #FBC2C4;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+.eroare img{
+	padding-left:20px;
+	padding-right:20px;
+	color:red;
+	font-size:14px;
+}

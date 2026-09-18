@@ -1,0 +1,52 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu,pachet_vip,tricou,print_vip,duatlon,locul,puncte,timp,ture,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+1,75RS8G,Raduletu,"Sebastian Radu Iulian",40,seniori,masculin,Maraton,vip,M,,,0,0,,0,,OP,105.00,,ok,achitata,sebastian.raduletu@gmail.com,0722319132,2015-09-13
+2,07SSCH,Savin,Sara,8,copii,feminin,"Crosul Copiilor",,,,,0,0,,0,,OP,0.00,1,ok,achitata,radusavin@gmail.com,0722302746,2015-09-13
+3,68CM4G,Corban,"Mircea Anton",47,seniori,masculin,Maraton,vip,L,,,0,0,,0,,OP,70.00,,ok,achitata,corban.sr@gmail.com,0758118093,2015-09-13
+4,03RT9F,Rocsin,Teo,12,uriasi,masculin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,neachitata,rdragos2002@yahoo.com,0741059111,2015-09-13
+5,91EG62,"Enescu ",George,24,adulti,masculin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,enescu_george1991@yahoo.com,0757576633,2015-09-13
+6,78IA5K,Ionescu,Alexandru,37,adulti,masculin,Cros,vip,M,,,0,0,,0,,Velo,85.00,,tbc,achitata,alex@net4all.ro,0742044504,2015-09-13
+7,97FI5D,Funduc,"Iulia Florina",18,tineri,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,iulia.florina7@yahoo.com,0767364775,2015-09-13
+9,90TI53,Tempeanu,"Ilinca Maria ",25,adulti,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,ilinca_tempeanu@yahoo.com,0723442571,2015-09-27
+10,77CB2F,Cretu,Bogdan,38,adulti,masculin,Cros,vip,M,,,0,0,,0,,,0.00,,,neachitata,bruce.cretu@gmail.com,0737667777,2015-09-27
+11,01BA8X,Brica,Ana-Maria,14,tineri,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,anne_mariab@yahoo.ro,0760137715,2015-09-27
+12,81PO11,Petre,Ovidiu,34,adulti,masculin,Maraton,,,,,0,0,,0,,Velo,70.00,,tbc,achitata,serviep@yahoo.com,0743108626,2015-09-27
+13,74NR8G,Necsoiu,Robert,41,seniori,masculin,Cros,,,,,0,0,,0,,OP,50.00,,ok,achitata,robert.necsoiu@hotmail.com,0720025700,2015-09-26
+14,73MC2S,Maghiar,Cristina,42,seniori,feminin,Semimaraton,,,,,0,0,,0,,OP,50.00,,ok,achitata,maghiarflorin@yahoo.com,0734335840,2015-09-26
+15,01MI7B,Maghiar,Iulia,14,tineri,feminin,Semimaraton,,,,,0,0,,0,,OP,50.00,,ok,achitata,maghiarflorin@yahoo.com,0745103554,2015-09-26
+16,75MF1G,Maghiar,Florin,40,seniori,masculin,Semimaraton,,,,,0,0,,0,,OP,70.00,,ok,achitata,maghiarflorin@yahoo.com,0745103554,2015-09-26
+17,87BC8I,Barbu,Cristian,28,adulti,masculin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,barbuchris@yahoo.com,0763613011,2015-09-26
+18,85MDAO,Milea,Dana,30,adulti,feminin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,zdo_vision@yahoo.com,0727866597,2015-09-26
+19,82BCAK,Bucerzan,Cosmin---Gabriel,33,adulti,masculin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,cosmingbr2014@yahoo.com,0728207156,2015-09-26
+20,87MM5E,Mihai,Marian,28,adulti,masculin,Semimaraton,,,,,0,0,,0,,Velo,50.00,,tbc,achitata,marianmihai87@yahoo.com,0724543064,2015-09-26
+22,67AVAH,Alecu,Virgil,48,seniori,masculin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,anticgraal@yahoo.com,0726688626,2015-09-26
+23,67BLAE,Butkovits,Lucian,48,seniori,masculin,Maraton,vip,M,,,0,0,,0,,OP,105.00,,ok,achitata,ld_butkovits@yahoo.com,0727324579,2015-09-26
+24,80DCAV,Delcea,Cristina,35,adulti,feminin,Cros,vip,M,,,0,0,,0,,Velo,85.00,,tbc,achitata,cristina.delcea@yahoo.com,0721228212,2015-09-26
+25,80BI2B,"Bogatu ","Iulian ",35,adulti,masculin,Semimaraton,vip,M,,,0,0,,0,,OP,85.00,,ok,achitata,bogatu_iulian@yahoo.com,0743387425,2015-09-26
+26,76TN75,Toader,"Nicolae Andrei",39,adulti,masculin,Maraton,vip,M,,,0,0,,0,,,0.00,,,neachitata,andrei.iulie@yahoo.com,0731766010,2015-09-26
+28,87ZABR,Zamfir,Alex,28,adulti,masculin,Cros,vip,M,,,0,0,,0,,Velo,85.00,,tbc,achitata,wazap1987op@yahoo.com,0728310639,2015-09-26
+29,00CAB1,Ciobanu,Andrei,15,tineri,masculin,Cros,vip,L,,duatlon,0,0,,0,,OP,115.00,,ok,achitata,ciobanuovi57@yahoo.com,0744130123,2015-09-26
+30,08PS6E,Popa,"Stefan ",7,pitici,masculin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,neachitata,syyylviuta@yahoo.co.uk,0733957837,2015-09-26
+31,10PT1G,Popa,Tiberiu,5,piticoti,masculin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,neachitata,syyylviuta@yahoo.co.uk,0733957837,2015-09-26
+32,47ZP8M,Zeveleanu,Petre,68,forever_young,masculin,Semimaraton,vip,M,,,0,0,,0,,OP,85.00,,ok,achitata,zeveleanu_icu@yahoo.com,0746552890,2015-09-26
+33,68BMBK,Brasoveanu,Marius,47,seniori,masculin,Semimaraton,,,,duatlon,0,0,,0,,Velo,80.00,,tbc,achitata,vali_brasoveanu@yahoo.com,0741148642,2015-09-26
+34,90CA6D,Christos,Argiropoulos,25,adulti,masculin,Cros,,,,duatlon,0,0,,0,,OP,0.00,,ok,gratuit,cargiropoulos@divertiland.ro,0726058296,2015-09-26
+35,82RO1G,"Rauta ","Oana ",33,adulti,feminin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,nicoloffoana@yahoo.com,0749334051,2015-09-26
+36,76DL47,Dinculita,Laurentiu,39,adulti,masculin,Semimaraton,vip,M,,duatlon,0,0,,0,,OP,120.00,,ok,achitata,lauradze@yahoo.com,0726711291,2015-09-26
+37,85CABB,Calugaru,Andreea,30,adulti,feminin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,sabrah_@hotmail.com,0721559578,2015-09-26
+38,77NM1J,Nicolae,Marius,38,adulti,masculin,Semimaraton,,,,,0,0,,0,,OP,50.00,,ok,achitata,nicolaemarius77@gmail.com,0723346166,2015-09-26
+39,77NL3U,Nicolae,Luiza,38,adulti,feminin,Semimaraton,,,,,0,0,,0,,OP,50.00,,ok,achitata,nicolaeluiza@yahoo.com,0722287356,2015-09-26
+40,09IB37,Ionescu,"Bianca Andreea",6,pitici,feminin,"Crosul Copiilor",vip,XS,,,0,0,,0,,Velo,65.00,,tbc,achitata,alex@net4all.ro,0742044504,2015-09-26
+41,96NV43,Nechita,"Vladimir Eugen",19,tineri,masculin,Cros,,,,,0,0,,0,,OP,50.00,,ok,achitata,vlad_bosss3@yahoo.com,0731288100,2015-09-26
+42,70BB82,Bacescu,Bogdan,45,seniori,masculin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,iris_dancu@yahoo.com,0722610359,2015-09-26
+43,08BL3I,Bacescu,Lara--Maria,7,pitici,feminin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,neachitata,iris_dancu@yahoo.com,0722610359,2015-09-26
+44,99BV9H,Balan,Vlad,16,tineri,masculin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,vladbalan112@yahoo.com,0736656844,2015-09-26
+45,60RI3K,Rosu,Ilie,55,forever_young,masculin,Maraton,,,,,0,0,,0,,OP,70.00,,ok,achitata,ilierosu@gmail.com,0762669969,2015-09-26
+46,67CI9V,Cristian,Iordan,48,seniori,masculin,Semimaraton,,,,duatlon,0,0,,0,,,0.00,,,neachitata,iordan.cristian@gmail.com,0722207207,2015-09-26
+47,68CM1X,"Cimpeanu Oertle",Marilena,47,seniori,feminin,Semimaraton,,,,,0,0,,0,,OP,50.00,,ok,achitata,marilena.cimpeanu@yahoo.com,0766773133,2015-09-26
+48,81LR6H,Lupu,Roxana,34,adulti,feminin,Semimaraton,,,,duatlon,0,0,,0,,,0.00,,,neachitata,roxanadianalupu@yahoo.com,0745583733,2015-09-26
+49,09PM7F,Paraschiv,Marcu,6,pitici,masculin,"Crosul Copiilor",,,,duatlon,0,0,,0,,OP,30.00,,ok,achitata,poesis3000@yahoo.com,0754997234,2015-09-26
+50,73MACL,Manuela,Arpinte,42,seniori,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,arpintemanuela@gmail.com,0745427348,2015-09-26
+51,73AD59,Arpinte,Daniel,42,seniori,masculin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,arpinte@gmail.com,0745427348,2015-09-26
+52,73AMCL,Arpinte,Manuela,42,seniori,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,arpinte@gmail.com,0745427348,2015-09-26
+53,78PC6D,Paraschiv,Cosmin,37,adulti,masculin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,cosmin_paraschiv2006@yahoo.com,0724059849,2015-09-26
+54,80SM11,Sirbu,Mihai,35,adulti,masculin,Maraton,,,,,0,0,,0,,,0.00,,,neachitata,mihai_sirbu@yahoo.com,0740000000,2015-09-26

@@ -1,0 +1,14 @@
+<?php
+$counter = 0;
+foreach ($tweets as $tweet) {
+    if ($counter === 0) {
+        echo '<div class="active">';
+    } else {
+        echo '<div class="inactive">';
+    }
+        echo '<p>' . $tweet['text'] . '</p>';
+        echo '<span class="roki-tweet">~ ' . $tweet['time'] . '</span>';
+    echo '</div>';
+    $counter++;
+}
+?>

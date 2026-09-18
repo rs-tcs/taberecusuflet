@@ -1,0 +1,247 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu,insotitor,pachet_vip,tricou,print_vip,duatlon,locul,puncte,timp,ture,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+1,74SAAD,Scarlat,AurelDaniel,40,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,aurelscarlat@yahoo.com,0732147374,2014-09-20
+2,03CV97,Calinescu,Vlad,11,spiridusi,masculin,Copiilor,da,,,,,0,,,0,,,,,,neachitata,simincalinescu@yahoo.com,0747154490,2014-09-20
+3,85VP9S,VictorMario,Petre,29,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,victor.tzone@gmail.com,0744753121,2014-09-20
+4,83MI58,Mihaiescu,Ionut,31,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,909,OP,,abonmam,abonm,achitata,ionut.mihaiescu@gmail.com,0729290763,2014-09-20
+5,61MF3H,Munteanu,Florin,53,forever_young,masculin,TeamXpert,,vip,M,"Forever Young",,0,,,0,,,,,,neachitata,florin61p@gmail.com,0722554567,2014-09-20
+6,95GM9R,Grigorescu,MarianStelian,19,tineri,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,grigorescustelian95@gmail.com,0737631431,2014-09-20
+7,78BR6U,blaga,Radu,36,adulti,masculin,TeamXpert,,,,,duatlon,2,105,2:33:01,2,103,OP,,duatl,duatl,achitata,rblaga@yahoo.com,0722191340,2014-09-27
+8,02CM5U,Ciufu,"Mihai Stefan",12,uriasi,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,ciufu.lidia@yahoo.ro,0749058878,2014-09-27
+9,06CS5X,Costescu,Stefan,8,copii,masculin,Copiilor,,,,,,9,43,0:20:27,1,393,OP,50,cash,ok,achitata,monicastroe@bnpa.ro,0744287575,2014-09-27
+10,74SM1R,Stroe,Monica,40,seniori,feminin,Bujorilor,,,,,,13,37,"1 lap",1,780,OP,50,cash,ok,achitata,monicastroe@bnpa.ro,0744287575,2014-09-27
+11,77GSAR,Gruia,Sergiu,37,adulti,masculin,Bujorilor,,,,,,43,5,0:53:23,1,898,OP,50,cash,ok,achitata,sergiugruia@yahoo.com,0745036661,2014-09-27
+12,68GDB2,Ghiulea,Daniel,46,seniori,masculin,Bujorilor,,,,,,17,29,1:11:54,2,896,OP,48,op,ok,achitata,daniel.ghiulea@yahoo.com,0723301089,2014-09-27
+13,98GA99,Ghiulea,Alexandru,16,tineri,masculin,Bujorilor,,,,,,21,22,1:24:50,2,897,OP,48,op,ok,achitata,alexandru.ghiulea@yahoo.com,0727483223,2014-09-27
+14,63BM9J,Buruianu,Marius,51,forever_young,masculin,TeamXpert,,,,,,6,72,2:56:36,2,104,Felt,50,chit,OK,achitata,marius_buru@yahoo.com,0740188941,2014-09-27
+15,03RAC8,Rizescu,"Andrei George",11,spiridusi,masculin,Copiilor,da,,,,,9,43,0:15:30,1,442,Velo,60,7,OK,achitata,ciprianrizescu2001@yahoo.com,0744321883,2014-09-27
+16,08BM55,Brinza,Mihai,6,pitici,masculin,Copiilor,da,,,,,1,80,0:15:34,1,420,OP,60,op,ok,achitata,brinzadragos@yahoo.com,0723601874,2014-09-27
+17,06BV4M,Brinza,Victor,8,copii,masculin,Copiilor,,,,,,3,63,0:15:12,1,392,OP,50,op,ok,achitata,brinzadragos@yahoo.com,0723601874,2014-09-27
+18,07GT1I,Gavrizescu,Tudor,7,pitici,masculin,Copiilor,da,vip,S,Tudor,,0,,,0,,,,,,neachitata,bobbygav@gmail.com,0723558231,2014-09-27
+19,74MR13,Moise,Ruxandru,40,seniori,masculin,TeamXpert,,vip,M,3174,,28,1,DNS,0,102,Felt,85,"ridicat banii",ok,achitata,ruxandru.moise2@gmail.com,0722501746,2014-09-27
+20,77PS3S,Postelnicu,Septimiu,37,adulti,masculin,Bujorilor,,vip,L,Multumesc,,48,1,DNS,0,874,OP,83,op,ok,achitata,septimiu.postelnicu@Yahoo.com,0727198528,2014-09-27
+21,62NA8T,Nestian,Alexandru,52,forever_young,masculin,Bujorilor,,vip,XL,Daniel,duatlon,0,,,0,,,,,,neachitata,nestiandaniel@gmail.com,0723148877,2014-09-27
+22,07RVAN,Rocsin,Victor,7,pitici,masculin,Copiilor,da,,,,,7,49,0:19:02,1,443,OP,50,cash,ok,achitata,rdragos2002@yahoo.com,0741059111,2014-09-27
+23,03RT9F,Rocsin,Teo,11,spiridusi,masculin,Copiilor,,,,,,7,49,0:14:46,1,400,Felt,,"de confirmat",tbc,achitata,rdragos2002@yahoo.com,0741059111,2014-09-27
+24,07ER6M,Enciu,Radu,7,pitici,masculin,Copiilor,da,vip,XS,Radu,,13,34,0:23:16,1,407,OP,94,op,ok,achitata,mariana.enciu@imd.ro,0723314141,2014-09-27
+25,72EH91,Enciu,Horia,42,seniori,masculin,Bujorilor,,,,,,28,15,1:39:14,2,894,OP,50,op,ok,achitata,mariana.enciu@imd.ro,0722351345,2014-09-27
+26,02EAAH,Enciu,Alexandra,12,tineri,feminin,Bujorilor,,vip,S,Ale,,4,70,1:39:13,2,871,OP,84,op,ok,achitata,mariana.enciu@imd.ro,0723314141,2014-09-27
+27,73TBB3,Tudor,Bogdan,41,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,937,OP,50,op,ok,achitata,bog0311@yahoo.com,0756169061,2014-09-27
+28,02TA7B,Tudor,Alexandru,12,uriasi,masculin,Copiilor,,,,,,0,,,0,,OP,50,op,ok,achitata,alex.horea.tudor@gmail.com,0724050445,2014-09-27
+29,59RA8U,roncea,adrian,55,forever_young,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,adrianroncea@hotmail.com,0721799799,2014-09-27
+30,68MBAO,MARICA,Bogdan,46,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,bogdan.marica@gmail.com,0729987047,2014-09-27
+31,96MO57,MARICA,Oana,18,tineri,feminin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,oana.marik@gmail.com,0729987047,2014-09-27
+32,09MABH,MEREUTA,ALEXANDRU,5,piticoti,masculin,Tricicletelor,da,,,,,0,,,0,,,,,,neachitata,luizasecret@yahoo.com,0724578469,2014-09-27
+33,57MS6B,MIHAI,Serban,57,forever_young,masculin,Bujorilor,,vip,XL,"SERBAN - ALSTOM",,33,10,1:45:25,2,872,OP,81,op,ok,achitata,serban.mihai@clicknet.ro,0745078530,2014-09-27
+34,79MC9G,Militaru,Cristi,35,adulti,masculin,Bujorilor,,vip,XL,,,48,1,DNS,0,910,OP,83,op,ok,achitata,cristi.militaru@gmail.com,0723057461,2014-09-27
+35,81BI96,Barisic,Ivan,33,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,879,OP,48,op,ok,achitata,ivaniron@alice.it,0751188338,2014-09-27
+36,01BD1I,Busegeanu,"Dinu Andrei",13,tineri,masculin,Bujorilor,,vip,S,"DINU BUSEGEANU",,11,42,1:07:06,2,776,Velo,85,"de confirmat",tbc,achitata,mi_busegeanu@yahoo.com,0744308802,2014-09-27
+37,04TP2J,Tanase,"Paul Florin",10,spiridusi,masculin,Copiilor,,vip,S,,,5,55,0:13:49,1,405,OP,85,cash,ok,achitata,gabriela.elena.stinga@gmail.com,0766478055,2014-09-27
+38,73NG47,NECULA,GABRIEL,41,seniori,masculin,TeamXpert,,,,,duatlon,12,46,4:07:58,2,118,Felt,,duatl,noVIP,achitata,gnecula@bdt.ro,0751071754,2014-09-27
+39,04CABO,Cornea,"Ana alexandra",10,spiridusi,feminin,Copiilor,da,,,,,1,80,0:17:06,1,424,Velo,60,10,OK,achitata,denedenis@yahoo.com,0723280802,2014-09-27
+40,76CD5H,Chirila,Dragos,38,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,dragos@fourhooks.com,0722395375,2014-09-27
+41,11MSCT,Militaru,Stefan,3,piticoti,masculin,Tricicletelor,da,,,,,0,,,0,,,,,,neachitata,cristi.militaru@gmail.com,0723057461,2014-09-27
+42,05IM8P,Iordache,Maria,9,copii,feminin,Copiilor,da,,,,,2,70,0:19:54,1,432,OP,60,op,ok,achitata,raduiordache@yahoo.com,0723279559,2014-09-27
+43,09SR92,Soviani,"Radu Alexandru",5,piticoti,masculin,Tricicletelor,da,,,,,0,,,0,,,,,,neachitata,osoviani@yahoo.com,0722604018,2014-09-27
+44,80MD95,MICLAUS,DORIN,34,adulti,masculin,Bujorilor,,,,,,23,20,1:29:28,2,778,,,,,neachitata,dorin.miclaus@ymail.com,0722634528,2014-09-27
+45,08RNBD,Rusu,Nichita,6,pitici,masculin,Copiilor,da,,,,,14,32,0:29:22,1,444,Velo,60,5,OK,achitata,rusubogro@gmail.com,0744153555,2014-09-27
+46,86OFAK,Obreja,Flavia,28,adulti,feminin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,flavia.obreja@gmail.com,0744694943,2014-09-27
+47,08ST7N,Suster,Tudor,6,pitici,masculin,Copiilor,,vip,XS,777,,11,38,0:21:04,1,410,OP,85,102781183,ok,achitata,ciprian.suster@gmail.com,0742688563,2014-09-27
+48,78VA5L,Vieru,Antonio,36,adulti,masculin,TeamXpert,,,,,,1,120,2:11:51,2,128,Felt,50,chit,OK,achitata,antonio210578@yahoo.com,0724266635,2014-09-27
+49,81PV51,Popescu,Valentin,33,adulti,masculin,Bujorilor,,vip,L,"VALENTIN POPESCU",,3,76,0:54:29,2,873,OP,88.6,op,ok,achitata,valentin.popescu81@yahoo.com,0723856343,2014-09-27
+50,81TE19,Ticu,Eduard,33,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,ticu_eduard@yahoo.com,0740052694,2014-09-27
+51,10CLBF,"Costescu ",Liza,4,piticoti,feminin,Tricicletelor,da,,,,,4,58,0:10:47,1,433,,,,,neachitata,monicastroe@bnpa.ro,0744287575,2014-09-27
+52,65NF3X,Nimara,Florin,49,seniori,masculin,Bujorilor,,,,,duatlon,13,37,1:08:16,2,913,depunere,,cash,ok,achitata,florin_nimara@yahoo.com,0744342387,2014-09-27
+53,53GP7V,Giuseppe,Paffoni,61,forever_young,masculin,TeamXpert,,vip,XXL,"Giuseppe Paffoni",,19,26,2:08:24,1,130,,,,,neachitata,beppe@cromplastic.ro,0726283781,2014-09-27
+54,02SM17,Sbarcea-Valeriu,Matei,12,uriasi,masculin,Copiilor,,vip,S,MATEI,,2,70,0:16:16,1,409,OP,84,op,"tbc F",achitata,sbarceag@yahoo.com,0721942084,2014-09-27
+55,77SG1A,Sbarcea,Gabriel,37,adulti,masculin,TeamXpert,,,,,,9,58,3:39:28,2,123,OP,49,op,"tbc F",achitata,sbarceag@yahoo.com,0721942084,2014-09-27
+56,06SGB8,Sbarcea-Valeriu,Grigore,8,copii,masculin,Copiilor,da,vip,XS,GRIGORE,,5,55,0:17:14,1,408,OP,95,op,"tbc F",achitata,sbarceag@yahoo.com,0721942084,2014-09-27
+57,76MN12,Marius,Neacsa,38,adulti,masculin,TeamXpert,,,,,,16,33,1:40:35,1,114,OP,50,op,ok,achitata,marius@floresti.ro,0744349147,2014-09-27
+58,06GN8K,Gruia,Neacsa,8,copii,masculin,Copiilor,da,vip,XS,,,8,46,0:19:12,1,428,OP,95,op,ok,achitata,marius@floresti.ro,0744349147,2014-09-27
+59,71SM33,Suditu,Marius,43,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,mariussuditu71@gmail.com,0729105747,2014-09-27
+60,82RB5J,Radu,Bogdan,32,adulti,masculin,TeamXpert,,,,,,5,78,2:51:32,2,129,,,,,neachitata,bogdanradu99@yahoo.com,0723671367,2014-09-27
+61,07BTCA,Bucur,Toma,7,pitici,masculin,Copiilor,da,vip,XS,"TOMA BUCUR",,10,40,0:20:45,1,452,,,,,neachitata,mbucur@sagafilm.ro,0741100741,2014-09-27
+62,74BM3S,Bucur,marius,40,seniori,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,mbucur@sagafilm.ro,0741100741,2014-09-27
+63,07PLC7,Perian,"Lara mihaela",7,pitici,feminin,Copiilor,da,,,,,3,63,0:25:55,1,440,,60,op,ok,achitata,andreea.perian@skin.ro,0744386488,2014-09-27
+64,75DC96,Dontu,Ciprian,39,adulti,masculin,TeamXpert,,,,,,10,54,3:48:48,2,134,,,,,neachitata,ciprian.dontu@gmail.com,0743266969,2014-09-27
+65,07DI9R,Dontu,Ian,7,pitici,masculin,Copiilor,da,vip,S,,,0,,,0,,,,,,neachitata,ciprian.dontu@gmail.com,0743266969,2014-09-27
+66,78CR9O,Clim,Rigoleto,36,adulti,masculin,TeamXpert,,vip,S,"sportul e religia fizicului",,24,20,2:55:36,1,101,Velo,85,"de confirmat",tbc,achitata,rigoleto.clim@yahoo.com,0725481010,2014-09-27
+67,08MA2G,Micata,Alexandru,6,pitici,masculin,Copiilor,da,vip,XS,,,18,1,DNS,0,436,Velo,95,4,OK,achitata,mihai.micata@gmail.com,0741333026,2014-09-27
+68,02SDAE,Stoica,"Diana Alexandra",12,uriasi,feminin,Copiilor,,,,,duatlon,1,80,0:13:47,1,402,,,,,achitata,foxnoname@yahoo.com,0744558483,2014-09-27
+69,06SR3X,Stoica,"Robert Alexandru",8,copii,masculin,Copiilor,,,,,duatlon,2,70,0:14:11,1,403,,,,,achitata,foxnoname@yahoo.com,0744558483,2014-09-27
+70,08SD6I,"Stoica ","David Gabriel",6,pitici,masculin,Copiilor,,,,,duatlon,16,28,0:34:58,1,404,,,,,achitata,foxnoname@yahoo.com,0744558483,2014-09-27
+71,40SN8F,Stroescu,Nicolae,74,forever_young,masculin,Bujorilor,,,,,,46,4,1:17:27,1,934,depunere,50,cash,ok,achitata,stroen@clicknet.ro,0244522608,2014-09-27
+72,70IA6I,Ilie,"Adrian Catalin",44,seniori,masculin,Bujorilor,,,,,duatlon,19,25,1:18:16,2,902,OP,,,ok,achitata,bv88ctn@gmail.com,0723544496,2014-09-27
+73,81DC32,Dumitrache,Cozmin,33,adulti,masculin,TeamXpert,,,,,,28,1,DNS,0,108,Felt,50,,tbc,achitata,cozy_dcm@yahoo.com,0723122754,2014-09-27
+74,88TM8E,Tanase,Madalin,26,adulti,masculin,TeamXpert,,,,,,17,30,1:54:20,1,126,Velo,50,3,OK,achitata,p4nd4bear@yahoo.com,0742954503,2014-09-27
+75,78BC3S,Burla,Catalin,36,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,883,OP,50,op,ok,achitata,cata_bg@yahoo.com,0722390942,2014-09-27
+76,06BA61,Birghilescu,Alexandru,8,copii,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,Daniel.Birghilescu@printec.ro,0727772643,2014-09-27
+77,79MC17,Matei,"Catalin Ion",35,adulti,masculin,TeamXpert,,,,,,13,42,4:25:41,2,115,OP,50,op,ok,achitata,cmatei@gmail.com,0744677478,2014-09-27
+78,77TA6O,Tudoran,Alin,37,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,938,Felt,50,op,ok,achitata,alin26tudoran@yahoo.com,0723637047,2014-09-27
+79,89PCAL,Posea,Cristian,25,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,919,Felt,50,chit,OK,achitata,cristian.posea@gmail.com,0749780132,2014-09-27
+80,86PA3D,Posea,Alexandru,28,adulti,masculin,Bujorilor,,,,,,40,5,0:46:24,1,920,OP,50,op,ok,achitata,alex49489@yahoo.com,0726285485,2014-09-27
+81,97DICR,Davidescu,Ioana,17,tineri,feminin,Bujorilor,,,,,,14,1,DNS,0,892,Felt,50,,tbc,achitata,davidescu.ioana@yahoo.com,0720574049,2014-09-27
+82,68DG64,Davidescu,Gabriel,46,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,893,Felt,50,,tbc,achitata,davidescu.ioana@yahoo.com,0722294587,2014-09-27
+83,69MC1P,Musca,Cristian,45,seniori,masculin,TeamXpert,,,,,,7,67,3:21:03,2,117,Felt,50,chit,OK,achitata,cristian.musca@jti.com,0745588036,2014-09-27
+84,07VAB8,Volosincu,Andrei,7,pitici,masculin,Copiilor,da,,,,,6,52,0:18:54,1,446,Felt,60,,tbc,achitata,volosincu@yahoo.com,0723048546,2014-09-27
+85,07VMB8,Volosincu,Maria,7,pitici,feminin,Copiilor,,,,,,2,70,0:18:51,1,415,Felt,50,,tbc,achitata,volosincu@yahoo.com,0723048546,2014-09-27
+86,03MCB2,MANACHE,COSMIN-LUCIAN,11,spiridusi,masculin,Copiilor,,,,,,4,58,0:13:47,1,397,OP,50,op,ok,achitata,emanache@yahoo.com,0741155292,2014-09-27
+87,07MSBN,MANACHE,STEFAN-CRISTIAN,7,pitici,masculin,Copiilor,da,,,,,4,58,0:18:45,1,464,OP,60,op,ok,achitata,emanache@yahoo.com,0741155292,2014-09-27
+88,73RC44,Radu,Calinescu,41,seniori,masculin,Bujorilor,,,,,,4,70,0:54:56,2,924,OP,50,op,ok,achitata,radu.calinescu@emex-romania.ro,0744321774,2014-09-27
+89,85PCAF,Preda,Cosmin,29,adulti,masculin,Bujorilor,,,,,,5,65,0:56:04,2,921,OP,50,op,ok,achitata,min_cos_85@yahoo.com,0766901115,2014-09-27
+90,75CAAP,Ciurea,Adrian,39,adulti,masculin,Bujorilor,,,,,,18,27,1:11:55,2,888,OP,50,oop,ok,achitata,liliana.ciurea@eda.admin.ch,0743332074,2014-09-27
+91,06CB4P,Ciurea,Beatrice,8,copii,feminin,Copiilor,da,,,,,3,63,0:22:35,1,422,OP,60,,ok,achitata,liliana.ciurea@eda.admin.ch,0727492268,2014-09-27
+92,85CA25,Carstina,Andreea,29,adulti,feminin,Bujorilor,,,,,,2,85,1:31:03,2,949,,,,,neachitata,andreea.carstina@gmail.com,0766519988,2014-09-27
+93,71PM45,PAUNESCU,Marina-Oltea,43,seniori,feminin,TeamXpert,,,,,,1,1,DNS,0,120,OP,,1,Abona,achitata,paunescu2000@yahoo.com,1111111111,2014-09-27
+94,67CNC7,CIUREA,Nicolae,47,seniori,masculin,TeamXpert,,,,,,28,1,DNS,0,107,OP,,,abonm,achitata,nicu.ciurea@humanitas.ro,1111111111,2014-09-27
+95,50HAA8,Hiticas,Alexandru,64,forever_young,masculin,Bujorilor,,,,,,26,17,1:36:56,2,899,Felt,50,chit,OK,achitata,edelweissh@gmail.com,0723655054,2014-09-27
+96,81PICE,Pupazan,Ion-Razvan,33,adulti,masculin,Bujorilor,,,,,,9,48,1:02:10,2,922,Felt,50,,tbc,achitata,pupazan@sbr.ro,0729005512,2014-09-27
+97,06PV1V,Paun,Vlad,8,copii,masculin,Copiilor,da,,,,,11,1,DNS,0,447,,,,,neachitata,dpaun@xnet.ro,0722245242,2014-09-27
+98,04PM8A,Paun,Mara,10,spiridusi,feminin,Copiilor,,,,,,3,1,DNS,0,448,,,,,neachitata,dpaun@xnet.ro,0722245242,2014-09-27
+99,83AC7U,Anghel,Ciprian,31,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,877,OP,50,oop,ok,achitata,cypry_29@yahoo.com,0724938980,2014-09-27
+100,00NB3H,Niculita,Bogdan,14,tineri,masculin,Bujorilor,,,,,,14,35,1:08:22,2,912,Felt,50,,tbc,achitata,autentic2009@yahoo.com,0726263773,2014-09-27
+101,02NTCR,Nitu,Timeea,12,uriasi,feminin,Copiilor,,,,,,0,,,0,,,,,,neachitata,timeeanitu@yahoo.com,0720151222,2014-09-27
+102,81CD91,Carstina,Dan-Andrei,33,adulti,masculin,Bujorilor,,,,,,38,6,0:41:56,1,950,,,,,neachitata,andrei.carstina@gmail.com,0725938085,2014-09-27
+103,57KP41,Kertesz,Petru,57,forever_young,masculin,Bujorilor,,,,,,15,33,1:08:22,2,947,,,,,neachitata,petru.kertesz@gmail.com,0745617428,2014-09-27
+104,58KV91,Kertesz,Voichita,56,forever_young,feminin,Bujorilor,,,,,,12,39,2:17:50,2,948,,,,,neachitata,voichita.kertesz@gmail.com,0766656157,2014-09-27
+105,04MRCA,Mosteanu,"Rares Nicolae",10,spiridusi,masculin,Copiilor,da,,,,,6,52,0:14:20,1,438,OP,60,op,ok,achitata,dramosgroup@yahoo.com,0745324625,2014-09-27
+106,06MR8P,Mosteanu,ROBERT,8,copii,masculin,Copiilor,da,,,,,7,49,0:18:54,1,439,OP,60,,ok,achitata,dramosgroup@yahoo.com,0745324625,2014-09-27
+107,03IM5F,Ilie,Maria,11,spiridusi,feminin,Copiilor,da,,,,,3,1,DNS,0,429,OP,60,op,ok,achitata,elegabili@yahoo.com,0724110380,2014-09-27
+108,07ISBE,Ilie,Stefan,7,pitici,masculin,Copiilor,da,,,,,18,1,DNS,0,430,OP,60,op,ok,achitata,elegabili@yahoo.com,0724110380,2014-09-27
+109,71IM9M,ILIE,Mircea,43,seniori,masculin,Bujorilor,,,,,,10,45,1:03:22,2,903,OP,50,op,ok,achitata,mircea.ilie@tep.ro,0751012818,2014-09-27
+110,71IEBS,ILIE,Elena,43,seniori,feminin,Bujorilor,,,,,,10,45,2:09:20,2,904,OP,50,op,ok,achitata,elegabili@yahoo.com,0724110380,2014-09-27
+111,83AR4T,Alexandrescu,Radu,31,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,alexandrescu.radu@gmail.com,0758880795,2014-09-27
+112,03MI61,Mindru,"Ioan Alexandru",11,spiridusi,masculin,Copiilor,da,,,,,8,46,0:14:50,1,437,Felt,50,chit,OK,achitata,mindru_codrut@yahoo.com,0723383953,2014-09-27
+113,87MT7B,Mocanu,Tudor,27,adulti,masculin,TeamXpert,,,,,,27,17,3:21:13,1,116,OP,50,op,ok,achitata,tudor.mocanu@gmail.com,0740144051,2014-09-27
+114,78SV9H,Sraer,Victor,36,adulti,masculin,Bujorilor,,,,,,25,18,1:33:46,2,931,OP,50,op,ok,achitata,victor.sraer@ottobroker.ro,0722779951,2014-09-27
+115,06SMAI,Sraer,Maia,8,copii,feminin,Tricicletelor,,,,,,2,70,0:08:09,1,401,OP,50,op,ok,achitata,simona.panaitescu@ottobroker.ro,0722779951,2014-09-27
+116,09SM8S,Sraer,Miruna,5,pitici,feminin,Copiilor,da,,,,,4,58,0:26:35,1,450,OP,50,op,ok,achitata,office@ottobroker.ro,0726141492,2014-09-27
+117,07BR2O,Balica,"Robert Mihail",7,pitici,masculin,Copiilor,da,,,,,18,1,DNS,0,417,Velo,60,6,OK,achitata,nicbalica@yahoo.com,0722408666,2014-09-27
+118,77LBBI,Laurentiu,Bita,37,adulti,masculin,TeamXpert,,,,,,28,1,DNS,0,110,OP,50,,ok,achitata,laurentiu_bita@yahoo.com,0721254499,2014-09-27
+119,69CD58,"Cornea ",Dan,45,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,890,Velo,50,9,OK,achitata,dacorrom@yahoo.com,0722200969,2014-09-27
+120,09EM72,Ene,"Mihail Alexandru",5,piticoti,masculin,Copiilor,da,,,,,0,,,0,,Velo,60,8,OK,achitata,daniel_ene_75@yahoo.com,0723313852,2014-09-27
+121,83IS49,IONITA,SEBASTIAN,31,adulti,masculin,Bujorilor,,,,,,24,19,1:31:18,2,779,,,,,neachitata,sebastian.ionita@service-echipamente.ro,0758056977,2014-09-27
+122,85BM5K,Boerescu,Mihai,29,adulti,masculin,Bujorilor,,vip,S,,,27,16,1:37:54,2,881,Velo,85,18,OK,achitata,popeeeye18@yahoo.com,0736366426,2014-09-27
+123,57CD91,Candea,Danut,57,forever_young,masculin,TeamXpert,,,,,,26,18,3:07:13,1,105,Felt,50,chit,OK,achitata,dany_candea@yahoo.com,0723681439,2014-09-27
+124,00MA93,MATEESCU,Andreea-Alexandra,14,tineri,feminin,Bujorilor,,,,,,7,56,1:52:45,2,907,Felt,50,chit,OK,achitata,andreea.alexandra.mateescu@gmail.com,0724004723,2014-09-27
+125,02VM4P,Voicu,"Maria Loredana",12,uriasi,feminin,Copiilor,,,,,,0,,,0,,,,,,neachitata,tibi1voicu@yahoo.com,0723688354,2014-09-27
+126,78PCC2,Perian,Camil,36,adulti,masculin,Bujorilor,,,,,,45,4,0:55:01,1,917,OP,50,oop,ok,achitata,andreea.perian@skin.ro,0744386488,2014-09-27
+127,66VTB3,Voicu,Tiberiu,48,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,tibi1voicu@yahoo.com,0723688354,2014-09-27
+128,07BA95,"Balacescu ",Alexandru-Mihai,7,pitici,masculin,Copiilor,da,vip,S,,,9,43,0:19:43,1,416,Velo,175,14,OK,achitata,laura_sandulescu@yahoo.com,0744271047,2014-09-27
+129,03MSA8,Matei,Soare,11,spiridusi,masculin,Copiilor,da,,,,,10,40,0:16:04,1,435,Felt,50,chit,OK,achitata,matei.soare@gmail.com,0755061556,2014-09-27
+130,77PD7J,Puricescu,Danut,37,adulti,masculin,Bujorilor,,,,,,36,7,1:56:28,2,923,OP,50,,ok,achitata,dan.puricescu@gmail.com,0721268226,2014-09-27
+131,73UA45,UNGUREANU,ALEXANDRU,41,seniori,masculin,Bujorilor,,vip,L,,,47,4,1:27:58,1,940,,150,+bicla,ok+bi,achitata,alexungureanu@yahoo.com,0747454351,2014-09-27
+132,08IV2I,"Ilie ","Vlad Cristian",6,pitici,masculin,Copiilor,,,,,,12,36,0:22:41,1,395,,50,cash,ok,achitata,bv88ctn@gmail.com,0723544496,2014-09-27
+133,96MI3A,Marcoci,Ionut,18,tineri,masculin,Bujorilor,,,,,,7,56,0:58:00,2,906,Velo,50,,tbc,achitata,nicolaegirimea@gmail.com,0729024052,2014-09-27
+134,94MI2H,Marcoci,Ionut,20,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,,0000000000,2014-09-27
+135,05AVB8,Aron,"Victor Alexandru",9,copii,masculin,Copiilor,,,,,,11,1,DNS,0,391,Felt,50,chit,OK,achitata,mihai.aron@gmail.com,0724235556,2014-09-27
+136,07GV4U,Ghiula,Vlad,7,pitici,masculin,Copiilor,da,,,,,8,46,0:19:31,1,427,OP,60,op,ok,achitata,tavi79@yahoo.com,0722618061,2014-09-27
+137,00PT8I,Podocea,"Teodor Marian",14,tineri,masculin,Bujorilor,,,,,,37,7,2:39:24,2,918,Felt,50,,tbc,achitata,podoceageanina@yahoo.com,0726264142,2014-09-27
+138,85PV9S,Petre,"Victor Mario",29,adulti,masculin,TeamXpert,,,,,,3,94,2:41:27,2,122,Velo,50,23,OK,achitata,victor.tzone@gmail.com,0744753121,2014-09-27
+139,84LP93,"Lucian ","Pavel ",30,adulti,masculin,TeamXpert,,,,,,18,28,2:04:28,1,111,Felt,50,chit,OK,achitata,lucian.pavel@gmail.com,0727732263,2014-09-27
+140,77CRBB,Constantin,Razvan,37,adulti,masculin,Bujorilor,,,,,,12,39,1:07:22,2,889,Felt,50,chit,OK,achitata,crazvann24@yahoo.com,0722133441,2014-09-27
+141,73MR5L,MATEESCU,Remus,41,seniori,masculin,Bujorilor,,,,,,35,8,1:55:00,2,908,Felt,50,chit,OK,achitata,remus.mateescu@gmail.com,0724648090,2014-09-27
+142,68SA3H,Segal,Andi,46,seniori,masculin,Bujorilor,,,,,,8,52,1:00:47,2,928,OP,50,op,ok,achitata,andi.segal@gmail.com,0745344673,2014-09-27
+143,97SR69,Segal,Radu,17,tineri,masculin,Bujorilor,,,,,,2,85,0:54:16,2,929,OP,50,op,ok,achitata,radu.segal@gmail.com,0743917559,2014-09-27
+144,75PACV,"Paun ",Anca,39,adulti,feminin,Bujorilor,,,,,,5,65,1:45:46,2,941,,,,,neachitata,ancaarnautu@yahoo.com,0723261556,2014-09-27
+145,98BABF,Bardac,Alexandra,16,tineri,feminin,Bujorilor,,vip,S,,,6,60,1:46:12,2,878,Felt,85,,tbc,achitata,ana.bardac@gmail.com,0728898152,2014-09-27
+146,68BJ5M,Becker,Johannes,46,seniori,masculin,Bujorilor,,,,,,34,9,1:46:07,2,880,Velo,50,11,OK,achitata,jb@beckerconsult.ro,0722523560,2014-09-27
+147,80SA3U,Sorescu,Andreia,34,adulti,feminin,Bujorilor,,,,,,11,42,2:10:53,2,930,Velo,50,12,OK,achitata,andreiasorescu@gmail.com,0720084291,2014-09-27
+148,08MS2A,Matache,"Stefan Andrei",6,pitici,masculin,Copiilor,da,,,,,18,1,DNS,0,434,Velo,60,17,OK,achitata,claudia.lascar@nielsen.com,0744868156,2014-09-27
+149,07UV5L,Ungureanu,Vlad,7,pitici,masculin,Copiilor,da,,,,,2,70,0:16:20,1,445,Felt,60,chit,OK,achitata,sharr.radu@gmail.com,0721068057,2014-09-27
+150,75DN6O,Dan,Neda,39,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,891,OP,50,op,ok,achitata,nedadan@gmail.com.com,0730552255,2014-09-27
+151,74CC56,Cristian,Chifiac,40,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,nedadan@gmail.com.com,0730552255,2014-09-27
+152,03TD6B,Toader,David,11,spiridusi,masculin,Copiilor,,,,,,1,80,0:11:31,1,412,OP,50,,ok,achitata,k_cliffs@yahoo.com,0721562245,2014-09-27
+153,04TAC4,Toader,Alin,10,spiridusi,masculin,Copiilor,,,,,,2,70,0:12:13,1,413,OP,50,,ok,achitata,k_cliffs@yahoo.com,0721562245,2014-09-27
+154,67UC86,Ursachi,"Catalin ",47,seniori,masculin,TeamXpert,,,,,,8,62,3:22:10,2,127,OP,50,,ok,achitata,ursachio_catalin@yahoo.com,0724238214,2014-09-27
+155,74CS5H,Calinescu,Simin,40,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,885,OP,50,op,ok,achitata,simin.calinescu.sc@gmail.com,0722191355,2014-09-27
+156,77RD5F,Rece,Dan,37,adulti,masculin,Bujorilor,,,,,,22,21,1:26:05,2,927,OP,50,op,ok,achitata,dan.rece@gmail.com,0740270371,2014-09-27
+157,82BC4J,Butnaru,"Cristian Ionut",32,adulti,masculin,Bujorilor,,,,,,32,11,1:44:13,2,884,OP,50,op,tbc,achitata,butnarucristianionut@gmail.com,0720290772,2014-09-27
+158,79TSA2,Traistaru,Sorin-Alexandru,35,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,sorin.traistaru@gmail.com,0723159766,2014-09-27
+159,75CC6O,Chifiac,Cristian,39,adulti,masculin,Bujorilor,,,,,,48,1,DNS,0,886,OP,50,op,ok,achitata,nedadan@gmail.com,0730552255,2014-09-27
+160,82SA38,Suciu,Andrei,32,adulti,masculin,TeamXpert,,,,,,15,36,1:35:42,1,125,OP,50,,ok,achitata,andreisuciu2004@yahoo.com,0731770786,2014-09-27
+161,07IR2S,Ionescu,Radu,7,pitici,masculin,Copiilor,da,,,,,18,1,DNS,0,431,Velo,60,16,OK,achitata,mihail.ionescu@gmail.com,0752077701,2014-09-27
+162,04PM7O,Pop,"Matei Alexandru",10,spiridusi,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,andrapop76@yahoo.com,0722212254,2014-09-27
+163,00TR8K,Toader,Roxana,14,tineri,feminin,Bujorilor,,,,,,1,100,1:27:00,2,936,OP,50,,ok,achitata,k_cliffs@yahoo.com,0721362878,2014-09-27
+164,85NM43,Nitu,Marius,29,adulti,masculin,Bujorilor,,,,,,29,14,1:39:22,2,914,OP,50,,ok,achitata,nitzumarius@yahoo.com,0721586585,2014-09-27
+165,07IFAP,ILIESCU,FILIP,7,pitici,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,iliescualina81@yahoo.com,0736494286,2014-09-27
+166,65RI95,Radu,Ioan,49,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,925,OP,50,,ok,achitata,ioan.ionutz@gmail.com,0722665321,2014-09-27
+167,72GN37,Gabriela,Neacsu,42,seniori,feminin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,gabriellaneacsu@yahoo.com,0723640107,2014-09-27
+168,09IAB7,ILIESCU,ANASTASIA,5,piticoti,feminin,Copiilor,,,,,,0,,,0,,,,,,neachitata,iliescualina81@yahoo.com,0736494286,2014-09-27
+169,75RB7M,Razvan,Bucataru,39,adulti,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,razbike@gmail.com,0722167675,2014-09-27
+170,10PF76,Palanciuc,Fadi,4,piticoti,masculin,Tricicletelor,da,vip,XS,,,2,70,0:09:25,1,552,Velo,35,,tbc,achitata,dorin.palanciuc@gmaol.com,0742218221,2014-09-27
+171,78PDB8,Palanciuc,Dorin,36,adulti,masculin,TeamXpert,,,,,,14,39,1:32:37,1,119,Velo,50,,tbc,achitata,dorin.palanciuc@gmail.com,0742218221,2014-09-27
+172,83LL5D,Lupsa,Liviu,31,adulti,masculin,TeamXpert,,,,,,22,22,2:51:13,1,113,Velo,50,22,OK,achitata,liviulupsa_romania@yahoo.com,0744698413,2014-09-27
+173,09RT14,Rada,Tufescu,5,piticoti,feminin,Copiilor,da,,,,,0,,,0,,OP,60,op,ok,achitata,kostinesku@yahoo.com,0723293197,2014-09-27
+174,73RTAM,Radu,Tufescu,41,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,926,OP,50,op,ok,achitata,radu_tufescu@yahoo.com,0723293197,2014-09-27
+176,89LC5K,Lungu,Catalin,25,adulti,masculin,TeamXpert,,,,,,25,19,2:57:19,1,112,Felt,50,chitt,OK,achitata,cata.lng@gmail.com,0725925327,2014-09-27
+177,70FF53,Furdui,Florin,44,seniori,masculin,Bujorilor,,,,,,41,5,0:46:28,1,895,OP,50,op,ok,achitata,furdui@portlandtrust.ro,0722275967,2014-09-27
+178,83SAC8,Stanculescu,Alexandru,31,adulti,masculin,Bujorilor,,,,,,44,5,0:53:46,1,932,OP,50,op,ok,achitata,furdui@portlandtrust.ro,0722275967,2014-09-27
+179,07FT25,Furdui,"Tudor Alexandru",7,pitici,masculin,Copiilor,da,vip,XS,,,18,1,DNS,0,426,OP,105,"2 insotit",ok,achitata,florin.jean@yahoo.com,0722275967,2014-09-27
+180,07INAC,Ivana,"Nectarie ioan",7,pitici,masculin,Copiilor,,,,,,5,55,0:18:48,1,396,Felt,50,chit,OK,achitata,sharr.radu@gmail.com,0721068057,2014-09-27
+181,85BD1I,Bunescu,Dan,29,adulti,masculin,Bujorilor,,,,,,39,6,0:46:23,1,882,Felt,50,chit,OK,achitata,bunescu_dan@yahoo.com,0745266514,2014-09-27
+182,82AB14,Alexe,Bogdan,32,adulti,masculin,Bujorilor,,,,,,6,60,0:57:43,2,875,OP,50,,ok,achitata,bogdan2win@gmail.com,0724855286,2014-09-27
+183,85TP41,Tudorica,Paul,29,adulti,masculin,Bujorilor,,,,,,42,5,0:46:38,1,939,OP,50,,ok,achitata,alexebogdan2004@yahoo.com,0769452390,2014-09-27
+184,83PRC8,Petculescu,Radu,31,adulti,masculin,TeamXpert,,,,,,23,21,2:52:35,1,121,Felt,50,chit,OK,achitata,raaduuuu@yahoo.com,0727756350,2014-09-27
+185,01DVA3,DINU,Vlad,13,uriasi,masculin,Copiilor,,,,,duatlon,1,80,0:14:42,1,462,,,,,neachitata,sorindinu1971@yahoo.com,0769665539,2014-09-27
+186,78MACX,Manoleli,Alexandra,36,adulti,feminin,Bujorilor,,,,,,14,1,DNS,0,905,OP,50,,ok,achitata,manolelialexandra@yahoo.com,0723224491,2014-09-27
+187,75BM2N,Briceag,Marin,39,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,marin.briceag@alvorada.ro,0722653730,2014-09-27
+188,68DA6H,Dobre-Calman,"Ana-Maria Cristina",46,seniori,feminin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,cristinacalman@yahoo.com,0723153173,2014-09-27
+189,79BABA,Bratucu,Adrian,35,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,adrian@gamesmart.ro,0723687520,2014-09-27
+190,67CL7I,Ciobanu,"Lazar Cristian",47,seniori,masculin,Bujorilor,,,,,,48,1,DNS,0,887,OP,50,,ok,achitata,ciobanu_lazar_cristian@yahoo.com,0723785728,2014-09-27
+191,76PM4B,Pavlescu,Mihai,38,adulti,masculin,Bujorilor,,,,,,31,12,1:42:59,2,916,Velo,50,"TS 19",TBC,achitata,mihai.pavlescu@yahoo.com,0722277966,2014-09-27
+192,74AS9S,Adrian,Sterea,40,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,adcon.sterea@gmail.com,0726757246,2014-09-27
+193,07DS28,Darius,Sterea,7,pitici,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,adcon.sterea@gmail.com,0726757246,2014-09-27
+194,10PS8H,Petru,Sterea,4,piticoti,masculin,Tricicletelor,da,,,,,0,,,0,,,,,,neachitata,adcon.sterea@gmail.com,0726757246,2014-09-27
+195,99GT21,georgescu,teodor,15,tineri,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,mircea.georgescu@ro.bosch.com,0722315290,2014-09-27
+196,70GMCF,georgescu,mircea,44,seniori,masculin,Bujorilor,,,,,,0,,,0,,,,,,neachitata,mircea.georgescu@ro.bosch.com,0722315290,2014-09-27
+198,07CD1K,Ciobanu,Doriana,7,pitici,feminin,Copiilor,da,,,,,6,1,DNS,0,421,OP,60,,ok,achitata,ciobanu_lazar_cristian@yahoo.com,0723785728,2014-09-27
+199,05PTB5,Poenaru,"Tudor octavian",9,copii,masculin,Copiilor,,,,,,10,40,0:25:04,1,459,,,,,neachitata,poenarudana@yahoo.com,0744359065,2014-09-27
+200,68PE7I,Preda,"Eugen Radu",46,seniori,masculin,TeamXpert,,,,,,20,24,2:20:08,1,133,Velo,50,25,OK,achitata,rpreda2005@gmail.com,0746164124,2014-09-27
+201,06BS73,Borda,"Sophia Anne",8,copii,feminin,Copiilor,da,,,,,1,80,0:17:57,1,419,Velo,60,23,OK,achitata,nicoleta.tiloiu@raiffeisen.ro,0724393247,2014-09-27
+202,10BS49,Borda,"Smaranda Adiia",4,piticoti,feminin,Tricicletelor,da,,,,,1,80,0:07:08,1,468,,,,,neachitata,nicoleta.tiloiu@raiffeisen.ro,0724393247,2014-09-27
+203,06PHB8,PRECUP,HOREA,8,copii,masculin,Copiilor,,,,,,1,80,0:12:55,1,460,,,,,neachitata,iulianprecup@yahoo.com,0745212393,2014-09-27
+204,08PI4G,PRECUP,IRINA,6,pitici,feminin,Copiilor,,,,,,1,80,0:16:30,1,461,,,,,neachitata,iulianprecup@yahoo.com,0745212393,2014-09-27
+205,82DM46,Dinu,"Marius Cristian",32,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,cristi.dinu@hotmail.com,0722224704,2014-09-27
+206,02PD71,Poenaru,"Dan toma",12,uriasi,masculin,Copiilor,da,,,,,3,63,0:17:02,1,418,,,,,neachitata,poenarudana@yahoo.com,0744359065,2014-09-27
+207,86SC3T,Suciu,Cristina,28,adulti,feminin,Bujorilor,,,,,,3,76,1:33:58,2,935,OP,50,,ok,achitata,suciu.cristina.kee@gmail.com,0722772633,2014-09-27
+208,09RV9B,ROBERT,VISAROI,5,piticoti,masculin,Tricicletelor,da,vip,S,,,1,80,0:09:08,1,447,,,,,neachitata,camelia.poenaru@yahoo.com,0744387537,2014-09-27
+209,61AM99,Angelescu,Marius,53,forever_young,masculin,Bujorilor,,vip,M,,,20,23,1:22:47,2,876,Felt,85,chit,OK,achitata,automatizarivl@yahoo.com,0744477463,2014-09-27
+210,05CM6K,Calin,Motei,9,copii,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,cosmin.motei@gmail.com,0754699633,2014-09-27
+211,09BAA5,BOBOCEA,Anais,5,piticoti,feminin,Copiilor,,,,,,0,,,0,,,,,,neachitata,adrianbobocea@gmail.com,0724150370,2014-09-27
+212,03DR8U,DRAGOIU,RADUALEXANDRU,11,spiridusi,masculin,Copiilor,,,,,,3,63,0:12:42,1,394,Felt,50,chit,OK,achitata,rodragoiu@yahoo.com,0744977534,2014-09-27
+213,71BVCO,Bardac,Valeriu,43,seniori,masculin,Bujorilor,,vip,XL,,,0,,,0,,,,,,neachitata,anamariabardac@yahoo.com,0723169175,2014-09-27
+214,56CM34,CIURDAR,MIRCEA,58,forever_young,masculin,TeamXpert,,,,,,28,1,DNS,0,106,Felt,50,chit,OK,achitata,mcmirceaciurdar@gmail.com,0744561920,2014-09-27
+215,02BA4F,"Bardac ",Andrei,12,uriasi,masculin,Copiilor,da,vip,S,,,4,58,0:18:09,1,451,Felt,95,chit,tbc,achitata,anamariabardac@yahoo.com,0723169175,2014-09-27
+216,74SA7T,Sporis,Augustin,40,seniori,masculin,TeamXpert,,vip,M,,,21,23,2:29:41,1,124,Felt,85,neconfirm,tbc,achitata,augustin.sporis@yahoo.co.uk,0752317222,2014-09-27
+217,08CB9K,Ciurea,Briana,6,pitici,feminin,Copiilor,da,,,,,5,55,0:34:23,1,423,OP,60,,ok,achitata,liliana.ciurea@eda.admin.ch,0727492268,2014-09-27
+218,00II3S,Ianciu,Irina,14,tineri,feminin,Bujorilor,,,,,,14,1,DNS,0,900,Felt,50,CHIT,OK,achitata,daniel.lica@uti.ro,0731495418,2014-09-27
+219,64IM5R,Ianciu,Mihai,50,forever_young,masculin,TeamXpert,,,,,,11,50,3:54:40,2,109,Felt,50,chit,OK,achitata,daniel.lica@uti.ro,0731495418,2014-09-27
+220,03PA62,"Palade ",Andrei,11,spiridusi,masculin,Copiilor,,,,,,12,36,0:19:23,1,399,Felt,50,chit,OK,achitata,roxanamariapalade@yahoo.com,0726374649,2014-09-27
+221,05TG6L,Tasbac,Gabriela,9,copii,feminin,Copiilor,,,,,,4,58,0:23:39,1,411,Felt,50,chit,OK,achitata,roxanamariapalade@yahoo.com,0726374649,2014-09-27
+222,82IV1O,Iancu,Valentin,32,adulti,masculin,TeamXpert,,,,,,4,85,2:45:30,2,135,Felt,50,chit,OK,achitata,inedit13@yahoo.com,0768930032,2014-09-27
+223,70NV1C,Naicu,Vlad,44,seniori,masculin,Bujorilor,,vip,XL,,,48,1,DNS,0,911,Velo,85,,ok,achitata,vlad.naicu@mgmedical.ro,0722200581,2014-09-27
+224,05NM8D,Naicu,Martin,9,copii,masculin,Copiilor,,vip,S,,,11,1,DNS,0,398,Velo,85,,tbc,achitata,martin.naicu@mgmedical.ro,0722200581,2014-09-27
+225,83CC5U,catana,cristian,31,adulti,masculin,TeamXpert,,,,,,28,1,DNS,0,132,,,,,neachitata,cristi_catana2004@yahoo.com,0766664533,2014-09-27
+226,98PM21,Paval,"Maria Stefania",16,tineri,feminin,Bujorilor,,,,,,8,52,2:00:15,2,915,OP,50,,ok,achitata,stefania.paval@yahoo.com,0735294627,2014-09-27
+227,73TO44,Trofin,Octavian,41,seniori,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,tavixoom@gmail.com,0724322399,2014-09-27
+228,09CB63,Coman,Bogdan,5,pitici,masculin,Copiilor,da,vip,M,,,17,26,0:40:47,1,453,,,,,neachitata,marius.coman@gmail.com,0722608067,2014-09-27
+229,04CM95,Coman,Matei,10,spiridusi,masculin,Copiilor,da,vip,M,,,11,38,0:17:58,1,454,,,,,neachitata,marius.coman@gmail.com,0722608067,2014-09-27
+230,04ZA76,Zbircea,Alma,10,spiridusi,feminin,Copiilor,da,vip,M,,,2,70,0:22:40,1,457,,,,,neachitata,ompopa@gmail.com,0723657777,2014-09-27
+231,06MVBU,Moroianu,Vlad,8,copii,masculin,Copiilor,da,vip,M,,,6,52,0:18:31,1,458,,,,,neachitata,george.moroianu@gmail.com,0722408575,2014-09-27
+232,84DV2D,Dreossi,Vlad,30,adulti,masculin,Bujorilor,,,,,,16,31,1:09:56,2,942,,,,,neachitata,vlad.dreossi@gmail.com,0722143573,2014-09-27
+233,74SA4P,Sideri,Aurelian,40,seniori,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,aurelian_sideri@yahoo.com,0722633923,2014-09-27
+234,83TTBK,Tone,"Traian Andrei",31,adulti,masculin,Bujorilor,,,,,,30,13,1:41:49,2,943,,,,,neachitata,traianandrei2005@yahoo.co.uk,0722125603,2014-09-27
+235,68AD3S,ALEXANDRU,DRAGOS,46,seniori,masculin,TeamXpert,,,,,,28,1,DNS,0,131,,,,,neachitata,anialexandru@yahoo.com,0744579168,2014-09-27
+236,08PR4P,Popescu,Rares,6,pitici,masculin,Copiilor,da,vip,S,,,15,30,0:29:38,1,455,,,,,neachitata,cristina.popescu@qpas.ro,0745440533,2014-09-27
+237,05PM3F,Popescu,Mihnea,9,copii,masculin,Copiilor,da,vip,L,,,4,58,0:16:17,1,456,,,,,neachitata,cristina.popescu@qpas.ro,0745440533,2014-09-27
+238,76AA7H,Alexandru,Ana-Maria,38,adulti,feminin,Bujorilor,,,,,,14,1,DNS,0,946,,,,,neachitata,ani@orek.ro,0745301968,2014-09-27
+239,02MB1M,Maxim,Bogdan,12,uriasi,masculin,Copiilor,,vip,L,,,5,55,0:18:12,1,449,,,,,neachitata,anamariabardac@yahoo.com,0723169175,2014-09-27
+240,88PI6J,Petrescu,Ioan,26,adulti,masculin,Bujorilor,,,,,,1,100,0:53:51,2,777,Felt,50,chit,OK,achitata,pioan50@gmail.com,0765175665,2014-09-27
+241,75BS8J,Brandus,Sandra,39,adulti,feminin,Bujorilor,,,,,,9,48,2:00:24,2,944,,,,,neachitata,sami@trodat.ro,0723997334,2014-09-27
+242,79AA8S,Arnautu,Andreea,35,adulti,feminin,Bujorilor,,,,,,14,1,DNS,0,945,,,,,neachitata,and.arnautu@yahoo.com,0723261556,2014-09-27
+243,08BAA1,Brandus,Alexandru,6,pitici,masculin,Copiilor,,,,,,3,63,0:17:59,1,463,,,,,neachitata,mihai@trodat.ro,0722634663,2014-09-27
+244,65STA5,Stoia,Tudor,49,seniori,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,tudor.stoia@brights.ro,0732117151,2014-09-27
+245,03MG6N,Matei,Ghincea,11,spiridusi,masculin,Copiilor,,,,,,0,,,0,,,,,,neachitata,ghincea_theodor@yahoo.com,0723134497,2014-09-27
+246,82CFBM,Crisiacu,Florin,32,adulti,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,crisiacuf@yahoo.com,0765395987,2014-09-27
+247,05GD7R,Garjoaba,Denis,9,spiridusi,masculin,Copiilor,da,,,,,13,34,0:24:06,1,414,,,,,neachitata,paulagoaga@gmail.com,0723608006,2014-09-27
+248,73GC6D,Gligorea,Calin,41,seniori,masculin,TeamXpert,,,,,,0,,,0,,,,,,neachitata,cgligorea@hotmail.com,0728700700,2014-09-27

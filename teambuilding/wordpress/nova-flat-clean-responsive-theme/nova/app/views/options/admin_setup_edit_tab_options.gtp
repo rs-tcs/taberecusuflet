@@ -1,0 +1,22 @@
+<div class="options-for-tab-content">
+<?php
+$adminToolbarSettings = GummRegistry::get('Helper', 'Layout')->adminToolbarSettings;
+$adminToolbarGroups = array_keys($adminToolbarSettings);
+
+$optionsByGroup = array_fill_keys($adminToolbarGroups, array());
+$optionsByGroup = array_merge($optionsByGroup, Set::group($optionsForTab, 'group', 'home'));
+?>
+
+<?php foreach ($optionsByGroup as $group => $options): ?>
+    <div class="options-group options-group-<?php echo $group; ?> <?php echo (empty($options))? 'hidden' : ''; ?>">
+        <div class="options-group-title"><?php echo $group; ?></div>
+        <?php foreach ($options as $option): ?>
+        <?php $this->requestAction(array('controller' => 'options', 'action' => 'admin_setup_edit_tab_option', $tabId, $option['id'])); ?>
+        <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
+</div>
+
+<?php echo $this->Html->link('add', array('controller' => 'options', 'action' => 'admin_setup_edit_tab_option', 'ajax' => true, 'tabId' => $tabId), array('class' => 'add-option')); ?>
+
+<a href="#" class="clone-option">clone</a>

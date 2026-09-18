@@ -1,0 +1,20 @@
+<?php
+
+$leftSidebar = $layoutSidebars['left'];
+$rightSidebar = $layoutSidebars['right'];
+
+$PageBuilderHelper = GummRegistry::get('Helper', 'PageBuilder');
+echo $PageBuilderHelper->editor(array(
+    'leftSidebar' => $layoutSidebars['left'],
+    'rightSidebar' => $layoutSidebars['right'],
+    'layoutSchema' => $layoutSchema,
+    'schemaInputsContainerSelector' => ($option['dependsOn']) ? '#' . Inflector::slug($option['dependsOn']) : null,
+    'builderAttributes' => array(
+        'id' => Inflector::slug($optionId),
+    ),
+    'editorMode' => 'sidebar',
+    'model' => 'Option',
+    'optionId' => $optionId,
+));
+
+?>

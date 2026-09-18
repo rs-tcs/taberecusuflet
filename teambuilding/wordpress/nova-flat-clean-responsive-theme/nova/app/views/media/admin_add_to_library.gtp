@@ -1,0 +1,16 @@
+<?php
+
+if (isset($uploadErrors)) {
+    echo '<div class="error"><p>' . implode('</p><p>', $uploadErrors) . '</p></div>';
+    return;
+}
+
+if (!$attachmentPost) return;
+
+View::renderElement('admin_media_upload', array(
+    'optionId' => $optionId,
+    'postId' => $postId,
+    'attachmentPost' => $attachmentPost
+));
+
+?>

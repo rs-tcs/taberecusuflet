@@ -1,0 +1,418 @@
+<style>
+label {display: block; font-size: 11px; margin-left: 10px;}
+#gumm-options-tabs {
+    width: 200px;
+    float: left;
+}
+#gumm-options-options {
+    float: left;
+    width: 600px;
+    margin-left: 50px;
+/*    border: 1px solid red;*/
+/*    position: absolute;*/
+/*    right: 250px;*/
+}
+.tabs li {float: none;}
+.tabs > li {
+    margin: 5px 2px;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 2px #999;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+}
+.tabs > li.current-tab {
+    border: 1px solid #66A8F2
+}
+.tabs li.droppable-hover {
+    border: 1px dashed #233A54;
+}
+.tab-item .edit-tab {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+#gumm-options-editor ul.tabs li.tab-item > a.remove-tab, .remove-option {
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: #BABABA;
+    color: #000000;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    padding: 5px 2px;
+    margin-right:0;
+    line-height: auto;
+    font-size: 10px;
+    line-height: 0;
+}
+.tabs .tab-settings {display: none;}
+.tabs .draggable-placeholder {
+    border: 1px dashed #000;
+}
+.tabs .child-tab {
+    margin-left: 20px;
+}
+.tab-option {
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+}
+.tab-option.droppable-hover {
+    border: 1px dashed #787878;
+}
+.tab-option-heading {
+    position: relative;
+}
+.tab-option.ui-selected, .tab-option.ui-selecting {
+    box-shadow: inset 0 0 30px #B2CDF1;
+}
+.tab-option-heading h6 {
+    padding: 5px;
+    font-size: 0.8em;
+}
+.tab-option-heading .edit-option {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab-option-heading span.tab-option-id {
+    color: #720101;
+    cursor: move;
+    font-size: 10px;
+}
+.tab-option-settings {
+    padding: 2px 10px;
+}
+.tab-option-settings input, .tab-option-settings textarea {
+    width: 550px;
+}
+.options-container .sortable-placeholder {
+    margin-top: 15px;
+}
+
+.options-group {
+    border: 2px solid #66A8F2;
+    padding: 5px;
+    position: relative;
+    margin-top: 30px;
+}
+.options-group .options-group-title {
+    position: absolute;
+    top: -25px;
+    left: -2px;
+    background-color: #66A8F2;
+    padding: 5px 10px;
+    line-height: 15px;
+    border-radius: 3px 3px 0 0;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.toolbar-tabs-panel {
+/*    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding: 5px;*/
+}
+.toolbar-tabs-panel > a {
+    border: 1px solid #565656;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #000000;
+    background-color: #F1F1F1;
+}
+.add-tab, .add-option, .clone-option {
+    padding: 5px 10px;
+    border: 1px solid #D1D1D1;
+    font-size: 12px;
+    color: #000000;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 10px 5px 5px 0;
+    line-height: 12px;
+    background-color: #223952;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+</style>
+<script>
+(function($){
+$(document).ready(function(){
+    $('.tabs .tab-title').live('click', function(e){
+        e.preventDefault();
+        var theTabItem = $(this).parents('.tab-item:first');
+        
+        $('.tabs').find('.current-tab').removeClass('current-tab');
+        $(this).parent().addClass('current-tab');
+        
+        $('.options-for-tab-container').hide();
+        $('.' + theTabItem.attr('id')).show();
+        // var theOptionsContainer = $('.options-container');
+        // $.ajax({
+        //     url: $(this).attr('href'),
+        //     success: function(data, textStatus, XMLHttpRequest) {
+        //         theOptionsContainer.html(data);
+        //     }
+        // });
+    });
+
+    $('.tab-item').find('input.title').live('keyup', function(e){
+        $(this).parents('.tab-item:first').children('.tab-title').text($(this).val());
+    });
+    $('.tabs').sortable({
+        items: '.tab-item',
+        placeholder: 'draggable-placeholder',
+        sort: function(event, ui) {
+            ui.placeholder.height(ui.helper.height());
+
+            var theParentEle = ui.placeholder.prev();
+            if (theParentEle.size() > 0) {
+                if (ui.helper.offset().left - theParentEle.offset().left > 40) {
+                    ui.placeholder.addClass('child-tab');
+                } else {
+                    ui.placeholder.removeClass('child-tab');
+                }
+            } else {
+                ui.placeholder.removeClass('child-tab');
+            }
+        },
+        stop: function(event, ui) {
+            var theParentEle = getNonChildPrev(ui.item);
+            if (ui.placeholder.hasClass('child-tab') && theParentEle.size() > 0) {
+                ui.item.addClass('child-tab');
+                ui.item.find('input.parent_id').val(theParentEle.find('input.id').val());
+            } else {
+                ui.item.removeClass('child-tab');
+                ui.item.find('input.parent_id').val('');
+            }
+        }
+    });
+    function getNonChildPrev(ele) {
+        var theParentEle = ele.prev();
+        if (theParentEle.size() < 1) return theParentEle;
+        if (theParentEle.hasClass('child-tab')) theParentEle = getNonChildPrev(theParentEle);
+        
+        return theParentEle;
+    }
+    
+    // Droppable
+    $('.tab-item').droppable({
+        accept: '.tab-option',
+        hoverClass: 'droppable-hover',
+        tolerance: 'intersect',
+        greedy: 'true',
+        drop: function(event, ui) {
+            var tabContent = $('.' + $(this).attr('id'));
+            var tab_id = $(this).attr('id').replace('tab-id-', '');
+            ui.draggable.find('input.tab_id').val(tab_id).trigger('change');
+            ui.draggable.data('droppedOn', $(this));
+        }
+    });
+    $('.tabs .edit-tab').live('click', function(e){
+        e.preventDefault();
+        $(this).parent().children('.tab-settings').stop(true, true).slideToggle(100)
+    });
+    $('.remove-tab').live('click', function(e){
+        e.preventDefault();
+        $(this).parent().remove();
+    });
+    $('.remove-option').live('click', function(e){
+        e.preventDefault();
+        $(this).parents('.tab-option:first').remove();
+    });
+    $('.add-tab').live('click', function(e){
+        e.preventDefault();
+        var theTabList = $('ul.tabs');
+        $.ajax({
+            url: $(this).attr('href'),
+            success: function(data, textStatus, XMLHttpRequest) {
+                var theTabItem = $(data);
+                theTabList.append(theTabItem);
+                theTabItem.children('.edit-tab').trigger('click');
+                theTabItem.find('input.title').focus();
+            }
+        });
+    });
+    $('.add-option').live('click', function(e){
+        e.preventDefault();
+        var theOptionsContainer = $(this).prev('.options-for-tab-content').children('.options-group-home');
+        $.ajax({
+            url: $(this).attr('href'),
+            success: function(data, textStatus, XMLHttpRequest) {
+                var theOption = $(data);
+                theOptionsContainer.append(theOption);
+                theOptionsContainer.show();
+                theOption.children().children('.edit-option').trigger('click');
+            }
+        });
+    });
+    $('.clone-option').live('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        var theOptionsContainer = $(this).prev().prev('.options-for-tab-content');
+        var optionsToClone = theOptionsContainer.find('.ui-selected');
+        if (optionsToClone.size() < 1) return;
+        
+        optionsToClone.each(function(i, opt){
+            var url = $this.prev().attr('href') + '&gummnamed[optionId]=' + $(opt).find('input.id').val();
+            var theOptionGroupContainer = $(opt).parent();
+            $.ajax({
+                url: url,
+                success: function(data, textStatus, XMLHttpRequest) {
+                    var theOption = $(data);
+                    theOptionGroupContainer.append(theOption);
+                    theOptionGroupContainer.show();
+                    theOption.children().children('.edit-option').trigger('click');
+                }
+            });
+        });
+    });
+    $('.tab-option-heading > .edit-option').live('click', function(e){
+        e.preventDefault();
+        var theOptionSettings = $(this).parents('.tab-option:first').children('.tab-option-settings');
+        theOptionSettings.stop(true, true).slideToggle(100);
+        theOptionSettings.find('input.name').focus();
+    });
+    $('.options-group').sortable({
+        // connectWith: '.options-group',
+        items: '.tab-option',
+        handle: '.tab-option-id',
+        placeholder: 'sortable-placeholder',
+        // start: function(event, ui) {
+        //     ui.helper.width(ui.helper.width()/2)
+        // },
+        sort: function(event, ui) {
+            ui.placeholder.height(ui.helper.height());
+        },
+        stop: function(event, ui) {
+            var droppedOn = ui.item.data('droppedOn');
+            if (droppedOn !== undefined && droppedOn !== false) {
+                var theOptionsContainer = $('.' + droppedOn.attr('id')).children('.options-for-tab-content:first');
+                var theOptionGroupContainer = theOptionsContainer.children('.options-group-' + ui.item.find('select.group').val());
+                
+                theOptionGroupContainer.append(ui.item);
+                theOptionGroupContainer.show();
+                
+                ui.item.data('droppedOn', false);
+            }
+        },
+        receive: function(event, ui) {
+            var theGroupMatch = /options-group\-(\w+)/g.exec($(this).attr('class'));
+            if (theGroupMatch !== null) {
+                var theGroup = theGroupMatch[1];
+                ui.item.find('select.group').val(theGroup);
+            }
+        }
+    });
+    $('.tab-option').droppable({
+        accept: '.tab-option',
+        tolerance: 'pointer',
+        hoverClass: 'droppable-hover',
+        drop: function(event, ui) {
+            alert('yeah');
+        }
+    });
+    
+    $('.options-container').selectable({
+        filter: '.tab-option',
+        cancel: 'input, textarea, select, .edit-option, .add-option, .remove-option, .clone-option'
+    });
+    
+    $('.tab-option-settings input.name').live('keyup', function(e){
+        $(this).parents('.tab-option').children('.tab-option-heading').find('.tab-option-title').text($(this).val());
+    });
+    $('.tab-option-settings input.id').live('keyup', function(e){
+        $(this).parents('.tab-option').children('.tab-option-heading').find('.tab-option-id').text('#' + $(this).val());
+    });
+    
+    $(".request-action-controllers").live("change", function(e){
+        var theWrapper = $(this).parents(".request-action-form-handler");
+        theWrapper.find(".request-action-methods").hide().attr('disabled', 'disabled');
+        theWrapper.find(".request-action-methods.for-controller-" + $(this).val()).show().removeAttr('disabled');
+    });
+    $(".add-request-params").live("click", function(e){
+        e.preventDefault();
+        var theParamInputs = jQuery(this).prev().clone();
+        $(this).before(theParamInputs);
+    });
+    $('.tab-option-settings select.group').live('change', function(e){
+        var theOption = $(this).parents('.tab-option:first');
+        var theContainer = theOption.parents('.options-for-tab-content');
+        var theCurrentOptionGroupContainer = $(this).parents('.options-group:first');
+        var theOptionGroupContainer = theContainer.children('.options-group-' + $(this).val());
+
+        
+        if (theOptionGroupContainer.size() > 0) {
+            theOptionGroupContainer.append(theOption);
+            theOptionGroupContainer.show();
+            
+            if (theCurrentOptionGroupContainer.children('.tab-option').size() < 1) theCurrentOptionGroupContainer.hide();
+        }
+    });
+    
+    $('.toolbar-tabs-panel > a').live('click', function(e){
+        e.preventDefault();
+        var theSelectedOptions = $('.options-container').find('.ui-selected');
+        theSelectedOptions.find('select.group').val($(this).attr('title')).trigger('change');
+    });
+});
+})(jQuery);
+</script>
+
+<?php //d($options); ?>
+
+<?php extract($options, EXTR_OVERWRITE); ?>
+<?php $toolbarSettings = GummRegistry::get('Helper', 'Layout')->adminToolbarSettings; ?>
+
+<div id="gumm-options-editor">
+<h2><?php _e('Gumm Options Editor'); ?></h1>
+
+<form method="POST" action="">
+<div id="gumm-options-tabs">
+    <h5>Tabs</h2>
+    <ul class="tabs">
+    <?php foreach ($tabs as $tab): ?>
+        <?php $this->requestAction(array('controller' => 'options', 'action' => 'admin_setup_edit_tab', $tab['id'])); ?>
+    <?php endforeach; ?>
+    </ul>
+    <div class="clear"></div>
+    <?php echo $this->Html->link('add', array('controller' => 'options', 'action' => 'admin_setup_edit_tab', 'ajax' => true), array('class' => 'add-tab'));?>
+</div>
+<div id="gumm-options-options">
+    <h5>Options</h5>
+    <div class="toolbar-tabs-panel">
+        <?php foreach ($toolbarSettings as $toolbar => $settings): ?>
+            <a href="#" title="<?php echo $toolbar; ?>"><?php echo $toolbar?></a>
+        <?php endforeach; ?>
+    </div>
+    <div class="options-container">
+        
+        <?php
+        ?>
+        
+        <?php $counter = 1; ?>
+        <?php foreach ($tabs as $tab) :?>
+        <div class="options-for-tab-container tab-id-<?php echo $tab['id']; echo ($counter!=1) ? ' hidden' : ''; ?>">
+            <?php $this->requestAction(array('controller' => 'options', 'action' => 'admin_setup_edit_tab_options', $tab['id'])); ?>
+        </div>
+        <?php $counter++; ?>
+        <?php endforeach; ?>
+
+    </div>
+
+</div>
+<div class="clear"></div>
+
+<input type="submit" value="save" name="save-gumm-options-setup"/>
+</form>
+</div>

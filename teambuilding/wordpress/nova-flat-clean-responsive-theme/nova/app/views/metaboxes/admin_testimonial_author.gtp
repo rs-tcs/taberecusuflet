@@ -1,0 +1,22 @@
+<div class="gumm-admin-metabox testimonial-author">
+    <?php
+    echo $this->Form->input('GummPostMeta', array(
+        'id' => $metabox['id'] . '.name',
+        'type' => 'text',
+        'name' => __('Name'),
+    ), array(
+        'class' => 'gumm-input'
+    ), array(
+        // 'div' => 'wrap-text'
+    ));
+    echo $this->Form->input('GummPostMeta', array(
+        'id' => $metabox['id'] . '.occupation',
+        'type' => 'text',
+        'name' => __('Occupation / Company'),
+    ), array(
+        'class' => 'gumm-input'
+    ), array(
+        // 'div' => 'wrap-text'
+    ));
+    ?>
+</div>

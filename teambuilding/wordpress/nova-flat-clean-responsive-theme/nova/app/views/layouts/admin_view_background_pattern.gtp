@@ -1,0 +1,14 @@
+<?php
+App::import('Helper', 'QuickLaunch');
+$quickLaunchHelper = new QuickLaunchHelper;
+
+$qlItems = $quickLaunchHelper->prepareForQuickLaunchDisplay($backgroundPatterns, array(
+    'items' => 'hasChildren',
+    'url' => array('ajax' => true, 'admin' => true, 'controller' => 'layouts', 'action' => 'view_background_pattern'),
+    'urlParams' => array('backgroundPatternType' => 'name'),
+    'contentCallback' => array(GummRegistry::get('Helper', 'Layout'), 'blockBackgroundPatternEditor'),
+));
+
+echo $quickLaunchHelper->quickLaunchView($qlItems, array('title' => ucwords($backgroundPatternType)));
+
+?>

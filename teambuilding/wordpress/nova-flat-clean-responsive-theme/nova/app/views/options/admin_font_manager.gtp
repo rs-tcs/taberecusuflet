@@ -1,0 +1,85 @@
+<?php
+    $googleFontsLoadNum = 20;
+    $currentFamily = $this->Wp->getOption($optionId);
+?>
+    
+<div id="gumm-fonts-manager" class="gumm-radio-fields">
+    
+    <?php if (!$fontsList): ?>
+        
+    <?php else:?>
+    <?php $counter = 1; ?>
+    <?php foreach ($fontsList->items as $fontItem): ?>
+        <?php
+        $divAttributes = array(
+            'class' => array('gumm-radio-input searchable'),
+            'data-search-value' => $fontItem->family,
+        );
+        if ($counter > $googleFontsLoadNum) {
+            $divAttributes['class'][] = 'hidden';
+        } else {
+            $divAttributes['class'][] = 'loaded';
+        }
+        $inputAttributes = array(
+            'type' => 'hidden',
+            'value' => $fontItem->family,
+            'disabled' => $currentFamily != $fontItem->family,
+            'name' => 'gumm-radio-input-value',
+            'class' => 'font-radio-input'
+        );
+        ?>
+        <div<?php echo $this->Html->_constructTagAttributes($divAttributes); ?>>
+            <a class="admin-radio" href="#" ><span></span></a>
+            <input<?php echo $this->Html->_constructTagAttributes($inputAttributes); ?> />
+            <div class="font-family-titles">
+                <h3 style="font-family: <?php echo $fontItem->family; ?>;">Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+                <label><strong><?php echo $fontItem->family; ?></strong></label>
+            </div>
+        </div>
+    <?php $counter++; ?>
+    <?php endforeach; ?>
+    <?php endif; ?>
+    
+    <input type="hidden" name="gumm-radio-value-<?php echo uniqid(); ?>" class="gumm-radio-value popup-form-value" />
+</div>
+
+<?php if ($fontSource != 'google') return; ?>
+
+<script type="text/javascript">
+  <?php
+      $fontFamilies = array();
+      foreach ($fontsList->items as $googleFontItem) {
+          $fontFamilies[] = $googleFontItem->family;
+      }
+      $fontChunks = array_chunk($fontFamilies, $googleFontsLoadNum);
+  ?>
+  
+  GummGoogleFontsList = <?php echo json_encode($fontChunks); ?>;
+  
+  loadGoogleWebFonts(GummGoogleFontsList[0]);  
+  
+  GummCurrentFontChunkDisplay = <?php echo $googleFontsLoadNum; ?>;
+  
+  jQuery(document).ready(function(){
+      var _fontGummRadioInputs = jQuery('#gumm-fonts-manager').children('.gumm-radio-input');
+      jQuery('#gumm-fonts-manager').parent().parent('.popup-content').scroll(function(e) {
+          // if (jQuery('html').hasClass('wf-loading')) e.preventDefault();
+          
+          var theScrollTriggerValue = jQuery(this).scrollTop() + jQuery(this).height();
+          var maxHeight = jQuery('#gumm-fonts-manager').height() - 850;
+          
+          if (theScrollTriggerValue > maxHeight) {
+              for(i=GummCurrentFontChunkDisplay; i<=(GummCurrentFontChunkDisplay+<?php echo $googleFontsLoadNum; ?>); i++) {
+                  _fontGummRadioInputs.eq(i).removeClass('hidden').addClass('loaded');
+              }
+              GummCurrentFontChunkDisplay += <?php echo $googleFontsLoadNum; ?>;
+              var theChunkIndex = GummCurrentFontChunkDisplay/<?php echo $googleFontsLoadNum; ?> - 1;
+              
+              if (theChunkIndex < GummGoogleFontsList.length) {
+                  loadGoogleWebFonts(GummGoogleFontsList[theChunkIndex]);
+              }
+          }
+      });
+  });
+  
+</script>

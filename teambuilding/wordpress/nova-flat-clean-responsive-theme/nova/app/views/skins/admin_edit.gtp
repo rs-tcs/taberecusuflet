@@ -1,0 +1,55 @@
+<?php
+
+echo $this->Form->create(array(
+    'id' => 'gumm-skin-edit-form',
+    'action' => array('admin' => true, 'controller' => 'skins', 'action' => 'edit'),
+    '_wpnonce' => SkinsController::WPNONCE,
+    'ajax' => true,
+));
+
+echo $this->Form->input('', array(
+    'id' => 'Skin.' . GUMM_THEME_PREFIX . '__skins.' . $id . '.name',
+    'type' => 'text',
+    'default' => ($skin && isset($skin['name'])) ? $skin['name'] : null,
+), array(
+    'class' => 'text-input span12',
+), array(
+    'label' => __('Name', 'gummfw'),
+));
+
+echo $this->Form->input('', array(
+    'id' => 'Skin.' . GUMM_THEME_PREFIX . '__skins.' . $id . '.css',
+    'type' => 'select',
+    'inputOptions' => $cssFilesAvailable,
+    'default' => ($skin && isset($skin['css'])) ? $skin['css'] : null,
+), array(
+    'class' => 'input-select span12',
+), array(
+    'label' => __('Additional CSS file for this skin:', 'gummfw'),
+));
+
+echo $this->Form->input('', array(
+    'id' => 'Skin.' . GUMM_THEME_PREFIX . '__skins.' . $id . '.inlineCss',
+    'type' => 'textarea',
+    'default' => ($skin && isset($skin['inlineCss'])) ? $skin['inlineCss'] : null,
+), array(
+    'class' => 'input-textarea span12',
+), array(
+    'label' => __('Additional inline CSS for this skin:', 'gummfw'),
+));
+
+?>
+<div class="alert alert-info">
+    <?php echo sprintf(__('You can create your own skin css files in %s, and they will appear in the dropdown above.', 'gummfw'), '<em>' . GUMM_ASSETS . 'css' . DS . 'skins' . DS . '</em>'); ?>
+</div>
+
+<?php
+echo $this->Form->input('', array(
+    'id' => 'Skin.' . GUMM_THEME_PREFIX . '__skins.' . $id . '.id',
+    'type' => 'hidden',
+), array(
+    'value' => $id
+));
+
+echo $this->Form->end();
+?>

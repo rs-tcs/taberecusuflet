@@ -1,0 +1,61 @@
+<?php
+$controlNav     = isset($controlNav) ? $controlNav : true;
+$directionNav   = isset($directionNav) ? $directionNav : true;
+$divContainerAtts = array(
+    'class' => 'image-wrap gallery-slide iosSlider loading',
+);
+$paddingBottom = null;
+if ($dimensions) {
+    $paddingBottom = (1/$dimensions['ar'])*100;
+}
+$divWrapperAtts = array(
+    'class' => 'iosSliderContainer',
+    'style' => $paddingBottom ? 'padding-bottom:' . $paddingBottom . '%;' : 'height:1500px;',
+);
+?>
+<div<?php echo $this->Html->_constructTagAttributes($divWrapperAtts); ?>>
+    <div<?php echo $this->Html->_constructTagAttributes($divContainerAtts); ?>>
+        <div class="slider">
+            <?php $counter = 0; ?>
+            <?php foreach ($media as $mediaItem): ?>
+                <?php
+                $link = 'javascript:void(0)';
+                $attributes = array(
+                    'href' => $link,
+                    'class' => 'slide',
+                );
+                ?>
+                <div class="slide">
+                <!-- <a<?php echo $this->Html->_constructTagAttributes($attributes); ?>> -->
+                    <?php
+                    echo $this->Media->display($mediaItem->guid, $dimensions, array(
+                        'alt' => $mediaItem->post_title,
+                        'class' => 'swipe-item'
+                    ));
+                    ?>
+                <!-- </a> -->
+                </div>
+                <?php $counter++; ?>
+            <?php endforeach; ?>
+    	</div>
+    	<?php if ($directionNav): ?>
+        <div class="prev-next-links">
+        	<a class="icon-chevron-left prev"></a>
+            <a class="icon-chevron-right next"></a>
+        </div>
+        <?php endif; ?>
+        <?php if ($controlNav): ?>
+        <ul class="slide-pagination iosSlider-pagination">
+            <?php
+            for ($i=0; $i<count($media); $i++) {
+                $liAtts = array();
+                if ($i === 0) {
+                    $liAtts = array('class' => 'current');
+                }
+                echo '<li' . $this->Html->_constructTagAttributes($liAtts) . '><a></a></li>';
+            }
+            ?>
+        </ul>
+        <?php endif; ?>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<?php
+$spanClass = array(
+    'span' . $rowSpan,
+    'text-box',
+    'bluebox-staff',
+    'gumm-filterable-item'
+);
+if ($shouldPaginate && $counter > $columns) $spanClass[] = 'hidden';
+
+$categories = $this->Wp->getPostCategories($post);
+foreach ($categories as $catId => $catName) {
+    $spanClass[] = 'for-category-' . $catId;
+}
+
+$attributes = array(
+    'class' => $spanClass,
+);
+?>
+
+<div<?php echo $this->Html->_constructTagAttributes($attributes); ?>>
+
+	<div class="image-wrap">
+        <?php if ($post->Thumbnail): ?>
+            <div class="image-details">
+            <!-- <a href="<?php the_permalink(); ?>" class="image-details"> -->
+                <?php
+                echo $this->Media->display($post->Thumbnail->guid, array(
+                        'ar' => 1,
+                        'context' => 'span' . $rowSpan,
+                     ),
+                     array(
+                         'alt' => get_the_title()
+                     )
+                );
+                ?>
+                <a href="<?php the_permalink(); ?>" class="image-details-link image-wrap-mask">
+                    <i class="icon-plus"></i>
+                </a>
+            </div>
+            <!-- </a> -->
+        <?php endif; ?>
+    </div>
+    <div class="content-details">
+        <h4 class="head-link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <span class="position"><?php echo implode(', ', $this->Wp->getPostCategories($post)); ?></span>
+        
+        <?php
+        if ($socialNetworksDisplay) {
+            $socialNetworks = Set::filter($post->PostMeta['social_networks_url']);
+            if ($socialNetworks) {
+                echo '<ul class="social-links">';
+                foreach ($socialNetworks as $k => $v) {
+                    $networkName = str_replace('_url', '', $k);
+            	    echo '<li><a href="' . $v . '" class="icon-' . $networkName . '" target="_blank"></a></li>';
+                }
+                echo '</ul>';
+            }
+        }
+        if ($excerptLength > 0) {
+            echo $this->Text->paragraphize($this->Text->truncate(get_the_excerpt(), $excerptLength));
+        }
+        ?>
+    </div>
+                            
+</div>

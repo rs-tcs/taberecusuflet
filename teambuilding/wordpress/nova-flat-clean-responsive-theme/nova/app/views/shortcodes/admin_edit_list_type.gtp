@@ -1,0 +1,8 @@
+<div class="gumm-sc-editor gumm-sc-editor-lists">
+    <ul>
+        <?php for ($i=1; $i<=3; $i++): ?>
+        <li style="background-image: url('<?php echo $listType['icon']['url']; ?>'); padding-left:30px; background-position:left center; background-repeat:no-repeat;"><?php printf(__('List %s preview item', 'gummfw'), '<strong>' . $listType['name'] . '</strong>'); ?></li>
+        <?php endfor; ?>
+    </ul>
+    <input type="hidden" class="gumm-sc-editor-value" value="sc-list <?php echo $listType['class']; ?>" />
+</div>

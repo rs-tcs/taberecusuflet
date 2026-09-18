@@ -1,0 +1,123 @@
+<?php
+$message = '';
+$iconClass = array('sample-data-icon');
+if ($formError) {
+    $message = $formError;
+} elseif ($successMessage) {
+    $message = $successMessage;
+    $iconClass[] = 'icon-ok';
+}
+?>
+<div id="gumm-sample-page-importer">
+    <div class="input-wrap wrap-text input-prepend">
+        <!-- <label for="gumm-import-sample-page-url"><strong><?php _e('Paste page url below:', 'gummfw'); ?></strong></label> -->
+        <span class="add-on">URL</span>
+        <input type="text" id="gumm-import-sample-page-url" class="span12 text-input" />
+        <i class="<?php echo implode(' ', $iconClass); ?>"></i>
+    </div>
+    <?php
+    if ($message){
+        echo '<p>' . $message . '</p>';
+    }
+    ?>
+    <?php if ($pages): ?>
+        <h5><?php _e('Currently imported pages:', 'gummfw'); ?></h5>
+        <ul class="gumm-sample-pages">
+            <?php
+            foreach ($pages as $page) {
+                echo '<li><a href="' . get_permalink($page->ID) . '" target="_blank">' . get_the_title($page->ID) . '</a></li>';
+            }
+            ?>
+        </ul>
+    <?php else: ?>
+        <h5><?php _e('No pages currently imported.'); ?></h5>
+    <?php endif; ?>
+
+    
+    <?php
+    echo '<div class="buttons-container">';
+    
+    $class = array('btn');
+    if (!$pages) $class[] = 'inactive';
+
+    echo $this->Html->link('<span>' . __('Remove All', 'gummfw') . '</span>', '#', array(
+        'id' => 'gumm-delete-sample-page',
+        'class' => implode(' ', $class),
+    ));
+    
+    
+    $class = array('btn', 'btn-success');
+
+    echo $this->Html->link('<span>' . __('Import', 'gummfw') . '</span>', '#', array(
+        'id' => 'gumm-import-sample-page',
+        'class' => implode(' ', $class),
+        'style' => 'margin-left:10px;'
+    ));
+    
+    echo '</div>';
+    ?>
+</div>
+
+<?php $this->scriptBlockStart(); ?>
+$(document).on('click', '#gumm-import-sample-page', function(e){
+    e.preventDefault();
+    var val = $('#gumm-import-sample-page-url').val();
+    
+    $.ajax({
+        url: ajaxurl,
+        type: 'post',
+        data: {
+            gummcontroller: 'layouts',
+            action: 'gumm_admin_import_sample_page',
+            urlToImport: val
+        },
+        beforeSend: function(jqXHR, settings) {
+            $('#gumm-import-sample-page').append('<i style="margin-left:10px;" class="icon-spinner icon-spin"></i>');
+            $('#gumm-sample-page-importer').find('.sample-data-icon')
+                .removeClass('icon-ok icon-minus')
+                .addClass('icon-spinner icon-spin');
+        },
+        success: function(data, textStatus, jqXHR) {
+            $('#gumm-sample-page-importer').html($(data).html());
+            $('#gumm-import-sample-page').children('i').removeClass('icon-spinner icon-spin').addClass('icon-ok');
+            
+            setTimeout(function(){
+                $('#gumm-import-sample-page-url').next().next('.form-success').hide('fade', 250);
+                $('#gumm-import-sample-page-url').next('.sample-data-icon').removeClass('icon-ok');
+            }, 2500);
+        }
+        
+    });
+});
+$(document).on('focus', '#gumm-import-sample-page-url', function(e){
+    $(this).next().next('.form-error').hide('fade', 250, function(){$(this).remove();});
+});
+$(document).on('click', '#gumm-delete-sample-page', function(e){
+    e.preventDefault();
+    if ($(this).hasClass('inactive')) return false;
+    
+    $.ajax({
+        url: ajaxurl,
+        type: 'post',
+        data: {
+            gummcontroller: 'layouts',
+            action: 'gumm_admin_import_sample_page',
+            takeAction: 'removeAll'
+        },
+        beforeSend: function(jqXHR, settings) {
+            $('#gumm-sample-page-importer').find('.sample-data-icon')
+                .removeClass('icon-ok icon-minus')
+                .addClass('icon-spinner icon-spin');
+        },
+        success: function(data, textStatus, jqXHR) {
+            $('#gumm-sample-page-importer').html($(data).html());
+            
+            setTimeout(function(){
+                $('#gumm-import-sample-page-url').next().next('.form-success').hide('fade', 250);
+                $('#gumm-import-sample-page-url').next('.sample-data-icon').removeClass('icon-ok');
+            }, 2500);
+        }
+        
+    });
+});
+<?php $this->scriptBlockEnd(); ?>

@@ -1,0 +1,2704 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nova 1.0.0\n"
+"POT-Creation-Date: 2013-08-16 13:44+0200\n"
+"PO-Revision-Date: 2013-08-16 13:45+0200\n"
+"Last-Translator: \n"
+"Language-Team: GUMM\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:5
+msgid "Error 404"
+msgstr ""
+
+#: ../404.php:7
+msgid "The page you are looking for doesn't seem to exist."
+msgstr ""
+
+#: ../comments.php:12
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:22 ../app/libs/views/helpers/html.php:651
+#: ../app/libs/views/helpers/wp.php:103
+msgid "No Comments"
+msgstr ""
+
+#: ../comments.php:22
+msgid "One Comment"
+msgstr ""
+
+#: ../comments.php:22
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:39
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../comments.php:42
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../comments.php:60
+msgid "Leave a reply"
+msgstr ""
+
+#: ../comments.php:67
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:86
+#: ../app/views/elements/layout-components/contact_form.php:150
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:90 ../comments.php:93
+#: ../app/views/elements/layout-components/contact_form.php:162
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:100
+msgid "Website"
+msgstr ""
+
+#: ../functions.php:52
+msgid "Prime Navigation Menu"
+msgstr ""
+
+#: ../index.php:7 ../page.php:29 ../single-portfolio.php:13
+#: ../single-staff.php:17 ../single.php:13
+#: ../taxonomy-portfolio_category.php:31
+msgid "No posts were found"
+msgstr ""
+
+#: ../search.php:23
+msgid "Load More"
+msgstr ""
+
+#: ../search.php:32
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../searchform.php:2
+msgid "Search..."
+msgstr ""
+
+#: ../searchform.php:8
+msgid "Show All Results"
+msgstr ""
+
+#: ../app/config/core.php:812 ../app/config/core.php:813
+msgctxt "portfolio admin labels"
+msgid "Portfolio"
+msgstr ""
+
+#: ../app/config/core.php:814
+msgctxt "portfolio admin labels"
+msgid "All Portfolio Items"
+msgstr ""
+
+#: ../app/config/core.php:815
+msgctxt "portfolio admin labels"
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../app/config/core.php:816
+msgctxt "portfolio admin labels"
+msgid "New Portfolio"
+msgstr ""
+
+#: ../app/config/core.php:817
+msgctxt "portfolio admin labels"
+msgid "View Portfolio"
+msgstr ""
+
+#: ../app/config/core.php:818
+msgctxt "portfolio admin labels"
+msgid "Search Portfolio Items"
+msgstr ""
+
+#: ../app/config/core.php:832
+msgctxt "portfolio title column"
+msgid "Title"
+msgstr ""
+
+#: ../app/config/core.php:833
+msgctxt "portfolio author column"
+msgid "Author"
+msgstr ""
+
+#: ../app/config/core.php:834
+msgctxt "portfolio types column"
+msgid "Category"
+msgstr ""
+
+#: ../app/config/core.php:835
+msgctxt "portfolio date column"
+msgid "Date"
+msgstr ""
+
+#: ../app/config/core.php:841
+msgctxt "staff admin labels"
+msgid "Staff"
+msgstr ""
+
+#: ../app/config/core.php:842
+msgctxt "staff admin labels"
+msgid "Staff Member"
+msgstr ""
+
+#: ../app/config/core.php:843
+msgctxt "staff admin labels"
+msgid "All Staff Members"
+msgstr ""
+
+#: ../app/config/core.php:844
+msgctxt "staff admin labels"
+msgid "Edit Staff Member"
+msgstr ""
+
+#: ../app/config/core.php:845
+msgctxt "staff admin labels"
+msgid "New Staff Member"
+msgstr ""
+
+#: ../app/config/core.php:846
+msgctxt "staff admin labels"
+msgid "View Staff Member"
+msgstr ""
+
+#: ../app/config/core.php:847
+msgctxt "staff admin labels"
+msgid "Search Staff Members"
+msgstr ""
+
+#: ../app/config/core.php:865
+msgctxt "staff title column"
+msgid "Title"
+msgstr ""
+
+#: ../app/config/core.php:866
+msgctxt "staff author column"
+msgid "Author"
+msgstr ""
+
+#: ../app/config/core.php:867
+msgctxt "staff types column"
+msgid "Category"
+msgstr ""
+
+#: ../app/config/core.php:868
+msgctxt "staff date column"
+msgid "Date"
+msgstr ""
+
+#: ../app/config/core.php:874
+msgctxt "testimonial"
+msgid "Testimonials"
+msgstr ""
+
+#: ../app/config/core.php:875
+msgctxt "testimonial"
+msgid "Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:876
+msgctxt "testimonial"
+msgid "All Testimonials"
+msgstr ""
+
+#: ../app/config/core.php:877
+msgctxt "testimonial"
+msgid "Edit Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:878
+msgctxt "testimonial"
+msgid "New Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:879
+msgctxt "testimonial"
+msgid "View Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:880
+msgctxt "testimonial"
+msgid "Search Testimonials"
+msgstr ""
+
+#: ../app/config/core.php:882
+msgid "Testimonials"
+msgstr ""
+
+#: ../app/config/core.php:883
+msgid "Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:901
+msgctxt "testimonial excerpt column"
+msgid "Testimonial"
+msgstr ""
+
+#: ../app/config/core.php:902
+msgctxt "testimonial author column"
+msgid "Author"
+msgstr ""
+
+#: ../app/config/core.php:903
+msgctxt "testimonial date column"
+msgid "Date"
+msgstr ""
+
+#: ../app/config/core.php:909 ../app/config/core.php:910
+msgctxt "partner"
+msgid "Partners"
+msgstr ""
+
+#: ../app/config/core.php:911
+msgctxt "partner"
+msgid "All Partners"
+msgstr ""
+
+#: ../app/config/core.php:912
+msgctxt "partner"
+msgid "Edit Partner"
+msgstr ""
+
+#: ../app/config/core.php:913
+msgctxt "partner"
+msgid "New Partner"
+msgstr ""
+
+#: ../app/config/core.php:914
+msgctxt "partner"
+msgid "View Partner"
+msgstr ""
+
+#: ../app/config/core.php:915
+msgctxt "partner"
+msgid "Search Partners"
+msgstr ""
+
+#: ../app/config/core.php:917
+msgid "Parnters"
+msgstr ""
+
+#: ../app/config/core.php:918
+msgid "Parnter"
+msgstr ""
+
+#: ../app/config/core.php:936
+msgctxt "partner title column"
+msgid "Title"
+msgstr ""
+
+#: ../app/config/core.php:937
+msgctxt "partner author column"
+msgid "Author"
+msgstr ""
+
+#: ../app/config/core.php:938
+msgctxt "partner date column"
+msgid "Date"
+msgstr ""
+
+#: ../app/config/core.php:944
+msgctxt "gallery admin labels"
+msgid "Events"
+msgstr ""
+
+#: ../app/config/core.php:945
+msgctxt "gallery admin labels"
+msgid "Event"
+msgstr ""
+
+#: ../app/config/core.php:946
+msgctxt "gallery admin labels"
+msgid "All Events"
+msgstr ""
+
+#: ../app/config/core.php:947
+msgctxt "gallery admin labels"
+msgid "Edit Event"
+msgstr ""
+
+#: ../app/config/core.php:948
+msgctxt "gallery admin labels"
+msgid "New Event"
+msgstr ""
+
+#: ../app/config/core.php:949
+msgctxt "gallery admin labels"
+msgid "View Event"
+msgstr ""
+
+#: ../app/config/core.php:950
+msgctxt "gallery admin labels"
+msgid "Search Events"
+msgstr ""
+
+#: ../app/config/core.php:967
+msgctxt "gallery admin labels"
+msgid "Terms"
+msgstr ""
+
+#: ../app/config/core.php:968
+msgctxt "gallery admin labels"
+msgid "Term"
+msgstr ""
+
+#: ../app/config/core.php:969
+msgctxt "gallery admin labels"
+msgid "All Terms"
+msgstr ""
+
+#: ../app/config/core.php:970
+msgctxt "gallery admin labels"
+msgid "Edit Term"
+msgstr ""
+
+#: ../app/config/core.php:971
+msgctxt "gallery admin labels"
+msgid "New Term"
+msgstr ""
+
+#: ../app/config/core.php:972
+msgctxt "gallery admin labels"
+msgid "View Term"
+msgstr ""
+
+#: ../app/config/core.php:973
+msgctxt "gallery admin labels"
+msgid "Search Term"
+msgstr ""
+
+#: ../app/config/core.php:1070
+msgid "Left Sidebar on all pages"
+msgstr ""
+
+#: ../app/config/core.php:1081
+msgid "Right Sidebar on all pages"
+msgstr ""
+
+#: ../app/config/core.php:1092
+msgid "Footer sidebar first column"
+msgstr ""
+
+#: ../app/config/core.php:1101
+msgid "Footer sidebar second column"
+msgstr ""
+
+#: ../app/config/core.php:1110
+msgid "Footer sidebar third column"
+msgstr ""
+
+#: ../app/config/core.php:1119
+msgid "Footer sidebar fourth column"
+msgstr ""
+
+#: ../app/controllers/emails_controller.php:10
+#: ../app/views/elements/layout-components/contact_form.php:73
+msgid "Please enter your name"
+msgstr ""
+
+#: ../app/controllers/emails_controller.php:13
+#: ../app/views/elements/layout-components/contact_form.php:76
+msgid "Please enter your email address"
+msgstr ""
+
+#: ../app/controllers/emails_controller.php:14
+#: ../app/views/elements/layout-components/contact_form.php:77
+msgid "Your email address must be in the format of name@domain.com"
+msgstr ""
+
+#: ../app/controllers/emails_controller.php:17
+#: ../app/views/elements/layout-components/contact_form.php:80
+msgid "Please enter a message"
+msgstr ""
+
+#: ../app/controllers/emails_controller.php:26
+#: ../app/views/elements/layout-components/contact_form.php:87
+msgid "Your email has been sent."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:364
+msgid "Errors: "
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:365
+msgid ""
+"Please check with your hosting provider if your server can connect to the "
+"specified URL."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:375
+msgid "Page imported successfully."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:377
+msgid ""
+"There was an error importing the page. Please make sure it is part of the "
+"demo site and is not a single post page."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:380
+msgid "Page to import not found. Error code 404."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:386
+msgid "Pages successfully deleted."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:389
+msgid "Could not delete pages. Please try again."
+msgstr ""
+
+#: ../app/controllers/layouts_controller.php:392
+msgid "Invalid url"
+msgstr ""
+
+#: ../app/controllers/media_controller.php:27
+msgid "404. Not found."
+msgstr ""
+
+#: ../app/controllers/media_controller.php:58
+msgid "There was an error saving media meta data."
+msgstr ""
+
+#: ../app/controllers/media_controller.php:61
+msgid "Media meta data saved."
+msgstr ""
+
+#: ../app/controllers/media_controller.php:77
+msgid "No files to upload"
+msgstr ""
+
+#: ../app/controllers/media_controller.php:160
+#, php-format
+msgid ""
+"There was an error deleting media. Function %1$s wp_delete_attachment() %2$s "
+"returned an empty result."
+msgstr ""
+
+#: ../app/controllers/media_controller.php:163
+msgid "Media item deleted"
+msgstr ""
+
+#: ../app/controllers/media_controller.php:204
+msgid ""
+"Could not insert media as attachment. Function <strong>wp_insert_attachment</"
+"strong> returned empty value."
+msgstr ""
+
+#: ../app/controllers/metaboxes_controller.php:31
+msgid "Invalid callback to dispatch for metabox"
+msgstr ""
+
+#: ../app/controllers/options_controller.php:351
+#: ../app/controllers/sidebars_controller.php:78
+#: ../app/controllers/skins_controller.php:41
+msgid "Security check failed."
+msgstr ""
+
+#: ../app/controllers/options_controller.php:358
+msgid "Options saved."
+msgstr ""
+
+#: ../app/controllers/posts_controller.php:66
+msgid ""
+"You need to upload at least two media items for the gallery post format."
+msgstr ""
+
+#: ../app/controllers/posts_controller.php:72
+msgid ""
+"You need to upload/embed at least one video item for the video post format."
+msgstr ""
+
+#: ../app/controllers/skins_controller.php:80
+msgid "There was an error deleting skin."
+msgstr ""
+
+#: ../app/controllers/skins_controller.php:83
+msgid "Skin deleted"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:32
+msgctxt "taxonomy general name"
+msgid " Categories"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:33
+msgctxt "taxonomy singular name"
+msgid " Category"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:34
+msgid "Search Categories"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:35
+#, php-format
+msgid "All %s Categories"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:36
+#, php-format
+msgid "Parent %s Category"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:37
+#, php-format
+msgid "Parent %s Category:"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:38
+#, php-format
+msgid "Edit %s Category"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:39
+#, php-format
+msgid "Update %s Category"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:40
+#, php-format
+msgid "Add New %s Category"
+msgstr ""
+
+#: ../app/controllers/taxonomies_controller.php:41
+#, php-format
+msgid "New %s Category Name"
+msgstr ""
+
+#: ../app/Lib/Utility/Security.php:137
+msgid "You cannot use an empty key for Security::cipher()"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:59
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:63
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:104
+msgid "Edit Menu Item"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:113
+#: ../app/libs/views/helpers/form.php:937
+#: ../app/libs/views/helpers/form.php:1867
+#: ../app/libs/views/helpers/form.php:2196
+#: ../app/libs/views/helpers/layout.php:242
+msgid "URL"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:120
+msgid "Navigation Label"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:126
+msgid "Title Attribute"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:133
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:138
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:144
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:150
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:37
+msgid "Description"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:152
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:159
+#: ../app/libs/views/helpers/shortcodes.php:765
+#: ../app/views/elements/layout-components/text_box.php:169
+msgid "Icon"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:171
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:184
+msgid "Remove"
+msgstr ""
+
+#: ../app/Lib/Walker/GummNavMenuWalkerEdit.php:185
+msgid "Cancel"
+msgstr ""
+
+#: ../app/libs/gumm_dispatcher.php:111
+#, php-format
+msgid "Class %s not defined."
+msgstr ""
+
+#: ../app/libs/gumm_dispatcher.php:116
+#, php-format
+msgid "Class %s must be a Controller."
+msgstr ""
+
+#: ../app/libs/gumm_dispatcher.php:128
+msgid "Request is not a valid callback."
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:372 ../app/libs/gumm_folder.php:393
+#, php-format
+msgid "%s changed to %s"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:376 ../app/libs/gumm_folder.php:395
+#, php-format
+msgid "%s NOT changed to %s"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:482
+#, php-format
+msgid "%s is a file"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:493 ../app/libs/gumm_folder.php:658
+#, php-format
+msgid "%s created"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:497
+#, php-format
+msgid "%s NOT created"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:572 ../app/libs/gumm_folder.php:586
+#, php-format
+msgid "%s removed"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:574 ../app/libs/gumm_folder.php:583
+#, php-format
+msgid "%s NOT removed"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:622
+#, php-format
+msgid "%s not found"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:631
+#, php-format
+msgid "%s not writable"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:645
+#, php-format
+msgid "%s copied to %s"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:647
+#, php-format
+msgid "%s NOT copied to %s"
+msgstr ""
+
+#: ../app/libs/gumm_folder.php:662
+#, php-format
+msgid "%s not created"
+msgstr ""
+
+#: ../app/libs/gumm_widget.php:135 ../app/libs/views/helpers/form.php:1854
+msgid "Title"
+msgstr ""
+
+#: ../app/libs/controller/components/gumm_template_element.php:101
+msgid "Unnamed Template Element"
+msgstr ""
+
+#: ../app/libs/controller/components/importer.php:716
+msgid "Remote server did not respond"
+msgstr ""
+
+#: ../app/libs/controller/components/importer.php:722
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: ../app/libs/controller/components/importer.php:729
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../app/libs/controller/components/importer.php:734
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../app/libs/controller/components/importer.php:740
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../app/libs/controller/components/mail.php:109
+msgid "Field cannot be empty"
+msgstr ""
+
+#: ../app/libs/controller/components/mail.php:115
+msgid "Not a valid email"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:306
+#: ../app/views/elements/layout-components/fancy_text.php:72
+msgid "Heading Text"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:336
+msgid "Media source"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:339
+msgid "Post"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:340
+#: ../app/views/elements/layout-components/fancy_text.php:102
+msgid "Custom"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:359
+msgid "Block description text"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:373
+msgid "Grid Layout"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:374
+msgid "Row Slider Layout"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:380
+msgid "Element layout"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:394
+msgid "Display element as end-to-end <em>(4 column element only)</em>"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:408
+msgid "Number of posts to display"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:458
+msgid "column"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:460
+#: ../app/views/elements/layout-components-single/single_related.php:79
+#: ../app/views/elements/layout-components-single/single_related.php:80
+#: ../app/views/elements/layout-components-single/single_related.php:81
+#: ../app/views/elements/layout-components-single/single_related.php:82
+msgid "columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:466
+#: ../app/views/elements/layout-components-single/single_related.php:76
+msgid "Number of columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:485
+msgid "Data Source"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:503
+#: ../app/libs/views/helpers/form.php:1147
+msgid "There are no available categories for this post type."
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:509
+msgid "Flickr"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:512
+msgid "Flickr username"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:517
+#: ../app/views/elements/layout-components/quote.php:49
+msgid "Default"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:519
+msgid "Use default WordPress query."
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:530
+#: ../app/views/elements/layout-components/portfolio.php:68
+msgid "Display filterable categories"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:534
+#: ../app/libs/views/gumm_layout_element.php:651
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:167
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:547
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:569
+#: ../app/views/elements/layout-components/blog.php:112
+#: ../app/views/elements/layout-components/fancy_text.php:91
+#: ../app/views/elements/layout-components/fancy_text.php:119
+#: ../app/views/elements/layout-components/portfolio.php:72
+#: ../app/views/elements/layout-components/portfolio.php:81
+#: ../app/views/elements/layout-components/portfolio.php:113
+#: ../app/views/elements/layout-components/quote.php:67
+#: ../app/views/elements/layout-components/text_box.php:197
+#: ../app/views/elements/layout-components/twitter_tweets.php:54
+msgid "Enable"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:535
+#: ../app/libs/views/gumm_layout_element.php:652
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:168
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:548
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:570
+#: ../app/views/elements/layout-components/blog.php:113
+#: ../app/views/elements/layout-components/fancy_text.php:92
+#: ../app/views/elements/layout-components/fancy_text.php:120
+#: ../app/views/elements/layout-components/portfolio.php:73
+#: ../app/views/elements/layout-components/portfolio.php:82
+#: ../app/views/elements/layout-components/portfolio.php:114
+#: ../app/views/elements/layout-components/quote.php:68
+#: ../app/views/elements/layout-components/text_box.php:198
+#: ../app/views/elements/layout-components/twitter_tweets.php:55
+msgid "Disable"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:558
+#: ../app/libs/views/helpers/form.php:1151
+#: ../app/views/elements/layout-components-single/single_taxonomies.php:26
+msgid "Category"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:578
+msgid "Excerpt length"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:598
+#: ../app/views/elements/layout-components/text_box.php:45
+#: ../app/views/elements/layout-components-single/single_featured_image.php:37
+msgid "Media Aspect Ratio"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:616
+msgid "Slider auto play"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:621
+#: ../app/views/elements/layout-components/quote.php:73
+msgid "Slide effect"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:624
+#: ../app/libs/views/helpers/form.php:1725
+#: ../app/views/elements/layout-components/quote.php:77
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:97
+#: ../app/views/elements/layout-components-single/single_related.php:69
+msgid "Slide"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:625
+#: ../app/libs/views/helpers/form.php:1726
+#: ../app/views/elements/layout-components/quote.php:76
+#: ../app/views/elements/layout-components-single/single_related.php:68
+msgid "Fade"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:631
+msgid "Animation speed (in ms)"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:647
+#: ../app/views/elements/layout-components/portfolio.php:77
+msgid "Enable Pagination Links"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:664
+#: ../app/views/elements/layout-components-single/single_post_meta.php:22
+#: ../app/views/elements/layout-components-single/single_related.php:50
+msgid "Meta fields"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:666
+#: ../app/views/elements/layout-components-single/single_post_meta.php:24
+#: ../app/views/elements/layout-components-single/single_related.php:52
+msgid "Author"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:667
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:65
+#: ../app/views/elements/layout-components-single/single_post_meta.php:25
+#: ../app/views/elements/layout-components-single/single_related.php:53
+msgid "Date"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:668
+#: ../app/views/elements/layout-components-single/single_post_meta.php:26
+#: ../app/views/elements/layout-components-single/single_related.php:54
+msgid "Categories"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:669
+#: ../app/libs/views/helpers/html.php:651 ../app/libs/views/helpers/wp.php:105
+#: ../app/views/elements/layout-components-single/single_comments.php:17
+#: ../app/views/elements/layout-components-single/single_post_meta.php:27
+#: ../app/views/elements/layout-components-single/single_related.php:55
+msgid "Comments"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:974
+msgid "Save"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_element.php:1293
+msgid ""
+" plugin is not installed. The plugin comes with this theme's downloaded "
+"files. Please install it to use the element."
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:121
+#: ../app/views/elements/layout-components/blog.php:92
+#: ../app/views/elements/layout-components/portfolio.php:96
+#: ../app/views/elements/layout-components/text_box.php:93
+#: ../app/views/elements/layout-components/text_box.php:165
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:40
+#: ../app/views/elements/layout-components-single/single_related.php:26
+msgid "Element Layout"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:124
+#: ../app/views/elements/layout-components/portfolio.php:99
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:43
+msgid "Grid"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:125
+#: ../app/views/elements/layout-components/portfolio.php:100
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:44
+msgid "Row Slider"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:126
+msgid "vCard"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:132
+msgid "Grid Columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:136
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:150
+#: ../app/views/elements/layout-components/portfolio.php:59
+msgid "1 column"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:137
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:151
+#: ../app/views/elements/layout-components/portfolio.php:60
+msgid "2 columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:138
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:152
+#: ../app/views/elements/layout-components/portfolio.php:61
+msgid "3 columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:139
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:153
+#: ../app/views/elements/layout-components/portfolio.php:62
+msgid "4 columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:140
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:154
+#: ../app/views/elements/layout-components/portfolio.php:63
+msgid "6 columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:146
+msgid "Slider Columns"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:159
+#: ../app/views/elements/layout-components/fancy_text.php:106
+#: ../app/views/elements/layout-components/fancy_text.php:109
+#: ../app/views/elements/layout-components/text_box.php:75
+#: ../app/views/elements/layout-components/text_box.php:176
+#: ../app/views/elements/layout-components-single/single_featured_image.php:33
+msgid "No additional settings for this option"
+msgstr ""
+
+#: ../app/libs/views/gumm_layout_posts_renderer_element.php:164
+msgid "Display Social Networks"
+msgstr ""
+
+#: ../app/libs/views/helpers/breadcrumb.php:48
+msgid "Search"
+msgstr ""
+
+#: ../app/libs/views/helpers/breadcrumb.php:55
+#: ../app/libs/views/helpers/layout.php:121
+msgid "Home"
+msgstr ""
+
+#: ../app/libs/views/helpers/cookie.php:7
+msgid "Cannot call write method from views"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:635
+msgid "select none"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:828
+msgid "Choose bullet"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:847
+msgid "Filter"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:903
+#: ../app/libs/views/helpers/layout.php:216
+msgid "Upload"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:946
+msgid "Current"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1172
+msgid "Number of posts"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1314
+#: ../app/libs/views/helpers/form.php:1579
+msgid "Tab"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1315
+msgid "Add New Tab"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1316
+msgid "Delete Current Tab"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1484
+msgid "Type address here"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1488
+#: ../app/libs/views/helpers/shortcodes.php:148
+msgid "Drop Pin"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1489
+msgid "Remove Pin"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1524
+msgid "Map height"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1539
+msgid "Enable Scroll Wheel"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1591
+msgid "Title Here"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1619
+msgid "Content Here"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1650
+msgid "Use text"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1651
+msgid "... or posts"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1698
+msgid "iosSlider"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1703
+#: ../app/libs/views/helpers/form.php:1731
+#: ../app/libs/views/helpers/form.php:1783
+msgid "Display control navigation"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1709
+#: ../app/libs/views/helpers/form.php:1737
+#: ../app/libs/views/helpers/form.php:1788
+msgid "Display directional navigation"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1716
+msgid "Flex Slider"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1721
+msgid "Type of animation"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1743
+msgid "Enable animation loop"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1749
+msgid "Animation speed"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1763
+msgid "Slideshow speed (0 for no slideshow)"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1778
+msgid "Windy Slider"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1873
+msgid "Open in new window"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1913
+msgid "Available Time Zones"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:1933
+msgid "Enabled Time Zones"
+msgstr ""
+
+#: ../app/libs/views/helpers/form.php:2177
+msgid "http(s)://example.com"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:644
+#: ../app/views/elements/layout-components/blog.php:396
+#: ../app/views/elements/layout-components/blog.php:557
+#: ../app/views/elements/layout-components-single/single_post_meta.php:46
+#: ../app/views/elements/layout-components-single/single_related.php:187
+msgid "By"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:645
+msgid "on"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:646
+msgid "in"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:647
+msgid "with"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:651 ../app/libs/views/helpers/wp.php:104
+msgid "1 Comment"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:702
+#, php-format
+msgid "... %d more"
+msgstr ""
+
+#: ../app/libs/views/helpers/html.php:780
+msgid "Loading"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:124
+msgid "Typography"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:127
+msgid "Backgrounds"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:130
+msgid "Colors"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:133
+#: ../app/views/elements/layout-components/tabs.php:38
+msgid "Layout"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:136
+msgid "Single Layout"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:139
+msgid "Effect"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:227
+msgid "Browse"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:263
+msgid "repeat both horizontally and vertically"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:264
+msgid "repeat horizontally"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:265
+msgid "repeat vertically"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:266
+msgid "no repeat"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:273
+msgid "Image Properties:"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:283
+msgid "left"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:284
+#: ../app/libs/views/helpers/layout.php:302
+msgid "center"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:285
+msgid "right"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:292
+msgid "Horizontal:"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:301
+msgid "top"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:303
+msgid "bottom"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:310
+msgid "Vertical:"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:336
+#: ../app/views/elements/layout-components/text_box.php:170
+msgid "Image"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:790
+msgid "save"
+msgstr ""
+
+#: ../app/libs/views/helpers/layout.php:794
+msgid "edit"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:355
+msgid "Upload Files"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:372
+msgid "Add Media"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:376
+msgid "Embed Video"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:463
+msgid "More"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:633
+msgid "Link Button Text"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:650
+msgid "Caption Title"
+msgstr ""
+
+#: ../app/libs/views/helpers/media.php:653
+msgid "Caption"
+msgstr ""
+
+#: ../app/libs/views/helpers/pagination.php:43
+msgid "First"
+msgstr ""
+
+#: ../app/libs/views/helpers/pagination.php:44
+msgid "Last"
+msgstr ""
+
+#: ../app/libs/views/helpers/pagination.php:45
+msgid "Next"
+msgstr ""
+
+#: ../app/libs/views/helpers/pagination.php:46
+msgid "Prev"
+msgstr ""
+
+#: ../app/libs/views/helpers/quick_launch.php:40
+msgid "Back"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:82
+msgid "Button Text:"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:90
+msgid "Button Link:"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:141
+msgid "Location"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:172
+msgid "Add Tab"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:189
+msgid "Tab Title"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:198
+msgid "Tab Content"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:207
+msgid "Make this the active tab"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:224
+msgid "Add Skill"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:241
+msgid "Skill Title"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:250
+msgid "Skill Level"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:263
+msgid "Number Format"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:286
+msgid "Add List Item"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:330
+msgid "active"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:338
+msgid "Columnt"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:345
+msgid "Column Title"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:358
+msgid "Currency"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:367
+msgid "Price"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:376
+msgid "Sub Heading"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:389
+msgid "Column Description"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:403
+msgid "Item Text"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:417
+msgid "Column Button Title"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:426
+msgid "Column Button link"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:438
+msgid "Add Row"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:457
+msgid "Drop Cap:"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:494
+msgid "Message Box Content:"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:540
+msgid "Upload Large Image"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:557
+msgid "Upload Small Image"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:575
+msgid "Magnifying Glass Size"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:603
+msgid "Large Image"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:610
+msgid "Small Image"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:634
+#: ../app/views/elements/layout-components/text_box.php:105
+msgid "Gauge Size"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:650
+#: ../app/views/elements/layout-components/text_box.php:118
+msgid "Gauge Stroke Width"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:666
+#: ../app/views/elements/layout-components/text_box.php:131
+msgid "Gauge Percent"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:719
+msgid "Icon size"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:745
+msgid "Font size"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:762
+msgid "Icon or text display"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:764
+msgid "No Text"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:766
+msgid "Symbol"
+msgstr ""
+
+#: ../app/libs/views/helpers/shortcodes.php:769
+msgid "No text will be displayed inside of the gauge circle"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:287
+msgid "cake"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:306
+#, php-format
+msgid "%d year"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:306
+#, php-format
+msgid "%d years"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:307
+#, php-format
+msgid "%d month"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:307
+#, php-format
+msgid "%d months"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:308
+#, php-format
+msgid "%d week"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:308
+#, php-format
+msgid "%d weeks"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:309
+#, php-format
+msgid "%d day"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:309
+#, php-format
+msgid "%d days"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:310
+#, php-format
+msgid "%d hour"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:310
+#, php-format
+msgid "%d hours"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:311
+#, php-format
+msgid "%d minute"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:311
+#, php-format
+msgid "%d minutes"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:312
+#, php-format
+msgid "%d second"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:312
+#, php-format
+msgid "%d seconds"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:314
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: ../app/libs/views/helpers/time.php:320
+msgid "just now"
+msgstr ""
+
+#: ../app/models/skin.php:98
+msgid "My Skin"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummExternalPluginBase.php:20
+msgid "Cannot intialize external plugin without supplying path"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:192
+msgid "sale"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:333
+msgid "Checkout"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:350
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:351
+msgid "Start shopping"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:355
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:404
+msgid "WooCommerce"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:413
+msgid "WooCommerce Products Pages Layout Structure"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:414
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:463
+msgid "Use the manager to adjust your layout."
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:435
+msgid "WooCommerce Products Pages Sidebars Content"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:436
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:485
+msgid ""
+"Use the manager to adjust your sidebars content. Drag and drop the sidebars "
+"on the left to their appropriate positions in the layout preview."
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:462
+msgid "WooCommerce Single Product Page Layout Structure"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:484
+msgid "WooCommerce Single Product Page Sidebars Content"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:511
+msgid "WooCommerce LightBox links in the loop"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:512
+msgid "Choose the display and functionality of lightbox links."
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:521
+msgid "Show thumbnails from all products on page"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:522
+msgid "Show thumbnails from the single product gallery"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:523
+msgid "Do not display lightbox links"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:537
+msgid "WooCommerce cart display in header"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:538
+msgid "Choose whether to display cart in custom menu."
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:554
+msgid "Info to display"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:558
+msgid "Total price only"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:559
+msgid "Items only"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:560
+msgid "Items and total price"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:565
+msgid "Always display cart"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/GummWooCommerce.php:575
+msgid "No additional settings for this option."
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:19
+msgid "SKU:"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:24
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:29
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:73
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:69
+msgid "Default sorting"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:74
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:70
+msgid "Sort by popularity"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:75
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:71
+msgid "Sort by average rating"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:76
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:72
+msgid "Sort by newness"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:77
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:73
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: ../app/Plugin/GummExternalPluginIntegration/functions/gumm_woocommerce_functions.php:78
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:74
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:164
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:70
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:165
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:71
+msgid "Install Plugins"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:166
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:72
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:178
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:490
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:84
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:179
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1846
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:85
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:517
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1300
+msgid "Status"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1544
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1956
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1956
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:73
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../app/Vendor/TgmPluginActivation/TgmPluginActivation.php:86
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:39
+msgid "Medium Image Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:46
+msgid "Blog Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:55
+#: ../app/views/elements/layout-components/blog.php:80
+#: ../app/views/elements/layout-components/portfolio.php:55
+#: ../app/views/elements/layout-components/tabs.php:51
+msgid "Layout Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:59
+msgid "Layout as grid"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:60
+msgid "Layout as row slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:64
+msgid "Elements Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:68
+msgid "Plain"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:69
+#: ../app/views/elements/layout-components/quote.php:50
+msgid "Fancy"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:84
+msgid "Full width image"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:85
+msgid "Thumbnail on the left"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:86
+#: ../app/views/elements/layout-components/portfolio.php:64
+msgid "Half image on the left"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:95
+#: ../app/views/elements/layout-components/tabs.php:41
+msgid "Horizontal"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:96
+#: ../app/views/elements/layout-components/tabs.php:42
+msgid "Vertical"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:108
+#: ../app/views/elements/layout-components/portfolio.php:109
+msgid "Display LightBox Link"
+msgstr ""
+
+#: ../app/views/elements/layout-components/blog.php:269
+#: ../app/views/elements/layout-components/blog.php:412
+#: ../app/views/elements/layout-components/blog.php:481
+#: ../app/views/elements/layout-components/blog.php:544
+#: ../app/views/elements/layout-components/portfolio.php:271
+msgid "Read More"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:22
+msgid "Contact Form"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:31
+#: ../app/widgets/gumm_contact_form.php:17
+msgid "Email address this form will send to"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:36
+#: ../app/widgets/gumm_contact_form.php:22
+msgid "Form layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:39
+#: ../app/widgets/gumm_contact_form.php:25
+msgid "Light, labels inside inputs"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:40
+#: ../app/widgets/gumm_contact_form.php:26
+msgid "Light, labels before inputs"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:41
+#: ../app/widgets/gumm_contact_form.php:27
+msgid "Plain, labels inside inputs"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:42
+#: ../app/widgets/gumm_contact_form.php:28
+msgid "Plain, labels before inputs"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:58
+msgid "Name *"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:59
+msgid "Email *"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:60
+msgid "Message *"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:173
+msgid "Message"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:184
+msgid "Submit"
+msgstr ""
+
+#: ../app/views/elements/layout-components/contact_form.php:184
+msgid "Sending..."
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:47
+msgid "Events"
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:56
+msgid "Display as"
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:59
+msgid "List"
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:60
+msgid "Calendar"
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:174
+msgid "No events found for this month"
+msgstr ""
+
+#: ../app/views/elements/layout-components/event.php:267
+msgid "Events for"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:32
+msgid "Fancy Text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:42
+msgid "Add New Image"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:61
+msgid "Text Color Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:64
+msgid "Dark"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:65
+#: ../app/views/elements/layout-components/fancy_text.php:100
+#: ../app/views/elements/layout-components/quote.php:58
+msgid "Light"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:76
+msgid "Subheading Text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:80
+msgid "Button Text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:84
+msgid "Button Link"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:88
+#: ../app/views/elements/layout-components/text_box.php:194
+msgid "Open link in new window"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:97
+msgid "Element Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:101
+#: ../app/views/elements/layout-components/quote.php:59
+msgid "Colourful"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:116
+#: ../app/views/elements/layout-components/quote.php:64
+msgid "Element Full Width"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:125
+msgid "Text Alignment"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:128
+msgid "Left"
+msgstr ""
+
+#: ../app/views/elements/layout-components/fancy_text.php:129
+msgid "Center"
+msgstr ""
+
+#: ../app/views/elements/layout-components/gallery.php:38
+msgid "Gallery Posts"
+msgstr ""
+
+#: ../app/views/elements/layout-components/gallery.php:47
+msgid "Display load more button if more galleries available"
+msgstr ""
+
+#: ../app/views/elements/layout-components/google_map.php:34
+msgid "Map"
+msgstr ""
+
+#: ../app/views/elements/layout-components/google_map.php:47
+msgid "Map Settings"
+msgstr ""
+
+#: ../app/views/elements/layout-components/heading.php:15
+#: ../app/views/elements/layout-components/heading.php:21
+msgid "Heading"
+msgstr ""
+
+#: ../app/views/elements/layout-components/page_content.php:24
+msgid "Page Content"
+msgstr ""
+
+#: ../app/views/elements/layout-components/partner.php:49
+msgid "Partners"
+msgstr ""
+
+#: ../app/views/elements/layout-components/portfolio.php:46
+msgid "Portfolio Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components/quote.php:37
+msgid "Quotes"
+msgstr ""
+
+#: ../app/views/elements/layout-components/quote.php:46
+msgid "Element Layout Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/quote.php:55
+msgid "Element Color Style"
+msgstr ""
+
+#: ../app/views/elements/layout-components/rich_content.php:13
+msgid "Custom Content"
+msgstr ""
+
+#: ../app/views/elements/layout-components/slider.php:42
+msgid "Slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/slider.php:51
+#: ../app/views/elements/layout-components-single/single_featured_image.php:53
+msgid "Slider Type"
+msgstr ""
+
+#: ../app/views/elements/layout-components/social_links.php:16
+msgid "Social Links"
+msgstr ""
+
+#: ../app/views/elements/layout-components/social_links.php:22
+#: ../app/views/elements/layout-components-single/single_sharebox.php:22
+msgid "Enabled Networks"
+msgstr ""
+
+#: ../app/views/elements/layout-components/staff.php:35
+msgid "Staff Members"
+msgstr ""
+
+#: ../app/views/elements/layout-components/steps_content.php:42
+msgid "Steps Content"
+msgstr ""
+
+#: ../app/views/elements/layout-components/steps_content.php:57
+msgid "Bullet Icon"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:29
+msgid "Tabs"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:47
+msgid "No additional settings available for this option"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:54
+msgid "Small"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:55
+msgid "Medium"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:56
+msgid "Large"
+msgstr ""
+
+#: ../app/views/elements/layout-components/tabs.php:69
+msgid "Tab icon (vertical layout only)"
+msgstr ""
+
+#: ../app/views/elements/layout-components/terms.php:22
+msgid "Terms"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:17
+msgid "Text Box"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:27
+msgid "Icon position"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:30
+msgid "With heading"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:31
+msgid "With text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:63
+msgid "Use Icon"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:64
+msgid "Use Percent"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:71
+msgid "Gauge Icon"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:81
+msgid "Icon Size"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:96
+msgid "Gauge on top, center aligned text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:97
+msgid "Gauge on top, left aligned text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:98
+msgid "Gauge with heading"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:99
+msgid "Gauge with text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:144
+msgid "Animation Speed"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:159
+msgid "Block Content"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:168
+msgid "Just Text"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:171
+msgid "Gauge"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:184
+msgid "Block Button Title"
+msgstr ""
+
+#: ../app/views/elements/layout-components/text_box.php:189
+msgid "Block Link Url"
+msgstr ""
+
+#: ../app/views/elements/layout-components/twitter_tweets.php:22
+msgid "Twitter"
+msgstr ""
+
+#: ../app/views/elements/layout-components/twitter_tweets.php:31
+#: ../app/widgets/gumm_twitter.php:15
+msgid "Twitter username"
+msgstr ""
+
+#: ../app/views/elements/layout-components/twitter_tweets.php:35
+msgid "@username"
+msgstr ""
+
+#: ../app/views/elements/layout-components/twitter_tweets.php:39
+msgid "Number of tweets"
+msgstr ""
+
+#: ../app/views/elements/layout-components/twitter_tweets.php:51
+msgid "Full width element"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:29
+msgid "Nova Slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:38
+msgid "Slider Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:41
+msgid "Right details"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:42
+msgid "Left details"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:43
+msgid "Bottom titles"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:44
+msgid "Right titles"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:49
+msgid "Display info box"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:54
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:81
+msgid "Display control nav"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:61
+msgid "Details display"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:64
+msgid "Heading and info box"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:65
+msgid "Heading only on top"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:66
+msgid "Heading only on bottom"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:67
+msgid "Info box only"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:71
+msgid "Display direction nav"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:77
+msgid "This slider layout has no additional settings"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:90
+msgid "Slides"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:95
+msgid "Add New Slide"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:96
+msgid "Delete Current Slide"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/ios_slider.php:107
+msgid "Button for this slide"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/layer_slider.php:35
+msgid "Layer Slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/layer_slider.php:45
+msgid "No sliders have been created."
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/layer_slider.php:51
+#: ../app/views/elements/layout-components/sliders/revolution_slider.php:60
+msgid "Choose slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/revolution_slider.php:38
+msgid ""
+"Revolution Slider plugin is not installed. The plugin comes with this "
+"theme's downloaded files. Please install it to use the element"
+msgstr ""
+
+#: ../app/views/elements/layout-components/sliders/revolution_slider.php:44
+msgid "Revolution Slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:34
+msgid "WooCommerce Products"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:50
+msgid "Display found results count"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:55
+msgid "Display sorting field"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:60
+msgid "Display pagination links"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:65
+msgid "Default products ordering"
+msgstr ""
+
+#: ../app/views/elements/layout-components/woocommerce/gumm_woocommerce_products.php:79
+msgid "Sliding product carousel will be displayed"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_author.php:17
+msgid "About The Author"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_author.php:26
+msgid "About the author"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_event.php:17
+msgid "Single Event Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_featured_image.php:18
+msgid "Featured Image"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_featured_image.php:25
+msgid "Crop Settings"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_featured_image.php:27
+msgid "Use Original"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_featured_image.php:28
+msgid "Crop"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:17
+msgid "Portfolio Details"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:53
+msgid "Details"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:59
+msgid "Client"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_portfolio_details.php:71
+msgid "Tags"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_post_content.php:17
+msgid "Post Content"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_post_meta.php:15
+msgid "Post Meta"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_post_meta.php:47
+#: ../app/views/elements/layout-components-single/single_post_meta.php:48
+#: ../app/views/elements/layout-components-single/single_post_meta.php:49
+msgid "/"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:18
+msgid "Related Posts"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:29
+msgid "Blog Vertical Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:30
+msgid "Portfolio Horizontal Layout"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:36
+msgid "Number of rows"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:39
+msgid "row"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:40
+#: ../app/views/elements/layout-components-single/single_related.php:41
+#: ../app/views/elements/layout-components-single/single_related.php:42
+#: ../app/views/elements/layout-components-single/single_related.php:43
+#: ../app/views/elements/layout-components-single/single_related.php:44
+msgid "rows"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:65
+msgid "Animation to use if the element should render as slider"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:120
+msgid "Related"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:188
+#: ../app/views/elements/layout-components-single/single_related.php:189
+#: ../app/views/elements/layout-components-single/single_related.php:190
+msgid " / "
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_related.php:206
+msgid "Read more"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_sharebox.php:16
+msgid "Sharebox"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_sharebox.php:46
+msgid "Share The Story"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_staff_details.php:17
+msgid "Staff Member Details"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_staff_vcard.php:19
+msgid "Staff Member vCard"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_taxonomies.php:15
+msgid "Post Tags/Categories"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_taxonomies.php:21
+msgid "Source Settings"
+msgstr ""
+
+#: ../app/views/elements/layout-components-single/single_taxonomies.php:25
+msgid "Tag"
+msgstr ""
+
+#: ../app/widgets/gumm_events_calendar.php:36
+msgid "The calendar will be displayed starting with today's date"
+msgstr ""
+
+#: ../app/widgets/gumm_posts.php:15
+msgid "Display date, comment, or author info"
+msgstr ""
+
+#: ../app/widgets/gumm_social_networks.php:15
+msgid "Social Networks"
+msgstr ""
+
+#: ../app/widgets/gumm_social_networks.php:38
+msgid "Social icons link to:"
+msgstr ""
+
+#: ../app/widgets/gumm_social_networks.php:41
+msgid "Share current page being viewed"
+msgstr ""
+
+#: ../app/widgets/gumm_social_networks.php:42
+msgid "Link to the social network account url (where applicable)"
+msgstr ""
+
+#: ../app/widgets/gumm_twitter.php:20
+msgid "Number of tweets to display"
+msgstr ""

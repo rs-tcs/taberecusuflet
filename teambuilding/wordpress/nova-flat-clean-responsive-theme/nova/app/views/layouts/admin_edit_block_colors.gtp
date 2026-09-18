@@ -1,0 +1,13 @@
+<?php
+echo $this->Form->input($option['model'], array(
+    'id' => $option['id'] . '.color',
+    'name' => __('Color', 'gummfw') . ':',
+    'type' => 'colorpicker',
+));
+
+echo $this->Form->input($option['model'], array(
+    'id' => $option['id'] . '.background-color',
+    'name' => __('Background Color', 'gummfw') . ':',
+    'type' => 'colorpicker',
+));
+?>

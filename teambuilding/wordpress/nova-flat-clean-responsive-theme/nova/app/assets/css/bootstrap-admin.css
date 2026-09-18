@@ -1,0 +1,6158 @@
+/*!
+ * Bootstrap v2.3.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+.bluebox-admin .clearfix {
+  *zoom: 1;
+}
+
+.bluebox-admin .clearfix:before,
+.bluebox-admin .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .clearfix:after {
+  clear: both;
+}
+
+.bluebox-admin .hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.bluebox-admin .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bluebox-admin article,
+.bluebox-admin aside,
+.bluebox-admin details,
+.bluebox-admin figcaption,
+.bluebox-admin figure,
+.bluebox-admin footer,
+.bluebox-admin header,
+.bluebox-admin hgroup,
+.bluebox-admin nav,
+.bluebox-admin section {
+  display: block;
+}
+
+.bluebox-admin audio,
+.bluebox-admin canvas,
+.bluebox-admin video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.bluebox-admin audio:not([controls]) {
+  display: none;
+}
+
+.bluebox-admin html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+.bluebox-admin a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.bluebox-admin a:hover,
+.bluebox-admin a:active {
+  outline: 0;
+}
+
+.bluebox-admin sub,
+.bluebox-admin sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.bluebox-admin sup {
+  top: -0.5em;
+}
+
+.bluebox-admin sub {
+  bottom: -0.25em;
+}
+
+.bluebox-admin img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.bluebox-admin #map_canvas img,
+.bluebox-admin .google-maps img {
+  max-width: none;
+}
+
+.bluebox-admin button,
+.bluebox-admin input,
+.bluebox-admin select,
+.bluebox-admin textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+.bluebox-admin button,
+.bluebox-admin input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+.bluebox-admin button::-moz-focus-inner,
+.bluebox-admin input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.bluebox-admin button,
+.bluebox-admin html input[type="button"],
+.bluebox-admin input[type="reset"],
+.bluebox-admin input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+.bluebox-admin label,
+.bluebox-admin select,
+.bluebox-admin button,
+.bluebox-admin input[type="button"],
+.bluebox-admin input[type="reset"],
+.bluebox-admin input[type="submit"],
+.bluebox-admin input[type="radio"],
+.bluebox-admin input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.bluebox-admin input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+.bluebox-admin input[type="search"]::-webkit-search-decoration,
+.bluebox-admin input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.bluebox-admin textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+@media print {
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  .bluebox-admin a,
+  .bluebox-admin a:visited {
+    text-decoration: underline;
+  }
+  .bluebox-admin a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  .bluebox-admin abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .bluebox-admin .ir a:after,
+  .bluebox-admin a[href^="javascript:"]:after,
+  .bluebox-admin a[href^="#"]:after {
+    content: "";
+  }
+  .bluebox-admin pre,
+  .bluebox-admin blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  .bluebox-admin thead {
+    display: table-header-group;
+  }
+  .bluebox-admin tr,
+  .bluebox-admin img {
+    page-break-inside: avoid;
+  }
+  .bluebox-admin img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  .bluebox-admin p,
+  .bluebox-admin h2,
+  .bluebox-admin h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  .bluebox-admin h2,
+  .bluebox-admin h3 {
+    page-break-after: avoid;
+  }
+}
+
+.bluebox-admin body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.bluebox-admin a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+.bluebox-admin a:hover,
+.bluebox-admin a:focus {
+  color: #005580;
+  text-decoration: underline;
+}
+
+.bluebox-admin .img-rounded {
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.bluebox-admin .img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bluebox-admin .img-circle {
+  -webkit-border-radius: 500px;
+     -moz-border-radius: 500px;
+          border-radius: 500px;
+}
+
+.bluebox-admin .row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+
+.bluebox-admin .row:before,
+.bluebox-admin .row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .row:after {
+  clear: both;
+}
+
+.bluebox-admin [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+
+.bluebox-admin .container,
+.bluebox-admin .navbar-static-top .container,
+.bluebox-admin .navbar-fixed-top .container,
+.bluebox-admin .navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+.bluebox-admin .span12 {
+  width: 940px;
+}
+
+.bluebox-admin .span11 {
+  width: 860px;
+}
+
+.bluebox-admin .span10 {
+  width: 780px;
+}
+
+.bluebox-admin .span9 {
+  width: 700px;
+}
+
+.bluebox-admin .span8 {
+  width: 620px;
+}
+
+.bluebox-admin .span7 {
+  width: 540px;
+}
+
+.bluebox-admin .span6 {
+  width: 460px;
+}
+
+.bluebox-admin .span5 {
+  width: 380px;
+}
+
+.bluebox-admin .span4 {
+  width: 300px;
+}
+
+.bluebox-admin .span3 {
+  width: 220px;
+}
+
+.bluebox-admin .span2 {
+  width: 140px;
+}
+
+.bluebox-admin .span1 {
+  width: 60px;
+}
+
+.bluebox-admin .offset12 {
+  margin-left: 980px;
+}
+
+.bluebox-admin .offset11 {
+  margin-left: 900px;
+}
+
+.bluebox-admin .offset10 {
+  margin-left: 820px;
+}
+
+.bluebox-admin .offset9 {
+  margin-left: 740px;
+}
+
+.bluebox-admin .offset8 {
+  margin-left: 660px;
+}
+
+.bluebox-admin .offset7 {
+  margin-left: 580px;
+}
+
+.bluebox-admin .offset6 {
+  margin-left: 500px;
+}
+
+.bluebox-admin .offset5 {
+  margin-left: 420px;
+}
+
+.bluebox-admin .offset4 {
+  margin-left: 340px;
+}
+
+.bluebox-admin .offset3 {
+  margin-left: 260px;
+}
+
+.bluebox-admin .offset2 {
+  margin-left: 180px;
+}
+
+.bluebox-admin .offset1 {
+  margin-left: 100px;
+}
+
+.bluebox-admin .row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+
+.bluebox-admin .row-fluid:before,
+.bluebox-admin .row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .row-fluid:after {
+  clear: both;
+}
+
+.bluebox-admin .row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bluebox-admin .row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+.bluebox-admin .row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+
+.bluebox-admin .row-fluid .span12 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+
+.bluebox-admin .row-fluid .span11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%;
+}
+
+.bluebox-admin .row-fluid .span10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+}
+
+.bluebox-admin .row-fluid .span9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%;
+}
+
+.bluebox-admin .row-fluid .span8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+
+.bluebox-admin .row-fluid .span7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%;
+}
+
+.bluebox-admin .row-fluid .span6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+
+.bluebox-admin .row-fluid .span5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%;
+}
+
+.bluebox-admin .row-fluid .span4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+
+.bluebox-admin .row-fluid .span3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%;
+}
+
+.bluebox-admin .row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+
+.bluebox-admin .row-fluid .span1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%;
+}
+
+.bluebox-admin .row-fluid .offset12 {
+  margin-left: 104.25531914893617%;
+  *margin-left: 104.14893617021275%;
+}
+
+.bluebox-admin .row-fluid .offset12:first-child {
+  margin-left: 102.12765957446808%;
+  *margin-left: 102.02127659574467%;
+}
+
+.bluebox-admin .row-fluid .offset11 {
+  margin-left: 95.74468085106382%;
+  *margin-left: 95.6382978723404%;
+}
+
+.bluebox-admin .row-fluid .offset11:first-child {
+  margin-left: 93.61702127659574%;
+  *margin-left: 93.51063829787232%;
+}
+
+.bluebox-admin .row-fluid .offset10 {
+  margin-left: 87.23404255319149%;
+  *margin-left: 87.12765957446807%;
+}
+
+.bluebox-admin .row-fluid .offset10:first-child {
+  margin-left: 85.1063829787234%;
+  *margin-left: 84.99999999999999%;
+}
+
+.bluebox-admin .row-fluid .offset9 {
+  margin-left: 78.72340425531914%;
+  *margin-left: 78.61702127659572%;
+}
+
+.bluebox-admin .row-fluid .offset9:first-child {
+  margin-left: 76.59574468085106%;
+  *margin-left: 76.48936170212764%;
+}
+
+.bluebox-admin .row-fluid .offset8 {
+  margin-left: 70.2127659574468%;
+  *margin-left: 70.10638297872339%;
+}
+
+.bluebox-admin .row-fluid .offset8:first-child {
+  margin-left: 68.08510638297872%;
+  *margin-left: 67.9787234042553%;
+}
+
+.bluebox-admin .row-fluid .offset7 {
+  margin-left: 61.70212765957446%;
+  *margin-left: 61.59574468085106%;
+}
+
+.bluebox-admin .row-fluid .offset7:first-child {
+  margin-left: 59.574468085106375%;
+  *margin-left: 59.46808510638297%;
+}
+
+.bluebox-admin .row-fluid .offset6 {
+  margin-left: 53.191489361702125%;
+  *margin-left: 53.085106382978715%;
+}
+
+.bluebox-admin .row-fluid .offset6:first-child {
+  margin-left: 51.063829787234035%;
+  *margin-left: 50.95744680851063%;
+}
+
+.bluebox-admin .row-fluid .offset5 {
+  margin-left: 44.68085106382979%;
+  *margin-left: 44.57446808510638%;
+}
+
+.bluebox-admin .row-fluid .offset5:first-child {
+  margin-left: 42.5531914893617%;
+  *margin-left: 42.4468085106383%;
+}
+
+.bluebox-admin .row-fluid .offset4 {
+  margin-left: 36.170212765957444%;
+  *margin-left: 36.06382978723405%;
+}
+
+.bluebox-admin .row-fluid .offset4:first-child {
+  margin-left: 34.04255319148936%;
+  *margin-left: 33.93617021276596%;
+}
+
+.bluebox-admin .row-fluid .offset3 {
+  margin-left: 27.659574468085104%;
+  *margin-left: 27.5531914893617%;
+}
+
+.bluebox-admin .row-fluid .offset3:first-child {
+  margin-left: 25.53191489361702%;
+  *margin-left: 25.425531914893618%;
+}
+
+.bluebox-admin .row-fluid .offset2 {
+  margin-left: 19.148936170212764%;
+  *margin-left: 19.04255319148936%;
+}
+
+.bluebox-admin .row-fluid .offset2:first-child {
+  margin-left: 17.02127659574468%;
+  *margin-left: 16.914893617021278%;
+}
+
+.bluebox-admin .row-fluid .offset1 {
+  margin-left: 10.638297872340425%;
+  *margin-left: 10.53191489361702%;
+}
+
+.bluebox-admin .row-fluid .offset1:first-child {
+  margin-left: 8.51063829787234%;
+  *margin-left: 8.404255319148938%;
+}
+
+.bluebox-admin [class*="span"].hide,
+.bluebox-admin .row-fluid [class*="span"].hide {
+  display: none;
+}
+
+.bluebox-admin [class*="span"].pull-right,
+.bluebox-admin .row-fluid [class*="span"].pull-right {
+  float: right;
+}
+
+.bluebox-admin .container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+.bluebox-admin .container:before,
+.bluebox-admin .container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .container:after {
+  clear: both;
+}
+
+.bluebox-admin .container-fluid {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+
+.bluebox-admin .container-fluid:before,
+.bluebox-admin .container-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .container-fluid:after {
+  clear: both;
+}
+
+.bluebox-admin p {
+  margin: 0 0 10px;
+}
+
+.bluebox-admin .lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.bluebox-admin small {
+  font-size: 85%;
+}
+
+.bluebox-admin strong {
+  font-weight: bold;
+}
+
+.bluebox-admin em {
+  font-style: italic;
+}
+
+.bluebox-admin cite {
+  font-style: normal;
+}
+
+.bluebox-admin .muted {
+  color: #999999;
+}
+
+.bluebox-admin a.muted:hover,
+.bluebox-admin a.muted:focus {
+  color: #808080;
+}
+
+.bluebox-admin .text-warning {
+  color: #c09853;
+}
+
+.bluebox-admin a.text-warning:hover,
+.bluebox-admin a.text-warning:focus {
+  color: #a47e3c;
+}
+
+.bluebox-admin .text-error {
+  color: #b94a48;
+}
+
+.bluebox-admin a.text-error:hover,
+.bluebox-admin a.text-error:focus {
+  color: #953b39;
+}
+
+.bluebox-admin .text-info {
+  color: #3a87ad;
+}
+
+.bluebox-admin a.text-info:hover,
+.bluebox-admin a.text-info:focus {
+  color: #2d6987;
+}
+
+.bluebox-admin .text-success {
+  color: #468847;
+}
+
+.bluebox-admin a.text-success:hover,
+.bluebox-admin a.text-success:focus {
+  color: #356635;
+}
+
+.bluebox-admin .text-left {
+  text-align: left;
+}
+
+.bluebox-admin .text-right {
+  text-align: right;
+}
+
+.bluebox-admin .text-center {
+  text-align: center;
+}
+
+.bluebox-admin h1,
+.bluebox-admin h2,
+.bluebox-admin h3,
+.bluebox-admin h4,
+.bluebox-admin h5,
+.bluebox-admin h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+.bluebox-admin h1 small,
+.bluebox-admin h2 small,
+.bluebox-admin h3 small,
+.bluebox-admin h4 small,
+.bluebox-admin h5 small,
+.bluebox-admin h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+.bluebox-admin h1,
+.bluebox-admin h2,
+.bluebox-admin h3 {
+  line-height: 40px;
+}
+
+.bluebox-admin h1 {
+  font-size: 38.5px;
+}
+
+.bluebox-admin h2 {
+  font-size: 31.5px;
+}
+
+.bluebox-admin h3 {
+  font-size: 24.5px;
+}
+
+.bluebox-admin h4 {
+  font-size: 17.5px;
+}
+
+.bluebox-admin h5 {
+  font-size: 14px;
+}
+
+.bluebox-admin h6 {
+  font-size: 11.9px;
+}
+
+.bluebox-admin h1 small {
+  font-size: 24.5px;
+}
+
+.bluebox-admin h2 small {
+  font-size: 17.5px;
+}
+
+.bluebox-admin h3 small {
+  font-size: 14px;
+}
+
+.bluebox-admin h4 small {
+  font-size: 14px;
+}
+
+.bluebox-admin .page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.bluebox-admin ul,
+.bluebox-admin ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+.bluebox-admin ul ul,
+.bluebox-admin ul ol,
+.bluebox-admin ol ol,
+.bluebox-admin ol ul {
+  margin-bottom: 0;
+}
+
+.bluebox-admin li {
+  line-height: 20px;
+}
+
+.bluebox-admin ul.unstyled,
+.bluebox-admin ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+.bluebox-admin ul.inline,
+.bluebox-admin ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+
+.bluebox-admin ul.inline > li,
+.bluebox-admin ol.inline > li {
+  display: inline-block;
+  *display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+  *zoom: 1;
+}
+
+.bluebox-admin dl {
+  margin-bottom: 20px;
+}
+
+.bluebox-admin dt,
+.bluebox-admin dd {
+  line-height: 20px;
+}
+
+.bluebox-admin dt {
+  font-weight: bold;
+}
+
+.bluebox-admin dd {
+  margin-left: 10px;
+}
+
+.bluebox-admin .dl-horizontal {
+  *zoom: 1;
+}
+
+.bluebox-admin .dl-horizontal:before,
+.bluebox-admin .dl-horizontal:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .dl-horizontal:after {
+  clear: both;
+}
+
+.bluebox-admin .dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bluebox-admin .dl-horizontal dd {
+  margin-left: 180px;
+}
+
+.bluebox-admin hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+
+.bluebox-admin abbr[title],
+.bluebox-admin abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+.bluebox-admin abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+.bluebox-admin blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eeeeee;
+}
+
+.bluebox-admin blockquote p {
+  margin-bottom: 0;
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.bluebox-admin blockquote small {
+  display: block;
+  line-height: 20px;
+  color: #999999;
+}
+
+.bluebox-admin blockquote small:before {
+  content: '\2014 \00A0';
+}
+
+.bluebox-admin blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+
+.bluebox-admin blockquote.pull-right p,
+.bluebox-admin blockquote.pull-right small {
+  text-align: right;
+}
+
+.bluebox-admin blockquote.pull-right small:before {
+  content: '';
+}
+
+.bluebox-admin blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
+
+.bluebox-admin q:before,
+.bluebox-admin q:after,
+.bluebox-admin blockquote:before,
+.bluebox-admin blockquote:after {
+  content: "";
+}
+
+.bluebox-admin address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.bluebox-admin code,
+.bluebox-admin pre {
+  padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.bluebox-admin code {
+  padding: 2px 4px;
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+.bluebox-admin pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin pre.prettyprint {
+  margin-bottom: 20px;
+}
+
+.bluebox-admin pre code {
+  padding: 0;
+  color: inherit;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.bluebox-admin .pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.bluebox-admin form {
+  margin: 0 0 20px;
+}
+
+.bluebox-admin fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.bluebox-admin legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 40px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bluebox-admin legend small {
+  font-size: 15px;
+  color: #999999;
+}
+
+.bluebox-admin label,
+.bluebox-admin input,
+.bluebox-admin button,
+.bluebox-admin select,
+.bluebox-admin textarea {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.bluebox-admin input,
+.bluebox-admin button,
+.bluebox-admin select,
+.bluebox-admin textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bluebox-admin label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bluebox-admin select,
+.bluebox-admin textarea,
+.bluebox-admin input[type="text"],
+.bluebox-admin input[type="password"],
+.bluebox-admin input[type="datetime"],
+.bluebox-admin input[type="datetime-local"],
+.bluebox-admin input[type="date"],
+.bluebox-admin input[type="month"],
+.bluebox-admin input[type="time"],
+.bluebox-admin input[type="week"],
+.bluebox-admin input[type="number"],
+.bluebox-admin input[type="email"],
+.bluebox-admin input[type="url"],
+.bluebox-admin input[type="search"],
+.bluebox-admin input[type="tel"],
+.bluebox-admin input[type="color"],
+.bluebox-admin .uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin input,
+.bluebox-admin textarea,
+.bluebox-admin .uneditable-input {
+  width: 206px;
+}
+
+.bluebox-admin textarea {
+  height: auto;
+}
+
+.bluebox-admin textarea,
+.bluebox-admin input[type="text"],
+.bluebox-admin input[type="password"],
+.bluebox-admin input[type="datetime"],
+.bluebox-admin input[type="datetime-local"],
+.bluebox-admin input[type="date"],
+.bluebox-admin input[type="month"],
+.bluebox-admin input[type="time"],
+.bluebox-admin input[type="week"],
+.bluebox-admin input[type="number"],
+.bluebox-admin input[type="email"],
+.bluebox-admin input[type="url"],
+.bluebox-admin input[type="search"],
+.bluebox-admin input[type="tel"],
+.bluebox-admin input[type="color"],
+.bluebox-admin .uneditable-input {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+.bluebox-admin textarea:focus,
+.bluebox-admin input[type="text"]:focus,
+.bluebox-admin input[type="password"]:focus,
+.bluebox-admin input[type="datetime"]:focus,
+.bluebox-admin input[type="datetime-local"]:focus,
+.bluebox-admin input[type="date"]:focus,
+.bluebox-admin input[type="month"]:focus,
+.bluebox-admin input[type="time"]:focus,
+.bluebox-admin input[type="week"]:focus,
+.bluebox-admin input[type="number"]:focus,
+.bluebox-admin input[type="email"]:focus,
+.bluebox-admin input[type="url"]:focus,
+.bluebox-admin input[type="search"]:focus,
+.bluebox-admin input[type="tel"]:focus,
+.bluebox-admin input[type="color"]:focus,
+.bluebox-admin .uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.bluebox-admin input[type="radio"],
+.bluebox-admin input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal;
+}
+
+.bluebox-admin input[type="file"],
+.bluebox-admin input[type="image"],
+.bluebox-admin input[type="submit"],
+.bluebox-admin input[type="reset"],
+.bluebox-admin input[type="button"],
+.bluebox-admin input[type="radio"],
+.bluebox-admin input[type="checkbox"] {
+  width: auto;
+}
+
+.bluebox-admin select,
+.bluebox-admin input[type="file"] {
+  height: 30px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+
+  line-height: 30px;
+}
+
+.bluebox-admin select {
+  width: 220px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.bluebox-admin select[multiple],
+.bluebox-admin select[size] {
+  height: auto;
+}
+
+.bluebox-admin select:focus,
+.bluebox-admin input[type="file"]:focus,
+.bluebox-admin input[type="radio"]:focus,
+.bluebox-admin input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.bluebox-admin .uneditable-input,
+.bluebox-admin .uneditable-textarea {
+  color: #999999;
+  cursor: not-allowed;
+  background-color: #fcfcfc;
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+}
+
+.bluebox-admin .uneditable-input {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bluebox-admin .uneditable-textarea {
+  width: auto;
+  height: auto;
+}
+
+.bluebox-admin input:-moz-placeholder,
+.bluebox-admin textarea:-moz-placeholder {
+  color: #999999;
+}
+
+.bluebox-admin input:-ms-input-placeholder,
+.bluebox-admin textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+.bluebox-admin input::-webkit-input-placeholder,
+.bluebox-admin textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.bluebox-admin .radio,
+.bluebox-admin .checkbox {
+  min-height: 20px;
+  padding-left: 20px;
+}
+
+.bluebox-admin .radio input[type="radio"],
+.bluebox-admin .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+
+.bluebox-admin .controls > .radio:first-child,
+.bluebox-admin .controls > .checkbox:first-child {
+  padding-top: 5px;
+}
+
+.bluebox-admin .radio.inline,
+.bluebox-admin .checkbox.inline {
+  display: inline-block;
+  padding-top: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.bluebox-admin .radio.inline + .radio.inline,
+.bluebox-admin .checkbox.inline + .checkbox.inline {
+  margin-left: 10px;
+}
+
+.bluebox-admin .input-mini {
+  width: 60px;
+}
+
+.bluebox-admin .input-small {
+  width: 90px;
+}
+
+.bluebox-admin .input-medium {
+  width: 150px;
+}
+
+.bluebox-admin .input-large {
+  width: 210px;
+}
+
+.bluebox-admin .input-xlarge {
+  width: 270px;
+}
+
+.bluebox-admin .input-xxlarge {
+  width: 530px;
+}
+
+.bluebox-admin input[class*="span"],
+.bluebox-admin select[class*="span"],
+.bluebox-admin textarea[class*="span"],
+.bluebox-admin .uneditable-input[class*="span"],
+.bluebox-admin .row-fluid input[class*="span"],
+.bluebox-admin .row-fluid select[class*="span"],
+.bluebox-admin .row-fluid textarea[class*="span"],
+.bluebox-admin .row-fluid .uneditable-input[class*="span"] {
+  float: none;
+  margin-left: 0;
+}
+
+.bluebox-admin .input-append input[class*="span"],
+.bluebox-admin .input-append .uneditable-input[class*="span"],
+.bluebox-admin .input-prepend input[class*="span"],
+.bluebox-admin .input-prepend .uneditable-input[class*="span"],
+.bluebox-admin .row-fluid input[class*="span"],
+.bluebox-admin .row-fluid select[class*="span"],
+.bluebox-admin .row-fluid textarea[class*="span"],
+.bluebox-admin .row-fluid .uneditable-input[class*="span"],
+.bluebox-admin .row-fluid .input-prepend [class*="span"],
+.bluebox-admin .row-fluid .input-append [class*="span"] {
+  display: inline-block;
+}
+
+.bluebox-admin input,
+.bluebox-admin textarea,
+.bluebox-admin .uneditable-input {
+  margin-left: 0;
+}
+
+.bluebox-admin .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 20px;
+}
+
+.bluebox-admin input.span12,
+.bluebox-admin textarea.span12,
+.bluebox-admin .uneditable-input.span12 {
+  width: 926px;
+}
+
+.bluebox-admin input.span11,
+.bluebox-admin textarea.span11,
+.bluebox-admin .uneditable-input.span11 {
+  width: 846px;
+}
+
+.bluebox-admin input.span10,
+.bluebox-admin textarea.span10,
+.bluebox-admin .uneditable-input.span10 {
+  width: 766px;
+}
+
+.bluebox-admin input.span9,
+.bluebox-admin textarea.span9,
+.bluebox-admin .uneditable-input.span9 {
+  width: 686px;
+}
+
+.bluebox-admin input.span8,
+.bluebox-admin textarea.span8,
+.bluebox-admin .uneditable-input.span8 {
+  width: 606px;
+}
+
+.bluebox-admin input.span7,
+.bluebox-admin textarea.span7,
+.bluebox-admin .uneditable-input.span7 {
+  width: 526px;
+}
+
+.bluebox-admin input.span6,
+.bluebox-admin textarea.span6,
+.bluebox-admin .uneditable-input.span6 {
+  width: 446px;
+}
+
+.bluebox-admin input.span5,
+.bluebox-admin textarea.span5,
+.bluebox-admin .uneditable-input.span5 {
+  width: 366px;
+}
+
+.bluebox-admin input.span4,
+.bluebox-admin textarea.span4,
+.bluebox-admin .uneditable-input.span4 {
+  width: 286px;
+}
+
+.bluebox-admin input.span3,
+.bluebox-admin textarea.span3,
+.bluebox-admin .uneditable-input.span3 {
+  width: 206px;
+}
+
+.bluebox-admin input.span2,
+.bluebox-admin textarea.span2,
+.bluebox-admin .uneditable-input.span2 {
+  width: 126px;
+}
+
+.bluebox-admin input.span1,
+.bluebox-admin textarea.span1,
+.bluebox-admin .uneditable-input.span1 {
+  width: 46px;
+}
+
+.bluebox-admin .controls-row {
+  *zoom: 1;
+}
+
+.bluebox-admin .controls-row:before,
+.bluebox-admin .controls-row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .controls-row:after {
+  clear: both;
+}
+
+.bluebox-admin .controls-row [class*="span"],
+.bluebox-admin .row-fluid .controls-row [class*="span"] {
+  float: left;
+}
+
+.bluebox-admin .controls-row .checkbox[class*="span"],
+.bluebox-admin .controls-row .radio[class*="span"] {
+  padding-top: 5px;
+}
+
+.bluebox-admin input[disabled],
+.bluebox-admin select[disabled],
+.bluebox-admin textarea[disabled],
+.bluebox-admin input[readonly],
+.bluebox-admin select[readonly],
+.bluebox-admin textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+.bluebox-admin input[type="radio"][disabled],
+.bluebox-admin input[type="checkbox"][disabled],
+.bluebox-admin input[type="radio"][readonly],
+.bluebox-admin input[type="checkbox"][readonly] {
+  background-color: transparent;
+}
+
+.bluebox-admin .control-group.warning .control-label,
+.bluebox-admin .control-group.warning .help-block,
+.bluebox-admin .control-group.warning .help-inline {
+  color: #c09853;
+}
+
+.bluebox-admin .control-group.warning .checkbox,
+.bluebox-admin .control-group.warning .radio,
+.bluebox-admin .control-group.warning input,
+.bluebox-admin .control-group.warning select,
+.bluebox-admin .control-group.warning textarea {
+  color: #c09853;
+}
+
+.bluebox-admin .control-group.warning input,
+.bluebox-admin .control-group.warning select,
+.bluebox-admin .control-group.warning textarea {
+  border-color: #c09853;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.bluebox-admin .control-group.warning input:focus,
+.bluebox-admin .control-group.warning select:focus,
+.bluebox-admin .control-group.warning textarea:focus {
+  border-color: #a47e3c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+}
+
+.bluebox-admin .control-group.warning .input-prepend .add-on,
+.bluebox-admin .control-group.warning .input-append .add-on {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #c09853;
+}
+
+.bluebox-admin .control-group.error .control-label,
+.bluebox-admin .control-group.error .help-block,
+.bluebox-admin .control-group.error .help-inline {
+  color: #b94a48;
+}
+
+.bluebox-admin .control-group.error .checkbox,
+.bluebox-admin .control-group.error .radio,
+.bluebox-admin .control-group.error input,
+.bluebox-admin .control-group.error select,
+.bluebox-admin .control-group.error textarea {
+  color: #b94a48;
+}
+
+.bluebox-admin .control-group.error input,
+.bluebox-admin .control-group.error select,
+.bluebox-admin .control-group.error textarea {
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.bluebox-admin .control-group.error input:focus,
+.bluebox-admin .control-group.error select:focus,
+.bluebox-admin .control-group.error textarea:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+.bluebox-admin .control-group.error .input-prepend .add-on,
+.bluebox-admin .control-group.error .input-append .add-on {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #b94a48;
+}
+
+.bluebox-admin .control-group.success .control-label,
+.bluebox-admin .control-group.success .help-block,
+.bluebox-admin .control-group.success .help-inline {
+  color: #468847;
+}
+
+.bluebox-admin .control-group.success .checkbox,
+.bluebox-admin .control-group.success .radio,
+.bluebox-admin .control-group.success input,
+.bluebox-admin .control-group.success select,
+.bluebox-admin .control-group.success textarea {
+  color: #468847;
+}
+
+.bluebox-admin .control-group.success input,
+.bluebox-admin .control-group.success select,
+.bluebox-admin .control-group.success textarea {
+  border-color: #468847;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.bluebox-admin .control-group.success input:focus,
+.bluebox-admin .control-group.success select:focus,
+.bluebox-admin .control-group.success textarea:focus {
+  border-color: #356635;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+
+.bluebox-admin .control-group.success .input-prepend .add-on,
+.bluebox-admin .control-group.success .input-append .add-on {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #468847;
+}
+
+.bluebox-admin .control-group.info .control-label,
+.bluebox-admin .control-group.info .help-block,
+.bluebox-admin .control-group.info .help-inline {
+  color: #3a87ad;
+}
+
+.bluebox-admin .control-group.info .checkbox,
+.bluebox-admin .control-group.info .radio,
+.bluebox-admin .control-group.info input,
+.bluebox-admin .control-group.info select,
+.bluebox-admin .control-group.info textarea {
+  color: #3a87ad;
+}
+
+.bluebox-admin .control-group.info input,
+.bluebox-admin .control-group.info select,
+.bluebox-admin .control-group.info textarea {
+  border-color: #3a87ad;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.bluebox-admin .control-group.info input:focus,
+.bluebox-admin .control-group.info select:focus,
+.bluebox-admin .control-group.info textarea:focus {
+  border-color: #2d6987;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
+}
+
+.bluebox-admin .control-group.info .input-prepend .add-on,
+.bluebox-admin .control-group.info .input-append .add-on {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #3a87ad;
+}
+
+.bluebox-admin input:focus:invalid,
+.bluebox-admin textarea:focus:invalid,
+.bluebox-admin select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+.bluebox-admin input:focus:invalid:focus,
+.bluebox-admin textarea:focus:invalid:focus,
+.bluebox-admin select:focus:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+     -moz-box-shadow: 0 0 6px #f8b9b7;
+          box-shadow: 0 0 6px #f8b9b7;
+}
+
+.bluebox-admin .form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  *zoom: 1;
+}
+
+.bluebox-admin .form-actions:before,
+.bluebox-admin .form-actions:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .form-actions:after {
+  clear: both;
+}
+
+.bluebox-admin .help-block,
+.bluebox-admin .help-inline {
+  color: #595959;
+}
+
+.bluebox-admin .help-block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bluebox-admin .help-inline {
+  display: inline-block;
+  *display: inline;
+  padding-left: 5px;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+.bluebox-admin .input-append,
+.bluebox-admin .input-prepend {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.bluebox-admin .input-append input,
+.bluebox-admin .input-prepend input,
+.bluebox-admin .input-append select,
+.bluebox-admin .input-prepend select,
+.bluebox-admin .input-append .uneditable-input,
+.bluebox-admin .input-prepend .uneditable-input,
+.bluebox-admin .input-append .dropdown-menu,
+.bluebox-admin .input-prepend .dropdown-menu,
+.bluebox-admin .input-append .popover,
+.bluebox-admin .input-prepend .popover {
+  font-size: 14px;
+}
+
+.bluebox-admin .input-append input,
+.bluebox-admin .input-prepend input,
+.bluebox-admin .input-append select,
+.bluebox-admin .input-prepend select,
+.bluebox-admin .input-append .uneditable-input,
+.bluebox-admin .input-prepend .uneditable-input {
+  position: relative;
+  margin-bottom: 0;
+  *margin-left: 0;
+  vertical-align: top;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .input-append input:focus,
+.bluebox-admin .input-prepend input:focus,
+.bluebox-admin .input-append select:focus,
+.bluebox-admin .input-prepend select:focus,
+.bluebox-admin .input-append .uneditable-input:focus,
+.bluebox-admin .input-prepend .uneditable-input:focus {
+  z-index: 2;
+}
+
+.bluebox-admin .input-append .add-on,
+.bluebox-admin .input-prepend .add-on {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  min-width: 16px;
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+}
+
+.bluebox-admin .input-append .add-on,
+.bluebox-admin .input-prepend .add-on,
+.bluebox-admin .input-append .btn,
+.bluebox-admin .input-prepend .btn,
+.bluebox-admin .input-append .btn-group > .dropdown-toggle,
+.bluebox-admin .input-prepend .btn-group > .dropdown-toggle {
+  vertical-align: top;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .input-append .active,
+.bluebox-admin .input-prepend .active {
+  background-color: #a9dba9;
+  border-color: #46a546;
+}
+
+.bluebox-admin .input-prepend .add-on,
+.bluebox-admin .input-prepend .btn {
+  margin-right: -1px;
+}
+
+.bluebox-admin .input-prepend .add-on:first-child,
+.bluebox-admin .input-prepend .btn:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.bluebox-admin .input-append input,
+.bluebox-admin .input-append select,
+.bluebox-admin .input-append .uneditable-input {
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.bluebox-admin .input-append input + .btn-group .btn:last-child,
+.bluebox-admin .input-append select + .btn-group .btn:last-child,
+.bluebox-admin .input-append .uneditable-input + .btn-group .btn:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .input-append .add-on,
+.bluebox-admin .input-append .btn,
+.bluebox-admin .input-append .btn-group {
+  margin-left: -1px;
+}
+
+.bluebox-admin .input-append .add-on:last-child,
+.bluebox-admin .input-append .btn:last-child,
+.bluebox-admin .input-append .btn-group:last-child > .dropdown-toggle {
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .input-prepend.input-append input,
+.bluebox-admin .input-prepend.input-append select,
+.bluebox-admin .input-prepend.input-append .uneditable-input {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .input-prepend.input-append input + .btn-group .btn,
+.bluebox-admin .input-prepend.input-append select + .btn-group .btn,
+.bluebox-admin .input-prepend.input-append .uneditable-input + .btn-group .btn {
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .input-prepend.input-append .add-on:first-child,
+.bluebox-admin .input-prepend.input-append .btn:first-child {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.bluebox-admin .input-prepend.input-append .add-on:last-child,
+.bluebox-admin .input-prepend.input-append .btn:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .input-prepend.input-append .btn-group:first-child {
+  margin-left: 0;
+}
+
+.bluebox-admin input.search-query {
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+/* Allow for input prepend/append in search forms */
+
+.bluebox-admin .form-search .input-append .search-query,
+.bluebox-admin .form-search .input-prepend .search-query {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .form-search .input-append .search-query {
+  -webkit-border-radius: 14px 0 0 14px;
+     -moz-border-radius: 14px 0 0 14px;
+          border-radius: 14px 0 0 14px;
+}
+
+.bluebox-admin .form-search .input-append .btn {
+  -webkit-border-radius: 0 14px 14px 0;
+     -moz-border-radius: 0 14px 14px 0;
+          border-radius: 0 14px 14px 0;
+}
+
+.bluebox-admin .form-search .input-prepend .search-query {
+  -webkit-border-radius: 0 14px 14px 0;
+     -moz-border-radius: 0 14px 14px 0;
+          border-radius: 0 14px 14px 0;
+}
+
+.bluebox-admin .form-search .input-prepend .btn {
+  -webkit-border-radius: 14px 0 0 14px;
+     -moz-border-radius: 14px 0 0 14px;
+          border-radius: 14px 0 0 14px;
+}
+
+.bluebox-admin .form-search input,
+.bluebox-admin .form-inline input,
+.bluebox-admin .form-horizontal input,
+.bluebox-admin .form-search textarea,
+.bluebox-admin .form-inline textarea,
+.bluebox-admin .form-horizontal textarea,
+.bluebox-admin .form-search select,
+.bluebox-admin .form-inline select,
+.bluebox-admin .form-horizontal select,
+.bluebox-admin .form-search .help-inline,
+.bluebox-admin .form-inline .help-inline,
+.bluebox-admin .form-horizontal .help-inline,
+.bluebox-admin .form-search .uneditable-input,
+.bluebox-admin .form-inline .uneditable-input,
+.bluebox-admin .form-horizontal .uneditable-input,
+.bluebox-admin .form-search .input-prepend,
+.bluebox-admin .form-inline .input-prepend,
+.bluebox-admin .form-horizontal .input-prepend,
+.bluebox-admin .form-search .input-append,
+.bluebox-admin .form-inline .input-append,
+.bluebox-admin .form-horizontal .input-append {
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+.bluebox-admin .form-search .hide,
+.bluebox-admin .form-inline .hide,
+.bluebox-admin .form-horizontal .hide {
+  display: none;
+}
+
+.bluebox-admin .form-search label,
+.bluebox-admin .form-inline label,
+.bluebox-admin .form-search .btn-group,
+.bluebox-admin .form-inline .btn-group {
+  display: inline-block;
+}
+
+.bluebox-admin .form-search .input-append,
+.bluebox-admin .form-inline .input-append,
+.bluebox-admin .form-search .input-prepend,
+.bluebox-admin .form-inline .input-prepend {
+  margin-bottom: 0;
+}
+
+.bluebox-admin .form-search .radio,
+.bluebox-admin .form-search .checkbox,
+.bluebox-admin .form-inline .radio,
+.bluebox-admin .form-inline .checkbox {
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.bluebox-admin .form-search .radio input[type="radio"],
+.bluebox-admin .form-search .checkbox input[type="checkbox"],
+.bluebox-admin .form-inline .radio input[type="radio"],
+.bluebox-admin .form-inline .checkbox input[type="checkbox"] {
+  float: left;
+  margin-right: 3px;
+  margin-left: 0;
+}
+
+.bluebox-admin .control-group {
+  margin-bottom: 10px;
+}
+
+.bluebox-admin legend + .control-group {
+  margin-top: 20px;
+  -webkit-margin-top-collapse: separate;
+}
+
+.bluebox-admin .form-horizontal .control-group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+
+.bluebox-admin .form-horizontal .control-group:before,
+.bluebox-admin .form-horizontal .control-group:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .form-horizontal .control-group:after {
+  clear: both;
+}
+
+.bluebox-admin .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+
+.bluebox-admin .form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 180px;
+  *margin-left: 0;
+}
+
+.bluebox-admin .form-horizontal .controls:first-child {
+  *padding-left: 180px;
+}
+
+.bluebox-admin .form-horizontal .help-block {
+  margin-bottom: 0;
+}
+
+.bluebox-admin .form-horizontal input + .help-block,
+.bluebox-admin .form-horizontal select + .help-block,
+.bluebox-admin .form-horizontal textarea + .help-block,
+.bluebox-admin .form-horizontal .uneditable-input + .help-block,
+.bluebox-admin .form-horizontal .input-prepend + .help-block,
+.bluebox-admin .form-horizontal .input-append + .help-block {
+  margin-top: 10px;
+}
+
+.bluebox-admin .form-horizontal .form-actions {
+  padding-left: 180px;
+}
+
+.bluebox-admin table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bluebox-admin .table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bluebox-admin .table th,
+.bluebox-admin .table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.bluebox-admin .table th {
+  font-weight: bold;
+}
+
+.bluebox-admin .table thead th {
+  vertical-align: bottom;
+}
+
+.bluebox-admin .table caption + thead tr:first-child th,
+.bluebox-admin .table caption + thead tr:first-child td,
+.bluebox-admin .table colgroup + thead tr:first-child th,
+.bluebox-admin .table colgroup + thead tr:first-child td,
+.bluebox-admin .table thead:first-child tr:first-child th,
+.bluebox-admin .table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.bluebox-admin .table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.bluebox-admin .table .table {
+  background-color: #ffffff;
+}
+
+.bluebox-admin .table-condensed th,
+.bluebox-admin .table-condensed td {
+  padding: 4px 5px;
+}
+
+.bluebox-admin .table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .table-bordered th,
+.bluebox-admin .table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+
+.bluebox-admin .table-bordered caption + thead tr:first-child th,
+.bluebox-admin .table-bordered caption + tbody tr:first-child th,
+.bluebox-admin .table-bordered caption + tbody tr:first-child td,
+.bluebox-admin .table-bordered colgroup + thead tr:first-child th,
+.bluebox-admin .table-bordered colgroup + tbody tr:first-child th,
+.bluebox-admin .table-bordered colgroup + tbody tr:first-child td,
+.bluebox-admin .table-bordered thead:first-child tr:first-child th,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child th,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.bluebox-admin .table-bordered thead:first-child tr:first-child > th:first-child,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child > td:first-child,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.bluebox-admin .table-bordered thead:first-child tr:first-child > th:last-child,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child > td:last-child,
+.bluebox-admin .table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.bluebox-admin .table-bordered thead:last-child tr:last-child > th:first-child,
+.bluebox-admin .table-bordered tbody:last-child tr:last-child > td:first-child,
+.bluebox-admin .table-bordered tbody:last-child tr:last-child > th:first-child,
+.bluebox-admin .table-bordered tfoot:last-child tr:last-child > td:first-child,
+.bluebox-admin .table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.bluebox-admin .table-bordered thead:last-child tr:last-child > th:last-child,
+.bluebox-admin .table-bordered tbody:last-child tr:last-child > td:last-child,
+.bluebox-admin .table-bordered tbody:last-child tr:last-child > th:last-child,
+.bluebox-admin .table-bordered tfoot:last-child tr:last-child > td:last-child,
+.bluebox-admin .table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.bluebox-admin .table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+}
+
+.bluebox-admin .table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+}
+
+.bluebox-admin .table-bordered caption + thead tr:first-child th:first-child,
+.bluebox-admin .table-bordered caption + tbody tr:first-child td:first-child,
+.bluebox-admin .table-bordered colgroup + thead tr:first-child th:first-child,
+.bluebox-admin .table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.bluebox-admin .table-bordered caption + thead tr:first-child th:last-child,
+.bluebox-admin .table-bordered caption + tbody tr:first-child td:last-child,
+.bluebox-admin .table-bordered colgroup + thead tr:first-child th:last-child,
+.bluebox-admin .table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.bluebox-admin .table-striped tbody > tr:nth-child(odd) > td,
+.bluebox-admin .table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.bluebox-admin .table-hover tbody tr:hover > td,
+.bluebox-admin .table-hover tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+
+.bluebox-admin table td[class*="span"],
+.bluebox-admin table th[class*="span"],
+.bluebox-admin .row-fluid table td[class*="span"],
+.bluebox-admin .row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span1,
+.bluebox-admin .table th.span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span2,
+.bluebox-admin .table th.span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span3,
+.bluebox-admin .table th.span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span4,
+.bluebox-admin .table th.span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span5,
+.bluebox-admin .table th.span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span6,
+.bluebox-admin .table th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span7,
+.bluebox-admin .table th.span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span8,
+.bluebox-admin .table th.span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span9,
+.bluebox-admin .table th.span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span10,
+.bluebox-admin .table th.span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span11,
+.bluebox-admin .table th.span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table td.span12,
+.bluebox-admin .table th.span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+
+.bluebox-admin .table tbody tr.success > td {
+  background-color: #dff0d8;
+}
+
+.bluebox-admin .table tbody tr.error > td {
+  background-color: #f2dede;
+}
+
+.bluebox-admin .table tbody tr.warning > td {
+  background-color: #fcf8e3;
+}
+
+.bluebox-admin .table tbody tr.info > td {
+  background-color: #d9edf7;
+}
+
+.bluebox-admin .table-hover tbody tr.success:hover > td {
+  background-color: #d0e9c6;
+}
+
+.bluebox-admin .table-hover tbody tr.error:hover > td {
+  background-color: #ebcccc;
+}
+
+.bluebox-admin .table-hover tbody tr.warning:hover > td {
+  background-color: #faf2cc;
+}
+
+.bluebox-admin .table-hover tbody tr.info:hover > td {
+  background-color: #c4e3f3;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+/* White icons with optional class, or on hover/focus/active states of certain elements */
+
+.bluebox-admin .icon-white,
+.bluebox-admin .nav-pills > .active > a > [class^="icon-"],
+.bluebox-admin .nav-pills > .active > a > [class*=" icon-"],
+.bluebox-admin .nav-list > .active > a > [class^="icon-"],
+.bluebox-admin .nav-list > .active > a > [class*=" icon-"],
+.bluebox-admin .navbar-inverse .nav > .active > a > [class^="icon-"],
+.bluebox-admin .navbar-inverse .nav > .active > a > [class*=" icon-"],
+.bluebox-admin .dropdown-menu > li > a:hover > [class^="icon-"],
+.bluebox-admin .dropdown-menu > li > a:focus > [class^="icon-"],
+.bluebox-admin .dropdown-menu > li > a:hover > [class*=" icon-"],
+.bluebox-admin .dropdown-menu > li > a:focus > [class*=" icon-"],
+.bluebox-admin .dropdown-menu > .active > a > [class^="icon-"],
+.bluebox-admin .dropdown-menu > .active > a > [class*=" icon-"],
+.bluebox-admin .dropdown-submenu:hover > a > [class^="icon-"],
+.bluebox-admin .dropdown-submenu:focus > a > [class^="icon-"],
+.bluebox-admin .dropdown-submenu:hover > a > [class*=" icon-"],
+.bluebox-admin .dropdown-submenu:focus > a > [class*=" icon-"] {
+  background-image: url("../img/glyphicons-halflings-white.png");
+}
+
+.bluebox-admin .icon-glass {
+  background-position: 0      0;
+}
+
+.bluebox-admin .icon-music {
+  background-position: -24px 0;
+}
+
+.bluebox-admin .icon-search {
+  background-position: -48px 0;
+}
+
+.bluebox-admin .icon-envelope {
+  background-position: -72px 0;
+}
+
+.bluebox-admin .icon-heart {
+  background-position: -96px 0;
+}
+
+.bluebox-admin .icon-star {
+  background-position: -120px 0;
+}
+
+.bluebox-admin .icon-star-empty {
+  background-position: -144px 0;
+}
+
+.bluebox-admin .icon-user {
+  background-position: -168px 0;
+}
+
+.bluebox-admin .icon-film {
+  background-position: -192px 0;
+}
+
+.bluebox-admin .icon-th-large {
+  background-position: -216px 0;
+}
+
+.bluebox-admin .icon-th {
+  background-position: -240px 0;
+}
+
+.bluebox-admin .icon-th-list {
+  background-position: -264px 0;
+}
+
+.bluebox-admin .icon-ok {
+  background-position: -288px 0;
+}
+
+.bluebox-admin .icon-remove {
+  background-position: -312px 0;
+}
+
+.bluebox-admin .icon-zoom-in {
+  background-position: -336px 0;
+}
+
+.bluebox-admin .icon-zoom-out {
+  background-position: -360px 0;
+}
+
+.bluebox-admin .icon-off {
+  background-position: -384px 0;
+}
+
+.bluebox-admin .icon-signal {
+  background-position: -408px 0;
+}
+
+.bluebox-admin .icon-cog {
+  background-position: -432px 0;
+}
+
+.bluebox-admin .icon-trash {
+  background-position: -456px 0;
+}
+
+.bluebox-admin .icon-home {
+  background-position: 0 -24px;
+}
+
+.bluebox-admin .icon-file {
+  background-position: -24px -24px;
+}
+
+.bluebox-admin .icon-time {
+  background-position: -48px -24px;
+}
+
+.bluebox-admin .icon-road {
+  background-position: -72px -24px;
+}
+
+.bluebox-admin .icon-download-alt {
+  background-position: -96px -24px;
+}
+
+.bluebox-admin .icon-download {
+  background-position: -120px -24px;
+}
+
+.bluebox-admin .icon-upload {
+  background-position: -144px -24px;
+}
+
+.bluebox-admin .icon-inbox {
+  background-position: -168px -24px;
+}
+
+.bluebox-admin .icon-play-circle {
+  background-position: -192px -24px;
+}
+
+.bluebox-admin .icon-repeat {
+  background-position: -216px -24px;
+}
+
+.bluebox-admin .icon-refresh {
+  background-position: -240px -24px;
+}
+
+.bluebox-admin .icon-list-alt {
+  background-position: -264px -24px;
+}
+
+.bluebox-admin .icon-lock {
+  background-position: -287px -24px;
+}
+
+.bluebox-admin .icon-flag {
+  background-position: -312px -24px;
+}
+
+.bluebox-admin .icon-headphones {
+  background-position: -336px -24px;
+}
+
+.bluebox-admin .icon-volume-off {
+  background-position: -360px -24px;
+}
+
+.bluebox-admin .icon-volume-down {
+  background-position: -384px -24px;
+}
+
+.bluebox-admin .icon-volume-up {
+  background-position: -408px -24px;
+}
+
+.bluebox-admin .icon-qrcode {
+  background-position: -432px -24px;
+}
+
+.bluebox-admin .icon-barcode {
+  background-position: -456px -24px;
+}
+
+.bluebox-admin .icon-tag {
+  background-position: 0 -48px;
+}
+
+.bluebox-admin .icon-tags {
+  background-position: -25px -48px;
+}
+
+.bluebox-admin .icon-book {
+  background-position: -48px -48px;
+}
+
+.bluebox-admin .icon-bookmark {
+  background-position: -72px -48px;
+}
+
+.bluebox-admin .icon-print {
+  background-position: -96px -48px;
+}
+
+.bluebox-admin .icon-camera {
+  background-position: -120px -48px;
+}
+
+.bluebox-admin .icon-font {
+  background-position: -144px -48px;
+}
+
+.bluebox-admin .icon-bold {
+  background-position: -167px -48px;
+}
+
+.bluebox-admin .icon-italic {
+  background-position: -192px -48px;
+}
+
+.bluebox-admin .icon-text-height {
+  background-position: -216px -48px;
+}
+
+.bluebox-admin .icon-text-width {
+  background-position: -240px -48px;
+}
+
+.bluebox-admin .icon-align-left {
+  background-position: -264px -48px;
+}
+
+.bluebox-admin .icon-align-center {
+  background-position: -288px -48px;
+}
+
+.bluebox-admin .icon-align-right {
+  background-position: -312px -48px;
+}
+
+.bluebox-admin .icon-align-justify {
+  background-position: -336px -48px;
+}
+
+.bluebox-admin .icon-list {
+  background-position: -360px -48px;
+}
+
+.bluebox-admin .icon-indent-left {
+  background-position: -384px -48px;
+}
+
+.bluebox-admin .icon-indent-right {
+  background-position: -408px -48px;
+}
+
+.bluebox-admin .icon-facetime-video {
+  background-position: -432px -48px;
+}
+
+.bluebox-admin .icon-picture {
+  background-position: -456px -48px;
+}
+
+.bluebox-admin .icon-pencil {
+  background-position: 0 -72px;
+}
+
+.bluebox-admin .icon-map-marker {
+  background-position: -24px -72px;
+}
+
+.bluebox-admin .icon-adjust {
+  background-position: -48px -72px;
+}
+
+.bluebox-admin .icon-tint {
+  background-position: -72px -72px;
+}
+
+.bluebox-admin .icon-edit {
+  background-position: -96px -72px;
+}
+
+.bluebox-admin .icon-share {
+  background-position: -120px -72px;
+}
+
+.bluebox-admin .icon-check {
+  background-position: -144px -72px;
+}
+
+.bluebox-admin .icon-move {
+  background-position: -168px -72px;
+}
+
+.bluebox-admin .icon-step-backward {
+  background-position: -192px -72px;
+}
+
+.bluebox-admin .icon-fast-backward {
+  background-position: -216px -72px;
+}
+
+.bluebox-admin .icon-backward {
+  background-position: -240px -72px;
+}
+
+.bluebox-admin .icon-play {
+  background-position: -264px -72px;
+}
+
+.bluebox-admin .icon-pause {
+  background-position: -288px -72px;
+}
+
+.bluebox-admin .icon-stop {
+  background-position: -312px -72px;
+}
+
+.bluebox-admin .icon-forward {
+  background-position: -336px -72px;
+}
+
+.bluebox-admin .icon-fast-forward {
+  background-position: -360px -72px;
+}
+
+.bluebox-admin .icon-step-forward {
+  background-position: -384px -72px;
+}
+
+.bluebox-admin .icon-eject {
+  background-position: -408px -72px;
+}
+
+.bluebox-admin .icon-chevron-left {
+  background-position: -432px -72px;
+}
+
+.bluebox-admin .icon-chevron-right {
+  background-position: -456px -72px;
+}
+
+.bluebox-admin .icon-plus-sign {
+  background-position: 0 -96px;
+}
+
+.bluebox-admin .icon-minus-sign {
+  background-position: -24px -96px;
+}
+
+.bluebox-admin .icon-remove-sign {
+  background-position: -48px -96px;
+}
+
+.bluebox-admin .icon-ok-sign {
+  background-position: -72px -96px;
+}
+
+.bluebox-admin .icon-question-sign {
+  background-position: -96px -96px;
+}
+
+.bluebox-admin .icon-info-sign {
+  background-position: -120px -96px;
+}
+
+.bluebox-admin .icon-screenshot {
+  background-position: -144px -96px;
+}
+
+.bluebox-admin .icon-remove-circle {
+  background-position: -168px -96px;
+}
+
+.bluebox-admin .icon-ok-circle {
+  background-position: -192px -96px;
+}
+
+.bluebox-admin .icon-ban-circle {
+  background-position: -216px -96px;
+}
+
+.bluebox-admin .icon-arrow-left {
+  background-position: -240px -96px;
+}
+
+.bluebox-admin .icon-arrow-right {
+  background-position: -264px -96px;
+}
+
+.bluebox-admin .icon-arrow-up {
+  background-position: -289px -96px;
+}
+
+.bluebox-admin .icon-arrow-down {
+  background-position: -312px -96px;
+}
+
+.bluebox-admin .icon-share-alt {
+  background-position: -336px -96px;
+}
+
+.bluebox-admin .icon-resize-full {
+  background-position: -360px -96px;
+}
+
+.bluebox-admin .icon-resize-small {
+  background-position: -384px -96px;
+}
+
+.bluebox-admin .icon-plus {
+  background-position: -408px -96px;
+}
+
+.bluebox-admin .icon-minus {
+  background-position: -433px -96px;
+}
+
+.bluebox-admin .icon-asterisk {
+  background-position: -456px -96px;
+}
+
+.bluebox-admin .icon-exclamation-sign {
+  background-position: 0 -120px;
+}
+
+.bluebox-admin .icon-gift {
+  background-position: -24px -120px;
+}
+
+.bluebox-admin .icon-leaf {
+  background-position: -48px -120px;
+}
+
+.bluebox-admin .icon-fire {
+  background-position: -72px -120px;
+}
+
+.bluebox-admin .icon-eye-open {
+  background-position: -96px -120px;
+}
+
+.bluebox-admin .icon-eye-close {
+  background-position: -120px -120px;
+}
+
+.bluebox-admin .icon-warning-sign {
+  background-position: -144px -120px;
+}
+
+.bluebox-admin .icon-plane {
+  background-position: -168px -120px;
+}
+
+.bluebox-admin .icon-calendar {
+  background-position: -192px -120px;
+}
+
+.bluebox-admin .icon-random {
+  width: 16px;
+  background-position: -216px -120px;
+}
+
+.bluebox-admin .icon-comment {
+  background-position: -240px -120px;
+}
+
+.bluebox-admin .icon-magnet {
+  background-position: -264px -120px;
+}
+
+.bluebox-admin .icon-chevron-up {
+  background-position: -288px -120px;
+}
+
+.bluebox-admin .icon-chevron-down {
+  background-position: -313px -119px;
+}
+
+.bluebox-admin .icon-retweet {
+  background-position: -336px -120px;
+}
+
+.bluebox-admin .icon-shopping-cart {
+  background-position: -360px -120px;
+}
+
+.bluebox-admin .icon-folder-close {
+  width: 16px;
+  background-position: -384px -120px;
+}
+
+.bluebox-admin .icon-folder-open {
+  width: 16px;
+  background-position: -408px -120px;
+}
+
+.bluebox-admin .icon-resize-vertical {
+  background-position: -432px -119px;
+}
+
+.bluebox-admin .icon-resize-horizontal {
+  background-position: -456px -118px;
+}
+
+.bluebox-admin .icon-hdd {
+  background-position: 0 -144px;
+}
+
+.bluebox-admin .icon-bullhorn {
+  background-position: -24px -144px;
+}
+
+.bluebox-admin .icon-bell {
+  background-position: -48px -144px;
+}
+
+.bluebox-admin .icon-certificate {
+  background-position: -72px -144px;
+}
+
+.bluebox-admin .icon-thumbs-up {
+  background-position: -96px -144px;
+}
+
+.bluebox-admin .icon-thumbs-down {
+  background-position: -120px -144px;
+}
+
+.bluebox-admin .icon-hand-right {
+  background-position: -144px -144px;
+}
+
+.bluebox-admin .icon-hand-left {
+  background-position: -168px -144px;
+}
+
+.bluebox-admin .icon-hand-up {
+  background-position: -192px -144px;
+}
+
+.bluebox-admin .icon-hand-down {
+  background-position: -216px -144px;
+}
+
+.bluebox-admin .icon-circle-arrow-right {
+  background-position: -240px -144px;
+}
+
+.bluebox-admin .icon-circle-arrow-left {
+  background-position: -264px -144px;
+}
+
+.bluebox-admin .icon-circle-arrow-up {
+  background-position: -288px -144px;
+}
+
+.bluebox-admin .icon-circle-arrow-down {
+  background-position: -312px -144px;
+}
+
+.bluebox-admin .icon-globe {
+  background-position: -336px -144px;
+}
+
+.bluebox-admin .icon-wrench {
+  background-position: -360px -144px;
+}
+
+.bluebox-admin .icon-tasks {
+  background-position: -384px -144px;
+}
+
+.bluebox-admin .icon-filter {
+  background-position: -408px -144px;
+}
+
+.bluebox-admin .icon-briefcase {
+  background-position: -432px -144px;
+}
+
+.bluebox-admin .icon-fullscreen {
+  background-position: -456px -144px;
+}
+
+.bluebox-admin .dropup,
+.bluebox-admin .dropdown {
+  position: relative;
+}
+
+.bluebox-admin .dropdown-toggle {
+  *margin-bottom: -3px;
+}
+
+.bluebox-admin .dropdown-toggle:active,
+.bluebox-admin .open .dropdown-toggle {
+  outline: 0;
+}
+
+.bluebox-admin .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.bluebox-admin .dropdown .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.bluebox-admin .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.bluebox-admin .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.bluebox-admin .dropdown-menu .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 9px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.bluebox-admin .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.bluebox-admin .dropdown-menu > li > a:hover,
+.bluebox-admin .dropdown-menu > li > a:focus,
+.bluebox-admin .dropdown-submenu:hover > a,
+.bluebox-admin .dropdown-submenu:focus > a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.bluebox-admin .dropdown-menu > .active > a,
+.bluebox-admin .dropdown-menu > .active > a:hover,
+.bluebox-admin .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.bluebox-admin .dropdown-menu > .disabled > a,
+.bluebox-admin .dropdown-menu > .disabled > a:hover,
+.bluebox-admin .dropdown-menu > .disabled > a:focus {
+  color: #999999;
+}
+
+.bluebox-admin .dropdown-menu > .disabled > a:hover,
+.bluebox-admin .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .open {
+  *z-index: 1000;
+}
+
+.bluebox-admin .open > .dropdown-menu {
+  display: block;
+}
+
+.bluebox-admin .pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.bluebox-admin .dropup .caret,
+.bluebox-admin .navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid #000000;
+  content: "";
+}
+
+.bluebox-admin .dropup .dropdown-menu,
+.bluebox-admin .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+.bluebox-admin .dropdown-submenu {
+  position: relative;
+}
+
+.bluebox-admin .dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+     -moz-border-radius: 0 6px 6px 6px;
+          border-radius: 0 6px 6px 6px;
+}
+
+.bluebox-admin .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.bluebox-admin .dropup .dropdown-submenu > .dropdown-menu {
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: -2px;
+  -webkit-border-radius: 5px 5px 5px 0;
+     -moz-border-radius: 5px 5px 5px 0;
+          border-radius: 5px 5px 5px 0;
+}
+
+.bluebox-admin .dropdown-submenu > a:after {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin-top: 5px;
+  margin-right: -10px;
+  border-color: transparent;
+  border-left-color: #cccccc;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+}
+
+.bluebox-admin .dropdown-submenu:hover > a:after {
+  border-left-color: #ffffff;
+}
+
+.bluebox-admin .dropdown-submenu.pull-left {
+  float: none;
+}
+
+.bluebox-admin .dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+     -moz-border-radius: 6px 0 6px 6px;
+          border-radius: 6px 0 6px 6px;
+}
+
+.bluebox-admin .dropdown .dropdown-menu .nav-header {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bluebox-admin .typeahead {
+  z-index: 1051;
+  margin-top: 2px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.bluebox-admin .well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.bluebox-admin .well-small {
+  padding: 9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.bluebox-admin .fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+     -moz-transition: opacity 0.15s linear;
+       -o-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
+}
+
+.bluebox-admin .fade.in {
+  opacity: 1;
+}
+
+.bluebox-admin .collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.bluebox-admin .collapse.in {
+  height: auto;
+}
+
+.bluebox-admin .close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.bluebox-admin .close:hover,
+.bluebox-admin .close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.bluebox-admin button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.bluebox-admin .btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .btn:hover,
+.bluebox-admin .btn:focus,
+.bluebox-admin .btn:active,
+.bluebox-admin .btn.active,
+.bluebox-admin .btn.disabled,
+.bluebox-admin .btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.bluebox-admin .btn:active,
+.bluebox-admin .btn.active {
+  background-color: #cccccc \9;
+}
+
+.bluebox-admin .btn:first-child {
+  *margin-left: 0;
+}
+
+.bluebox-admin .btn:hover,
+.bluebox-admin .btn:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.bluebox-admin .btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.bluebox-admin .btn.active,
+.bluebox-admin .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .btn.disabled,
+.bluebox-admin .btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.bluebox-admin .btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.bluebox-admin .btn-large [class^="icon-"],
+.bluebox-admin .btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+.bluebox-admin .btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.bluebox-admin .btn-small [class^="icon-"],
+.bluebox-admin .btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.bluebox-admin .btn-mini [class^="icon-"],
+.bluebox-admin .btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+.bluebox-admin .btn-mini {
+  padding: 0 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.bluebox-admin .btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bluebox-admin .btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+.bluebox-admin input[type="submit"].btn-block,
+.bluebox-admin input[type="reset"].btn-block,
+.bluebox-admin input[type="button"].btn-block {
+  width: 100%;
+}
+
+.bluebox-admin .btn-primary.active,
+.bluebox-admin .btn-warning.active,
+.bluebox-admin .btn-danger.active,
+.bluebox-admin .btn-success.active,
+.bluebox-admin .btn-info.active,
+.bluebox-admin .btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bluebox-admin .btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-primary:hover,
+.bluebox-admin .btn-primary:focus,
+.bluebox-admin .btn-primary:active,
+.bluebox-admin .btn-primary.active,
+.bluebox-admin .btn-primary.disabled,
+.bluebox-admin .btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+
+.bluebox-admin .btn-primary:active,
+.bluebox-admin .btn-primary.active {
+  background-color: #003399 \9;
+}
+
+.bluebox-admin .btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-warning:hover,
+.bluebox-admin .btn-warning:focus,
+.bluebox-admin .btn-warning:active,
+.bluebox-admin .btn-warning.active,
+.bluebox-admin .btn-warning.disabled,
+.bluebox-admin .btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+
+.bluebox-admin .btn-warning:active,
+.bluebox-admin .btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+.bluebox-admin .btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  *background-color: #bd362f;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-danger:hover,
+.bluebox-admin .btn-danger:focus,
+.bluebox-admin .btn-danger:active,
+.bluebox-admin .btn-danger.active,
+.bluebox-admin .btn-danger.disabled,
+.bluebox-admin .btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+
+.bluebox-admin .btn-danger:active,
+.bluebox-admin .btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+.bluebox-admin .btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  *background-color: #51a351;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-success:hover,
+.bluebox-admin .btn-success:focus,
+.bluebox-admin .btn-success:active,
+.bluebox-admin .btn-success.active,
+.bluebox-admin .btn-success.disabled,
+.bluebox-admin .btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+
+.bluebox-admin .btn-success:active,
+.bluebox-admin .btn-success.active {
+  background-color: #408140 \9;
+}
+
+.bluebox-admin .btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-info:hover,
+.bluebox-admin .btn-info:focus,
+.bluebox-admin .btn-info:active,
+.bluebox-admin .btn-info.active,
+.bluebox-admin .btn-info.disabled,
+.bluebox-admin .btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.bluebox-admin .btn-info:active,
+.bluebox-admin .btn-info.active {
+  background-color: #24748c \9;
+}
+
+.bluebox-admin .btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  *background-color: #222222;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .btn-inverse:hover,
+.bluebox-admin .btn-inverse:focus,
+.bluebox-admin .btn-inverse:active,
+.bluebox-admin .btn-inverse.active,
+.bluebox-admin .btn-inverse.disabled,
+.bluebox-admin .btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+
+.bluebox-admin .btn-inverse:active,
+.bluebox-admin .btn-inverse.active {
+  background-color: #080808 \9;
+}
+
+.bluebox-admin button.btn,
+.bluebox-admin input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+.bluebox-admin button.btn::-moz-focus-inner,
+.bluebox-admin input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.bluebox-admin button.btn.btn-large,
+.bluebox-admin input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
+.bluebox-admin button.btn.btn-small,
+.bluebox-admin input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+
+.bluebox-admin button.btn.btn-mini,
+.bluebox-admin input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+.bluebox-admin .btn-link,
+.bluebox-admin .btn-link:active,
+.bluebox-admin .btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.bluebox-admin .btn-link {
+  color: #0088cc;
+  cursor: pointer;
+  border-color: transparent;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .btn-link:hover,
+.bluebox-admin .btn-link:focus {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.bluebox-admin .btn-link[disabled]:hover,
+.bluebox-admin .btn-link[disabled]:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.bluebox-admin .btn-group {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *margin-left: .3em;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+.bluebox-admin .btn-group:first-child {
+  *margin-left: 0;
+}
+
+.bluebox-admin .btn-group + .btn-group {
+  margin-left: 5px;
+}
+
+.bluebox-admin .btn-toolbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+.bluebox-admin .btn-toolbar > .btn + .btn,
+.bluebox-admin .btn-toolbar > .btn-group + .btn,
+.bluebox-admin .btn-toolbar > .btn + .btn-group {
+  margin-left: 5px;
+}
+
+.bluebox-admin .btn-group > .btn {
+  position: relative;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .btn-group > .btn + .btn {
+  margin-left: -1px;
+}
+
+.bluebox-admin .btn-group > .btn,
+.bluebox-admin .btn-group > .dropdown-menu,
+.bluebox-admin .btn-group > .popover {
+  font-size: 14px;
+}
+
+.bluebox-admin .btn-group > .btn-mini {
+  font-size: 10.5px;
+}
+
+.bluebox-admin .btn-group > .btn-small {
+  font-size: 11.9px;
+}
+
+.bluebox-admin .btn-group > .btn-large {
+  font-size: 17.5px;
+}
+
+.bluebox-admin .btn-group > .btn:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.bluebox-admin .btn-group > .btn:last-child,
+.bluebox-admin .btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.bluebox-admin .btn-group > .btn.large:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+.bluebox-admin .btn-group > .btn.large:last-child,
+.bluebox-admin .btn-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.bluebox-admin .btn-group > .btn:hover,
+.bluebox-admin .btn-group > .btn:focus,
+.bluebox-admin .btn-group > .btn:active,
+.bluebox-admin .btn-group > .btn.active {
+  z-index: 2;
+}
+
+.bluebox-admin .btn-group .dropdown-toggle:active,
+.bluebox-admin .btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+
+.bluebox-admin .btn-group > .btn + .dropdown-toggle {
+  *padding-top: 5px;
+  padding-right: 8px;
+  *padding-bottom: 5px;
+  padding-left: 8px;
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .btn-group > .btn-mini + .dropdown-toggle {
+  *padding-top: 2px;
+  padding-right: 5px;
+  *padding-bottom: 2px;
+  padding-left: 5px;
+}
+
+.bluebox-admin .btn-group > .btn-small + .dropdown-toggle {
+  *padding-top: 5px;
+  *padding-bottom: 4px;
+}
+
+.bluebox-admin .btn-group > .btn-large + .dropdown-toggle {
+  *padding-top: 7px;
+  padding-right: 12px;
+  *padding-bottom: 7px;
+  padding-left: 12px;
+}
+
+.bluebox-admin .btn-group.open .dropdown-toggle {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .btn-group.open .btn.dropdown-toggle {
+  background-color: #e6e6e6;
+}
+
+.bluebox-admin .btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #0044cc;
+}
+
+.bluebox-admin .btn-group.open .btn-warning.dropdown-toggle {
+  background-color: #f89406;
+}
+
+.bluebox-admin .btn-group.open .btn-danger.dropdown-toggle {
+  background-color: #bd362f;
+}
+
+.bluebox-admin .btn-group.open .btn-success.dropdown-toggle {
+  background-color: #51a351;
+}
+
+.bluebox-admin .btn-group.open .btn-info.dropdown-toggle {
+  background-color: #2f96b4;
+}
+
+.bluebox-admin .btn-group.open .btn-inverse.dropdown-toggle {
+  background-color: #222222;
+}
+
+.bluebox-admin .btn .caret {
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+.bluebox-admin .btn-large .caret {
+  margin-top: 6px;
+}
+
+.bluebox-admin .btn-large .caret {
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-left-width: 5px;
+}
+
+.bluebox-admin .btn-mini .caret,
+.bluebox-admin .btn-small .caret {
+  margin-top: 8px;
+}
+
+.bluebox-admin .dropup .btn-large .caret {
+  border-bottom-width: 5px;
+}
+
+.bluebox-admin .btn-primary .caret,
+.bluebox-admin .btn-warning .caret,
+.bluebox-admin .btn-danger .caret,
+.bluebox-admin .btn-info .caret,
+.bluebox-admin .btn-success .caret,
+.bluebox-admin .btn-inverse .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.bluebox-admin .btn-group-vertical {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+
+.bluebox-admin .btn-group-vertical > .btn {
+  display: block;
+  float: none;
+  max-width: 100%;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .btn-group-vertical > .btn + .btn {
+  margin-top: -1px;
+  margin-left: 0;
+}
+
+.bluebox-admin .btn-group-vertical > .btn:first-child {
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+
+.bluebox-admin .btn-group-vertical > .btn:last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.bluebox-admin .btn-group-vertical > .btn-large:first-child {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+
+.bluebox-admin .btn-group-vertical > .btn-large:last-child {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+
+.bluebox-admin .alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .alert,
+.bluebox-admin .alert h4 {
+  color: #c09853;
+}
+
+.bluebox-admin .alert h4 {
+  margin: 0;
+}
+
+.bluebox-admin .alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 20px;
+}
+
+.bluebox-admin .alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.bluebox-admin .alert-success h4 {
+  color: #468847;
+}
+
+.bluebox-admin .alert-danger,
+.bluebox-admin .alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+.bluebox-admin .alert-danger h4,
+.bluebox-admin .alert-error h4 {
+  color: #b94a48;
+}
+
+.bluebox-admin .alert-info {
+  color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.bluebox-admin .alert-info h4 {
+  color: #3a87ad;
+}
+
+.bluebox-admin .alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.bluebox-admin .alert-block > p,
+.bluebox-admin .alert-block > ul {
+  margin-bottom: 0;
+}
+
+.bluebox-admin .alert-block p + p {
+  margin-top: 5px;
+}
+
+.bluebox-admin .nav {
+  margin-bottom: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.bluebox-admin .nav > li > a {
+  display: block;
+}
+
+.bluebox-admin .nav > li > a:hover,
+.bluebox-admin .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.bluebox-admin .nav > li > a > img {
+  max-width: none;
+}
+
+.bluebox-admin .nav > .pull-right {
+  float: right;
+}
+
+.bluebox-admin .nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.bluebox-admin .nav li + .nav-header {
+  margin-top: 9px;
+}
+
+.bluebox-admin .nav-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .nav-list > li > a,
+.bluebox-admin .nav-list .nav-header {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.bluebox-admin .nav-list > li > a {
+  padding: 3px 15px;
+}
+
+.bluebox-admin .nav-list > .active > a,
+.bluebox-admin .nav-list > .active > a:hover,
+.bluebox-admin .nav-list > .active > a:focus {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0088cc;
+}
+
+.bluebox-admin .nav-list [class^="icon-"],
+.bluebox-admin .nav-list [class*=" icon-"] {
+  margin-right: 2px;
+}
+
+.bluebox-admin .nav-list .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 9px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #ffffff;
+}
+
+.bluebox-admin .nav-tabs,
+.bluebox-admin .nav-pills {
+  *zoom: 1;
+}
+
+.bluebox-admin .nav-tabs:before,
+.bluebox-admin .nav-pills:before,
+.bluebox-admin .nav-tabs:after,
+.bluebox-admin .nav-pills:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .nav-tabs:after,
+.bluebox-admin .nav-pills:after {
+  clear: both;
+}
+
+.bluebox-admin .nav-tabs > li,
+.bluebox-admin .nav-pills > li {
+  float: left;
+}
+
+.bluebox-admin .nav-tabs > li > a,
+.bluebox-admin .nav-pills > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+.bluebox-admin .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.bluebox-admin .nav-tabs > li {
+  margin-bottom: -1px;
+}
+
+.bluebox-admin .nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+     -moz-border-radius: 4px 4px 0 0;
+          border-radius: 4px 4px 0 0;
+}
+
+.bluebox-admin .nav-tabs > li > a:hover,
+.bluebox-admin .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+
+.bluebox-admin .nav-tabs > .active > a,
+.bluebox-admin .nav-tabs > .active > a:hover,
+.bluebox-admin .nav-tabs > .active > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.bluebox-admin .nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.bluebox-admin .nav-pills > .active > a,
+.bluebox-admin .nav-pills > .active > a:hover,
+.bluebox-admin .nav-pills > .active > a:focus {
+  color: #ffffff;
+  background-color: #0088cc;
+}
+
+.bluebox-admin .nav-stacked > li {
+  float: none;
+}
+
+.bluebox-admin .nav-stacked > li > a {
+  margin-right: 0;
+}
+
+.bluebox-admin .nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+
+.bluebox-admin .nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .nav-tabs.nav-stacked > li:first-child > a {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.bluebox-admin .nav-tabs.nav-stacked > li:last-child > a {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.bluebox-admin .nav-tabs.nav-stacked > li > a:hover,
+.bluebox-admin .nav-tabs.nav-stacked > li > a:focus {
+  z-index: 2;
+  border-color: #ddd;
+}
+
+.bluebox-admin .nav-pills.nav-stacked > li > a {
+  margin-bottom: 3px;
+}
+
+.bluebox-admin .nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px;
+}
+
+.bluebox-admin .nav-tabs .dropdown-menu {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+
+.bluebox-admin .nav-pills .dropdown-menu {
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.bluebox-admin .nav .dropdown-toggle .caret {
+  margin-top: 6px;
+  border-top-color: #0088cc;
+  border-bottom-color: #0088cc;
+}
+
+.bluebox-admin .nav .dropdown-toggle:hover .caret,
+.bluebox-admin .nav .dropdown-toggle:focus .caret {
+  border-top-color: #005580;
+  border-bottom-color: #005580;
+}
+
+/* move down carets for tabs */
+
+.bluebox-admin .nav-tabs .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+
+.bluebox-admin .nav .active .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.bluebox-admin .nav-tabs .active .dropdown-toggle .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+
+.bluebox-admin .nav > .dropdown.active > a:hover,
+.bluebox-admin .nav > .dropdown.active > a:focus {
+  cursor: pointer;
+}
+
+.bluebox-admin .nav-tabs .open .dropdown-toggle,
+.bluebox-admin .nav-pills .open .dropdown-toggle,
+.bluebox-admin .nav > li.dropdown.open.active > a:hover,
+.bluebox-admin .nav > li.dropdown.open.active > a:focus {
+  color: #ffffff;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+.bluebox-admin .nav li.dropdown.open .caret,
+.bluebox-admin .nav li.dropdown.open.active .caret,
+.bluebox-admin .nav li.dropdown.open a:hover .caret,
+.bluebox-admin .nav li.dropdown.open a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.bluebox-admin .tabs-stacked .open > a:hover,
+.bluebox-admin .tabs-stacked .open > a:focus {
+  border-color: #999999;
+}
+
+.bluebox-admin .tabbable {
+  *zoom: 1;
+}
+
+.bluebox-admin .tabbable:before,
+.bluebox-admin .tabbable:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .tabbable:after {
+  clear: both;
+}
+
+.bluebox-admin .tab-content {
+  overflow: auto;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs,
+.bluebox-admin .tabs-right > .nav-tabs,
+.bluebox-admin .tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.bluebox-admin .tab-content > .tab-pane,
+.bluebox-admin .pill-content > .pill-pane {
+  display: none;
+}
+
+.bluebox-admin .tab-content > .active,
+.bluebox-admin .pill-content > .active {
+  display: block;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs > li > a:hover,
+.bluebox-admin .tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent;
+}
+
+.bluebox-admin .tabs-below > .nav-tabs > .active > a,
+.bluebox-admin .tabs-below > .nav-tabs > .active > a:hover,
+.bluebox-admin .tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs > li,
+.bluebox-admin .tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs > li > a,
+.bluebox-admin .tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs > li > a:hover,
+.bluebox-admin .tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.bluebox-admin .tabs-left > .nav-tabs .active > a,
+.bluebox-admin .tabs-left > .nav-tabs .active > a:hover,
+.bluebox-admin .tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.bluebox-admin .tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.bluebox-admin .tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.bluebox-admin .tabs-right > .nav-tabs > li > a:hover,
+.bluebox-admin .tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.bluebox-admin .tabs-right > .nav-tabs .active > a,
+.bluebox-admin .tabs-right > .nav-tabs .active > a:hover,
+.bluebox-admin .tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}
+
+.bluebox-admin .nav > .disabled > a {
+  color: #999999;
+}
+
+.bluebox-admin .nav > .disabled > a:hover,
+.bluebox-admin .nav > .disabled > a:focus {
+  text-decoration: none;
+  cursor: default;
+  background-color: transparent;
+}
+
+.bluebox-admin .navbar {
+  *position: relative;
+  *z-index: 2;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.bluebox-admin .navbar-inner {
+  min-height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.bluebox-admin .navbar-inner:before,
+.bluebox-admin .navbar-inner:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .navbar-inner:after {
+  clear: both;
+}
+
+.bluebox-admin .navbar .container {
+  width: auto;
+}
+
+.bluebox-admin .nav-collapse.collapse {
+  height: auto;
+  overflow: visible;
+}
+
+.bluebox-admin .navbar .brand {
+  display: block;
+  float: left;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777777;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.bluebox-admin .navbar .brand:hover,
+.bluebox-admin .navbar .brand:focus {
+  text-decoration: none;
+}
+
+.bluebox-admin .navbar-text {
+  margin-bottom: 0;
+  line-height: 40px;
+  color: #777777;
+}
+
+.bluebox-admin .navbar-link {
+  color: #777777;
+}
+
+.bluebox-admin .navbar-link:hover,
+.bluebox-admin .navbar-link:focus {
+  color: #333333;
+}
+
+.bluebox-admin .navbar .divider-vertical {
+  height: 40px;
+  margin: 0 9px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #f2f2f2;
+}
+
+.bluebox-admin .navbar .btn,
+.bluebox-admin .navbar .btn-group {
+  margin-top: 5px;
+}
+
+.bluebox-admin .navbar .btn-group .btn,
+.bluebox-admin .navbar .input-prepend .btn,
+.bluebox-admin .navbar .input-append .btn,
+.bluebox-admin .navbar .input-prepend .btn-group,
+.bluebox-admin .navbar .input-append .btn-group {
+  margin-top: 0;
+}
+
+.bluebox-admin .navbar-form {
+  margin-bottom: 0;
+  *zoom: 1;
+}
+
+.bluebox-admin .navbar-form:before,
+.bluebox-admin .navbar-form:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .navbar-form:after {
+  clear: both;
+}
+
+.bluebox-admin .navbar-form input,
+.bluebox-admin .navbar-form select,
+.bluebox-admin .navbar-form .radio,
+.bluebox-admin .navbar-form .checkbox {
+  margin-top: 5px;
+}
+
+.bluebox-admin .navbar-form input,
+.bluebox-admin .navbar-form select,
+.bluebox-admin .navbar-form .btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .navbar-form input[type="image"],
+.bluebox-admin .navbar-form input[type="checkbox"],
+.bluebox-admin .navbar-form input[type="radio"] {
+  margin-top: 3px;
+}
+
+.bluebox-admin .navbar-form .input-append,
+.bluebox-admin .navbar-form .input-prepend {
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+.bluebox-admin .navbar-form .input-append input,
+.bluebox-admin .navbar-form .input-prepend input {
+  margin-top: 0;
+}
+
+.bluebox-admin .navbar-search {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .navbar-search .search-query {
+  padding: 4px 14px;
+  margin-bottom: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.bluebox-admin .navbar-static-top {
+  position: static;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .navbar-static-top .navbar-inner {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .navbar-fixed-top,
+.bluebox-admin .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom: 0;
+}
+
+.bluebox-admin .navbar-fixed-top .navbar-inner,
+.bluebox-admin .navbar-static-top .navbar-inner {
+  border-width: 0 0 1px;
+}
+
+.bluebox-admin .navbar-fixed-bottom .navbar-inner {
+  border-width: 1px 0 0;
+}
+
+.bluebox-admin .navbar-fixed-top .navbar-inner,
+.bluebox-admin .navbar-fixed-bottom .navbar-inner {
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.bluebox-admin .navbar-static-top .container,
+.bluebox-admin .navbar-fixed-top .container,
+.bluebox-admin .navbar-fixed-bottom .container {
+  width: 940px;
+}
+
+.bluebox-admin .navbar-fixed-top {
+  top: 0;
+}
+
+.bluebox-admin .navbar-fixed-top .navbar-inner,
+.bluebox-admin .navbar-static-top .navbar-inner {
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bluebox-admin .navbar-fixed-bottom {
+  bottom: 0;
+}
+
+.bluebox-admin .navbar-fixed-bottom .navbar-inner {
+  -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bluebox-admin .navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.bluebox-admin .navbar .nav.pull-right {
+  float: right;
+  margin-right: 0;
+}
+
+.bluebox-admin .navbar .nav > li {
+  float: left;
+}
+
+.bluebox-admin .navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.bluebox-admin .navbar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+
+.bluebox-admin .navbar .nav > li > a:focus,
+.bluebox-admin .navbar .nav > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.bluebox-admin .navbar .nav > .active > a,
+.bluebox-admin .navbar .nav > .active > a:hover,
+.bluebox-admin .navbar .nav > .active > a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.bluebox-admin .navbar .btn-navbar {
+  display: none;
+  float: right;
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ededed;
+  *background-color: #e5e5e5;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
+  background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
+  background-repeat: repeat-x;
+  border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+
+.bluebox-admin .navbar .btn-navbar:hover,
+.bluebox-admin .navbar .btn-navbar:focus,
+.bluebox-admin .navbar .btn-navbar:active,
+.bluebox-admin .navbar .btn-navbar.active,
+.bluebox-admin .navbar .btn-navbar.disabled,
+.bluebox-admin .navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  *background-color: #d9d9d9;
+}
+
+.bluebox-admin .navbar .btn-navbar:active,
+.bluebox-admin .navbar .btn-navbar.active {
+  background-color: #cccccc \9;
+}
+
+.bluebox-admin .navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bluebox-admin .btn-navbar .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+.bluebox-admin .navbar .nav > li > .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.bluebox-admin .navbar .nav > li > .dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+.bluebox-admin .navbar-fixed-bottom .nav > li > .dropdown-menu:before {
+  top: auto;
+  bottom: -7px;
+  border-top: 7px solid #ccc;
+  border-bottom: 0;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.bluebox-admin .navbar-fixed-bottom .nav > li > .dropdown-menu:after {
+  top: auto;
+  bottom: -6px;
+  border-top: 6px solid #ffffff;
+  border-bottom: 0;
+}
+
+.bluebox-admin .navbar .nav li.dropdown > a:hover .caret,
+.bluebox-admin .navbar .nav li.dropdown > a:focus .caret {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+
+.bluebox-admin .navbar .nav li.dropdown.open > .dropdown-toggle,
+.bluebox-admin .navbar .nav li.dropdown.active > .dropdown-toggle,
+.bluebox-admin .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #555555;
+  background-color: #e5e5e5;
+}
+
+.bluebox-admin .navbar .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #777777;
+  border-bottom-color: #777777;
+}
+
+.bluebox-admin .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.bluebox-admin .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.bluebox-admin .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+
+.bluebox-admin .navbar .pull-right > li > .dropdown-menu,
+.bluebox-admin .navbar .nav > li > .dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.bluebox-admin .navbar .pull-right > li > .dropdown-menu:before,
+.bluebox-admin .navbar .nav > li > .dropdown-menu.pull-right:before {
+  right: 12px;
+  left: auto;
+}
+
+.bluebox-admin .navbar .pull-right > li > .dropdown-menu:after,
+.bluebox-admin .navbar .nav > li > .dropdown-menu.pull-right:after {
+  right: 13px;
+  left: auto;
+}
+
+.bluebox-admin .navbar .pull-right > li > .dropdown-menu .dropdown-menu,
+.bluebox-admin .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+  right: 100%;
+  left: auto;
+  margin-right: -1px;
+  margin-left: 0;
+  -webkit-border-radius: 6px 0 6px 6px;
+     -moz-border-radius: 6px 0 6px 6px;
+          border-radius: 6px 0 6px 6px;
+}
+
+.bluebox-admin .navbar-inverse .navbar-inner {
+  background-color: #1b1b1b;
+  background-image: -moz-linear-gradient(top, #222222, #111111);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  background-image: -o-linear-gradient(top, #222222, #111111);
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  border-color: #252525;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+
+.bluebox-admin .navbar-inverse .brand,
+.bluebox-admin .navbar-inverse .nav > li > a {
+  color: #999999;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bluebox-admin .navbar-inverse .brand:hover,
+.bluebox-admin .navbar-inverse .nav > li > a:hover,
+.bluebox-admin .navbar-inverse .brand:focus,
+.bluebox-admin .navbar-inverse .nav > li > a:focus {
+  color: #ffffff;
+}
+
+.bluebox-admin .navbar-inverse .brand {
+  color: #999999;
+}
+
+.bluebox-admin .navbar-inverse .navbar-text {
+  color: #999999;
+}
+
+.bluebox-admin .navbar-inverse .nav > li > a:focus,
+.bluebox-admin .navbar-inverse .nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.bluebox-admin .navbar-inverse .nav .active > a,
+.bluebox-admin .navbar-inverse .nav .active > a:hover,
+.bluebox-admin .navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.bluebox-admin .navbar-inverse .navbar-link {
+  color: #999999;
+}
+
+.bluebox-admin .navbar-inverse .navbar-link:hover,
+.bluebox-admin .navbar-inverse .navbar-link:focus {
+  color: #ffffff;
+}
+
+.bluebox-admin .navbar-inverse .divider-vertical {
+  border-right-color: #222222;
+  border-left-color: #111111;
+}
+
+.bluebox-admin .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.bluebox-admin .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.bluebox-admin .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #111111;
+}
+
+.bluebox-admin .navbar-inverse .nav li.dropdown > a:hover .caret,
+.bluebox-admin .navbar-inverse .nav li.dropdown > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.bluebox-admin .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+
+.bluebox-admin .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
+.bluebox-admin .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
+.bluebox-admin .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.bluebox-admin .navbar-inverse .navbar-search .search-query {
+  color: #ffffff;
+  background-color: #515151;
+  border-color: #111111;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.bluebox-admin .navbar-inverse .navbar-search .search-query:-moz-placeholder {
+  color: #cccccc;
+}
+
+.bluebox-admin .navbar-inverse .navbar-search .search-query:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.bluebox-admin .navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.bluebox-admin .navbar-inverse .navbar-search .search-query:focus,
+.bluebox-admin .navbar-inverse .navbar-search .search-query.focused {
+  padding: 5px 15px;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.bluebox-admin .navbar-inverse .btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0e0e0e;
+  *background-color: #040404;
+  background-image: -moz-linear-gradient(top, #151515, #040404);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
+  background-image: -webkit-linear-gradient(top, #151515, #040404);
+  background-image: -o-linear-gradient(top, #151515, #040404);
+  background-image: linear-gradient(to bottom, #151515, #040404);
+  background-repeat: repeat-x;
+  border-color: #040404 #040404 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.bluebox-admin .navbar-inverse .btn-navbar:hover,
+.bluebox-admin .navbar-inverse .btn-navbar:focus,
+.bluebox-admin .navbar-inverse .btn-navbar:active,
+.bluebox-admin .navbar-inverse .btn-navbar.active,
+.bluebox-admin .navbar-inverse .btn-navbar.disabled,
+.bluebox-admin .navbar-inverse .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #040404;
+  *background-color: #000000;
+}
+
+.bluebox-admin .navbar-inverse .btn-navbar:active,
+.bluebox-admin .navbar-inverse .btn-navbar.active {
+  background-color: #000000 \9;
+}
+
+.bluebox-admin .breadcrumb {
+  padding: 8px 15px;
+  margin: 0 0 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .breadcrumb > li {
+  display: inline-block;
+  *display: inline;
+  text-shadow: 0 1px 0 #ffffff;
+  *zoom: 1;
+}
+
+.bluebox-admin .breadcrumb > li > .divider {
+  padding: 0 5px;
+  color: #ccc;
+}
+
+.bluebox-admin .breadcrumb > .active {
+  color: #999999;
+}
+
+.bluebox-admin .pagination {
+  margin: 20px 0;
+}
+
+.bluebox-admin .pagination ul {
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  margin-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bluebox-admin .pagination ul > li {
+  display: inline;
+}
+
+.bluebox-admin .pagination ul > li > a,
+.bluebox-admin .pagination ul > li > span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left-width: 0;
+}
+
+.bluebox-admin .pagination ul > li > a:hover,
+.bluebox-admin .pagination ul > li > a:focus,
+.bluebox-admin .pagination ul > .active > a,
+.bluebox-admin .pagination ul > .active > span {
+  background-color: #f5f5f5;
+}
+
+.bluebox-admin .pagination ul > .active > a,
+.bluebox-admin .pagination ul > .active > span {
+  color: #999999;
+  cursor: default;
+}
+
+.bluebox-admin .pagination ul > .disabled > span,
+.bluebox-admin .pagination ul > .disabled > a,
+.bluebox-admin .pagination ul > .disabled > a:hover,
+.bluebox-admin .pagination ul > .disabled > a:focus {
+  color: #999999;
+  cursor: default;
+  background-color: transparent;
+}
+
+.bluebox-admin .pagination ul > li:first-child > a,
+.bluebox-admin .pagination ul > li:first-child > span {
+  border-left-width: 1px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.bluebox-admin .pagination ul > li:last-child > a,
+.bluebox-admin .pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.bluebox-admin .pagination-centered {
+  text-align: center;
+}
+
+.bluebox-admin .pagination-right {
+  text-align: right;
+}
+
+.bluebox-admin .pagination-large ul > li > a,
+.bluebox-admin .pagination-large ul > li > span {
+  padding: 11px 19px;
+  font-size: 17.5px;
+}
+
+.bluebox-admin .pagination-large ul > li:first-child > a,
+.bluebox-admin .pagination-large ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+.bluebox-admin .pagination-large ul > li:last-child > a,
+.bluebox-admin .pagination-large ul > li:last-child > span {
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.bluebox-admin .pagination-mini ul > li:first-child > a,
+.bluebox-admin .pagination-small ul > li:first-child > a,
+.bluebox-admin .pagination-mini ul > li:first-child > span,
+.bluebox-admin .pagination-small ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+          border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+}
+
+.bluebox-admin .pagination-mini ul > li:last-child > a,
+.bluebox-admin .pagination-small ul > li:last-child > a,
+.bluebox-admin .pagination-mini ul > li:last-child > span,
+.bluebox-admin .pagination-small ul > li:last-child > span {
+  -webkit-border-top-right-radius: 3px;
+          border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+}
+
+.bluebox-admin .pagination-small ul > li > a,
+.bluebox-admin .pagination-small ul > li > span {
+  padding: 2px 10px;
+  font-size: 11.9px;
+}
+
+.bluebox-admin .pagination-mini ul > li > a,
+.bluebox-admin .pagination-mini ul > li > span {
+  padding: 0 6px;
+  font-size: 10.5px;
+}
+
+.bluebox-admin .pager {
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+  *zoom: 1;
+}
+
+.bluebox-admin .pager:before,
+.bluebox-admin .pager:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .pager:after {
+  clear: both;
+}
+
+.bluebox-admin .pager li {
+  display: inline;
+}
+
+.bluebox-admin .pager li > a,
+.bluebox-admin .pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.bluebox-admin .pager li > a:hover,
+.bluebox-admin .pager li > a:focus {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+
+.bluebox-admin .pager .next > a,
+.bluebox-admin .pager .next > span {
+  float: right;
+}
+
+.bluebox-admin .pager .previous > a,
+.bluebox-admin .pager .previous > span {
+  float: left;
+}
+
+.bluebox-admin .pager .disabled > a,
+.bluebox-admin .pager .disabled > a:hover,
+.bluebox-admin .pager .disabled > a:focus,
+.bluebox-admin .pager .disabled > span {
+  color: #999999;
+  cursor: default;
+  background-color: #fff;
+}
+
+.bluebox-admin .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+.bluebox-admin .modal-backdrop.fade {
+  opacity: 0;
+}
+
+.bluebox-admin .modal-backdrop,
+.bluebox-admin .modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.bluebox-admin .modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.bluebox-admin .modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.bluebox-admin .modal.fade.in {
+  top: 10%;
+}
+
+.bluebox-admin .modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.bluebox-admin .modal-header .close {
+  margin-top: 2px;
+}
+
+.bluebox-admin .modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.bluebox-admin .modal-body {
+  position: relative;
+  max-height: 400px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.bluebox-admin .modal-form {
+  margin-bottom: 0;
+}
+
+.bluebox-admin .modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.bluebox-admin .modal-footer:before,
+.bluebox-admin .modal-footer:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .modal-footer:after {
+  clear: both;
+}
+
+.bluebox-admin .modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.bluebox-admin .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.bluebox-admin .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+.bluebox-admin .tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 11px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+
+.bluebox-admin .tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.bluebox-admin .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+.bluebox-admin .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.bluebox-admin .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+.bluebox-admin .tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+.bluebox-admin .tooltip-inner {
+  max-width: 200px;
+  padding: 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.bluebox-admin .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #000000;
+  border-width: 5px 5px 0;
+}
+
+.bluebox-admin .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-right-color: #000000;
+  border-width: 5px 5px 5px 0;
+}
+
+.bluebox-admin .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-left-color: #000000;
+  border-width: 5px 0 5px 5px;
+}
+
+.bluebox-admin .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-color: #000000;
+  border-width: 0 5px 5px;
+}
+
+.bluebox-admin .popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.bluebox-admin .popover.top {
+  margin-top: -10px;
+}
+
+.bluebox-admin .popover.right {
+  margin-left: 10px;
+}
+
+.bluebox-admin .popover.bottom {
+  margin-top: 10px;
+}
+
+.bluebox-admin .popover.left {
+  margin-left: -10px;
+}
+
+.bluebox-admin .popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+     -moz-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+}
+
+.bluebox-admin .popover-title:empty {
+  display: none;
+}
+
+.bluebox-admin .popover-content {
+  padding: 9px 14px;
+}
+
+.bluebox-admin .popover .arrow,
+.bluebox-admin .popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.bluebox-admin .popover .arrow {
+  border-width: 11px;
+}
+
+.bluebox-admin .popover .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+.bluebox-admin .popover.top .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
+}
+
+.bluebox-admin .popover.top .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-top-color: #ffffff;
+  border-bottom-width: 0;
+}
+
+.bluebox-admin .popover.right .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+.bluebox-admin .popover.right .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  border-right-color: #ffffff;
+  border-left-width: 0;
+}
+
+.bluebox-admin .popover.bottom .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
+}
+
+.bluebox-admin .popover.bottom .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  border-bottom-color: #ffffff;
+  border-top-width: 0;
+}
+
+.bluebox-admin .popover.left .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  border-right-width: 0;
+}
+
+.bluebox-admin .popover.left .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  border-left-color: #ffffff;
+  border-right-width: 0;
+}
+
+.bluebox-admin .thumbnails {
+  margin-left: -20px;
+  list-style: none;
+  *zoom: 1;
+}
+
+.bluebox-admin .thumbnails:before,
+.bluebox-admin .thumbnails:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.bluebox-admin .thumbnails:after {
+  clear: both;
+}
+
+.bluebox-admin .row-fluid .thumbnails {
+  margin-left: 0;
+}
+
+.bluebox-admin .thumbnails > li {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.bluebox-admin .thumbnail {
+  display: block;
+  padding: 4px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+.bluebox-admin a.thumbnail:hover,
+.bluebox-admin a.thumbnail:focus {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+     -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.bluebox-admin .thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bluebox-admin .thumbnail .caption {
+  padding: 9px;
+  color: #555555;
+}
+
+.bluebox-admin .media,
+.bluebox-admin .media-body {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1;
+}
+
+.bluebox-admin .media,
+.bluebox-admin .media .media {
+  margin-top: 15px;
+}
+
+.bluebox-admin .media:first-child {
+  margin-top: 0;
+}
+
+.bluebox-admin .media-object {
+  display: block;
+}
+
+.bluebox-admin .media-heading {
+  margin: 0 0 5px;
+}
+
+.bluebox-admin .media > .pull-left {
+  margin-right: 10px;
+}
+
+.bluebox-admin .media > .pull-right {
+  margin-left: 10px;
+}
+
+.bluebox-admin .media-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.bluebox-admin .label,
+.bluebox-admin .badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+}
+
+.bluebox-admin .label {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.bluebox-admin .badge {
+  padding-right: 9px;
+  padding-left: 9px;
+  -webkit-border-radius: 9px;
+     -moz-border-radius: 9px;
+          border-radius: 9px;
+}
+
+.bluebox-admin .label:empty,
+.bluebox-admin .badge:empty {
+  display: none;
+}
+
+.bluebox-admin a.label:hover,
+.bluebox-admin a.label:focus,
+.bluebox-admin a.badge:hover,
+.bluebox-admin a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bluebox-admin .label-important,
+.bluebox-admin .badge-important {
+  background-color: #b94a48;
+}
+
+.bluebox-admin .label-important[href],
+.bluebox-admin .badge-important[href] {
+  background-color: #953b39;
+}
+
+.bluebox-admin .label-warning,
+.bluebox-admin .badge-warning {
+  background-color: #f89406;
+}
+
+.bluebox-admin .label-warning[href],
+.bluebox-admin .badge-warning[href] {
+  background-color: #c67605;
+}
+
+.bluebox-admin .label-success,
+.bluebox-admin .badge-success {
+  background-color: #468847;
+}
+
+.bluebox-admin .label-success[href],
+.bluebox-admin .badge-success[href] {
+  background-color: #356635;
+}
+
+.bluebox-admin .label-info,
+.bluebox-admin .badge-info {
+  background-color: #3a87ad;
+}
+
+.bluebox-admin .label-info[href],
+.bluebox-admin .badge-info[href] {
+  background-color: #2d6987;
+}
+
+.bluebox-admin .label-inverse,
+.bluebox-admin .badge-inverse {
+  background-color: #333333;
+}
+
+.bluebox-admin .label-inverse[href],
+.bluebox-admin .badge-inverse[href] {
+  background-color: #1a1a1a;
+}
+
+.bluebox-admin .btn .label,
+.bluebox-admin .btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+.bluebox-admin .btn-mini .label,
+.bluebox-admin .btn-mini .badge {
+  top: 0;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  .bluebox-admin from {
+    background-position: 40px 0;
+  }
+  .bluebox-admin to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  .bluebox-admin from {
+    background-position: 40px 0;
+  }
+  .bluebox-admin to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-bar-stripes {
+  .bluebox-admin from {
+    background-position: 40px 0;
+  }
+  .bluebox-admin to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-bar-stripes {
+  .bluebox-admin from {
+    background-position: 0 0;
+  }
+  .bluebox-admin to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  .bluebox-admin from {
+    background-position: 40px 0;
+  }
+  .bluebox-admin to {
+    background-position: 0 0;
+  }
+}
+
+.bluebox-admin .progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bluebox-admin .progress .bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0e90d2;
+  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
+  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
+  background-image: -o-linear-gradient(top, #149bdf, #0480be);
+  background-image: linear-gradient(to bottom, #149bdf, #0480be);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: width 0.6s ease;
+     -moz-transition: width 0.6s ease;
+       -o-transition: width 0.6s ease;
+          transition: width 0.6s ease;
+}
+
+.bluebox-admin .progress .bar + .bar {
+  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bluebox-admin .progress-striped .bar {
+  background-color: #149bdf;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+     -moz-background-size: 40px 40px;
+       -o-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+
+.bluebox-admin .progress.active .bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+.bluebox-admin .progress-danger .bar,
+.bluebox-admin .progress .bar-danger {
+  background-color: #dd514c;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffc43c35', GradientType=0);
+}
+
+.bluebox-admin .progress-danger.progress-striped .bar,
+.bluebox-admin .progress-striped .bar-danger {
+  background-color: #ee5f5b;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.bluebox-admin .progress-success .bar,
+.bluebox-admin .progress .bar-success {
+  background-color: #5eb95e;
+  background-image: -moz-linear-gradient(top, #62c462, #57a957);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#57a957));
+  background-image: -webkit-linear-gradient(top, #62c462, #57a957);
+  background-image: -o-linear-gradient(top, #62c462, #57a957);
+  background-image: linear-gradient(to bottom, #62c462, #57a957);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
+}
+
+.bluebox-admin .progress-success.progress-striped .bar,
+.bluebox-admin .progress-striped .bar-success {
+  background-color: #62c462;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.bluebox-admin .progress-info .bar,
+.bluebox-admin .progress .bar-info {
+  background-color: #4bb1cf;
+  background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#339bb9));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
+  background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
+}
+
+.bluebox-admin .progress-info.progress-striped .bar,
+.bluebox-admin .progress-striped .bar-info {
+  background-color: #5bc0de;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.bluebox-admin .progress-warning .bar,
+.bluebox-admin .progress .bar-warning {
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+}
+
+.bluebox-admin .progress-warning.progress-striped .bar,
+.bluebox-admin .progress-striped .bar-warning {
+  background-color: #fbb450;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+.bluebox-admin .accordion {
+  margin-bottom: 20px;
+}
+
+.bluebox-admin .accordion-group {
+  margin-bottom: 2px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.bluebox-admin .accordion-heading {
+  border-bottom: 0;
+}
+
+.bluebox-admin .accordion-heading .accordion-toggle {
+  display: block;
+  padding: 8px 15px;
+}
+
+.bluebox-admin .accordion-toggle {
+  cursor: pointer;
+}
+
+.bluebox-admin .accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.bluebox-admin .carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.bluebox-admin .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bluebox-admin .carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.bluebox-admin .carousel-inner > .item > img,
+.bluebox-admin .carousel-inner > .item > a > img {
+  display: block;
+  line-height: 1;
+}
+
+.bluebox-admin .carousel-inner > .active,
+.bluebox-admin .carousel-inner > .next,
+.bluebox-admin .carousel-inner > .prev {
+  display: block;
+}
+
+.bluebox-admin .carousel-inner > .active {
+  left: 0;
+}
+
+.bluebox-admin .carousel-inner > .next,
+.bluebox-admin .carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bluebox-admin .carousel-inner > .next {
+  left: 100%;
+}
+
+.bluebox-admin .carousel-inner > .prev {
+  left: -100%;
+}
+
+.bluebox-admin .carousel-inner > .next.left,
+.bluebox-admin .carousel-inner > .prev.right {
+  left: 0;
+}
+
+.bluebox-admin .carousel-inner > .active.left {
+  left: -100%;
+}
+
+.bluebox-admin .carousel-inner > .active.right {
+  left: 100%;
+}
+
+.bluebox-admin .carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.bluebox-admin .carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.bluebox-admin .carousel-control:hover,
+.bluebox-admin .carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.bluebox-admin .carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+}
+
+.bluebox-admin .carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+.bluebox-admin .carousel-indicators .active {
+  background-color: #fff;
+}
+
+.bluebox-admin .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.bluebox-admin .carousel-caption h4,
+.bluebox-admin .carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.bluebox-admin .carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.bluebox-admin .carousel-caption p {
+  margin-bottom: 0;
+}
+
+.bluebox-admin .hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.bluebox-admin .hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.bluebox-admin .hero-unit li {
+  line-height: 30px;
+}
+
+.bluebox-admin .pull-right {
+  float: right;
+}
+
+.bluebox-admin .pull-left {
+  float: left;
+}
+
+.bluebox-admin .hide {
+  display: none;
+}
+
+.bluebox-admin .show {
+  display: block;
+}
+
+.bluebox-admin .invisible {
+  visibility: hidden;
+}
+
+.bluebox-admin .affix {
+  position: fixed;
+}

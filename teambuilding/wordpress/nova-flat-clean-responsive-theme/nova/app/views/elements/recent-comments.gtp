@@ -1,0 +1,10 @@
+<?php if (!isset($recentCommentsNumber)) $recentCommentsNumber = 3; ?>
+<?php $recentComments = get_comments(array('number' => $recentCommentsNumber));?>
+<div class="heading-wrap">
+<img src="<?php echo GUMM_THEME_IMG_URL ?>heading-bullet.png" alt="Recent comments" /><span>Recent comments</span>
+</div>
+<?php foreach ($recentComments as $recentComment): ?>
+<p class="portfolio-description">
+	<a href="#"><?php echo $recentComment->comment_author; ?></a> <span class="details">on</span> <a href="<?php echo get_permalink($recentComment->comment_post_ID); ?>"><?php echo get_the_title($recentComment->comment_post_ID); ?></a>
+</p>
+<?php endforeach; ?>

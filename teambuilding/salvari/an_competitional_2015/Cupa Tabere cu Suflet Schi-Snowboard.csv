@@ -1,0 +1,68 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,categoria,pachet_vip,tricou,print_vip,locul,puncte,timp,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,oras,data_competitiei
+2,07CDBT,Cernea,David,8,copii,masculin,Schi,vip,S,,0,0,,,,,,,neachitata,dan@epin.ro,0723223355," bucuresti",2015-03-08
+4,07SSCH,Savin,Sara,8,copii,feminin,Schi,vip,XS,,33,9,4:21:37,6,depunere,,,ok,achitata,radusavin@gmail.com,0722302746,,2015-03-08
+7,52NACE,Nadejde,Andrei,63,forever_young,masculin,Schi,vip,XL,,41,1,DNS,73,depunere,90,vip,ok,achitata,anadejde@gmail.com,0722593750,Bucuresti,2015-03-08
+8,04SBBC,Stresina,Brandusa,11,spiridusi,feminin,Schi,vip,XS,,0,0,,,,,,,neachitata,istresina@gmaail.com,0745202214,Bucuresti,2015-03-08
+9,05SA8L,Stoian,Andrei,10,spiridusi,masculin,Schi,vip,S,,0,0,,,,,,,neachitata,feliciamirela2002@yahoo.com,0723305344,Bucuresti,2015-03-08
+10,07SM93,Stoian,Mihai,8,copii,masculin,Schi,vip,S,,0,0,,,,,,,neachitata,feliciamirela2002@yahoo.com,0723305344,Bucuresti,2015-03-08
+11,08TA51,Tomici,Ana-Maria,7,pitici,feminin,Schi,vip,XS,,0,0,,,,,,,neachitata,stefan.tomici@austasigurari.ro,0723385952,,2015-03-08
+12,05TA92,Tomici,Aris,10,spiridusi,masculin,Schi,vip,S,,0,0,,,,,,,neachitata,stefan.tomici@austasigurari.ro,0723385952,,2015-03-08
+13,07GA7F,Georgescu,Ana,8,copii,feminin,Schi,vip,S,,0,0,,,,,,,neachitata,adrian260280@yahoo.com,0722383844,,2015-03-08
+14,06EM73,Ene,Mihai Lazar ,9,copii,masculin,Schi,vip,S,,0,0,,,depunere,30,,ok,achitata,constanta.ene@mai.gov.ro,0740014925,,2015-03-08
+15,08PAAH,Persunaru  ,Alesia,7,pitici,feminin,Schi,vip,XS,,0,0,,,,,,,neachitata,cornelpersunaru@gmail.com,0726345686,bucuresti,2015-03-08
+16,08BM55,Brinza,Mihai,7,pitici,masculin,Schi,,,,27,15,2:05:57,241,depunere,35,,ok,achitata,brinzadragos@yahoo.com,0723601874,Cernavoda,2015-03-08
+17,06BV4M,Brinza,Victor,9,copii,masculin,Schi,,,,24,18,2:01:09,61,depunere,35,,ok,achitata,brinzadragos@yahoo.com,0723601874,Cernavoda,2015-03-08
+18,85PD6P,Popa,Dan Razvan ,30,adulti,masculin,Snowboard,,,,0,0,,,,,,,neachitata,popa.dan.r@gmail.com,0743656468,bucuresti,2015-03-08
+20,05PP33,Popescu,Petru Emanuel ,10,spiridusi,masculin,Schi,vip,S,,32,10,2:20:14,8,,,,,neachitata,anamaria_popescuro@yahoo.com,0742526845,Ploiesti,2015-03-08
+21,03SA7D,Stanescu,Andrei,12,uriasi,masculin,Schi,,,,1,80,1:16:27,77,,,,,neachitata,adrian.stanescu@mats.ro,0722713640,Bucuresti,2015-03-08
+22,04PM85,Popescu,Matei Sebastian ,11,spiridusi,masculin,Schi,,,,18,24,1:45:01,22,,,,,neachitata,il.popescu@yahoo.com,0744550035,BUCURESTI,2015-03-08
+23,05BB7F,Baciu,Bruno,10,spiridusi,masculin,Schi,,,,40,5,4:55:48,69,,,,,neachitata,adriana.deac@yahoo.com,0744301355,bucuresti,2015-03-08
+24,02BA8T,Balan,Alexandru,13,uriasi,masculin,Schi,,,,41,4,ABD,37,depunere,30,,ok,achitata,alextemocico@gmail.com,0726721858,Bucuresti,2015-03-08
+25,61MC6J,Masek,Costin,54,forever_young,masculin,Schi,,,,7,49,1:32:13,71,,,,,achitata,costinmasek@yahoo.com,0723257575,BUCURESTI,2015-03-08
+26,06PV1V,Paun,Vlad,9,copii,masculin,Schi,,,,8,46,1:32:19,17,depunere,35,,tbc,achitata,dpaun@xnet.ro,0722245242,Bucuresti,2015-03-08
+27,04PM8A,Paun,Mara,11,spiridusi,feminin,Schi,,,,9,43,1:42:28,16,depunere,35,,tbc,achitata,dpaun@xnet.ro,0722245242,Bucuresti,2015-03-08
+28,66PD9V,Paun,Dragos,49,seniori,masculin,Schi,,,,0,0,,,depunere,70,,tbc,achitata,dpaun@xnet.ro,0722245242,Bucuresti,2015-03-08
+29,06PA5E,Petcu,Ana-Maria,9,copii,feminin,Schi,,,,24,18,2:09:12,5,depunere,30,"incl WeActiv 70 Ron",ok,achitata,petcu.bogdan@gmail.com,0729660682,Bucuresti,2015-03-08
+30,00TA82,Tudor,Andra Maria ,15,tineri,feminin,Schi,,,,19,23,1:56:95,15,depunere,60,,ok,achitata,tudor.andra.maria@gmail.com,0746367102,Bucuresti,2015-03-08
+31,02TIB4,Tudor,Ioana Calina ,13,uriasi,feminin,Schi,,,,11,38,1:48:35,9,depunere,30,,ok,achitata,ioana.calina.tudor@gmail.com,0740751831,Bucuresti,2015-03-08
+32,80CA7B,Chifanescu,Andi,35,adulti,masculin,Schi,,,,0,0,,,,,,,neachitata,andichifanescu@yahoo.com,0723989283,,2015-03-08
+33,01OM4A,Opris,"Maria Alexandra",14,tineri,feminin,Schi,,,,10,40,1:48:32,14,depunere,60,,tbc30,achitata,ilopris@gmail.com,0722758624,Bucuresti,2015-03-08
+34,99OI9V,Opris,"Irina Gabriela",16,tineri,feminin,Schi,,,,31,11,3:40:94,13,depunere,60,,tbc30,achitata,ilopris@gmail.com,0723259436,Bucuresti,2015-03-08
+35,06BS73,Borda,"Sophia Anne",9,copii,feminin,Schi,,,,22,20,2:03:19,3,depunere,30,,ok,achitata,nicoleta.tiloiu@raiffeisen.ro,0724393247,Bucuresti,2015-03-08
+36,08BSCC,Borda,"Sara Agnes",7,pitici,feminin,Schi,,,,0,0,,,depunere,30,,ok,achitata,nicoleta.tiloiu@raiffeisen.ro,0724393247,Bucuresti,2015-03-08
+37,10BS49,Borda,"Smaranda Adiia",5,piticoti,feminin,Schi,,,,32,10,3:55:90,1,depunere,30,,ok,achitata,nicoleta.tiloiu@raiffeisen.ro,0724393247,Bucuresti,2015-03-08
+38,67TC1D,Tipurita,Catalin,48,seniori,masculin,Schi,,,,16,28,1:44:40,11,OP,70,cash,ok,achitata,tipcata@k.ro,0722517917,Bucuresti,2015-03-08
+39,03TRCO,Tipurita,Radu,12,uriasi,masculin,Schi,vip,S,,14,32,1:40:92,26,depunere,35,cash,ok,achitata,tipcata@k.ro,0722517917,Bucuresti,2015-03-08
+40,05TMBN,Tipurita,Maria,10,spiridusi,feminin,Schi,vip,S,,14,32,1:51:30,7,depunere,35,,ok,achitata,tipcata@k.ro,0722517917,Bucuresti,2015-03-08
+41,03GMCG,Grigore,Matei,12,uriasi,masculin,Schi,vip,S,,15,30,1:41:69,12,,,,,neachitata,ioana.grigore@orange.com,0744440817,bucuresti,2015-03-08
+42,59PC47,Patrascu-Arabagian,Corvin-Alexandru,56,forever_young,masculin,Schi,,,,0,0,,,,,,,neachitata,corvin.patrascu@eneria.ro,0740104756,Bucuresti,2015-03-08
+43,03CM3E,Cojanu,Miruna,12,uriasi,feminin,Schi,,,,3,63,1:30:76,54,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+44,02PM4V,Preda,Madalina,13,uriasi,feminin,Schi,,,,4,58,1:30:90,56,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+45,04AE4E,Sauliuc,Emilia,11,spiridusi,feminin,Schi,,,,7,49,1:36:45,43,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+46,05BACE,Banulescu,Alexandru,10,spiridusi,feminin,Schi,,,,12,36,1:50:07,40,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+47,04FR75,Franculescu,Roberta,11,spiridusi,feminin,Schi,,,,15,30,1:51:71,41,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+48,08VD7O,Vlasceanu,Daria,7,pitici,feminin,Schi,,,,17,26,1:54:45,221,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+49,08BB91,Buliga,Bianca,7,pitici,feminin,Schi,,,,21,21,2:01:04,211,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+50,04IA66,Irima,Alexandra,11,spiridusi,feminin,Schi,,,,23,19,2:08:57,42,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+51,07SF8N,Sauluc,Florina,8,copii,feminin,Schi,,,,27,15,2:21:58,32,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+52,07EM15,Eftemie,Malina,8,copii,feminin,Schi,,,,28,14,2:23:01,30,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+53,01CM5V,Cojan,Mihnea,14,tineri,masculin,Schi,,,,3,63,1:18:36,65,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+54,03FC66,Flostoiu,Cristian,12,uriasi,masculin,Schi,,,,5,55,1:26:29,57,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+55,06RCBV,Rosca,Codrut,9,copii,masculin,Schi,,,,9,43,1:33:00,38,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+56,05FC9J,Flostoiu,Ciprian,10,spiridusi,masculin,Schi,,,,11,38,1:37:16,48,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+57,02GR69,Gabrian,Robert,13,uriasi,masculin,Schi,,,,12,36,1:39:37,58,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+58,08OD2E,Oancea,David,7,pitici,masculin,Schi,,,,13,34,1:40:84,26,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+59,04FAAV,Fratila,Alexandru,11,spiridusi,masculin,Schi,,,,19,23,1:45:30,241,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+60,02PABP,Popescu,Andrei,13,uriasi,masculin,Schi,,,,21,21,1:50:12,47,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+61,03SA5U,Stanciu,Andrei,12,uriasi,masculin,Schi,,,,22,20,1:55:27,59,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+62,02VM78,Vanatoru,Mihai,13,uriasi,masculin,Schi,,,,23,19,1:55:45,60,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+63,05MT34,Manolache,Teo,10,spiridusi,masculin,Schi,,,,25,17,2:01:57,3,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+64,08BA34,Boncoi,Alexandru,7,pitici,masculin,Schi,,,,26,16,2:03:85,51,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+65,05CM7K,Cojocaru,Marius,7,pitici,masculin,Schi,,,,28,14,2:09:04,18,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+66,09DE8F,Dinu,Eric,6,pitici,masculin,Schi,,,,31,11,2:18:96,25,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+67,05MA34,Manolache,Alexandru,10,spiridusi,masculin,Schi,,,,34,8,2.27.29,34,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+68,08SS5F,Sisea,Sabin,7,pitici,masculin,Schi,,,,36,6,2:40:00,36,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+69,06OM2P,Oancea,Matei,9,copii,masculin,Schi,,,,37,6,2:39:91,29,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+70,09VL92,Viman,Luca,6,pitici,masculin,Schi,,,,38,5,2:43:03,27,,,,,achitata,georgi_bubu@yahoo.com,0000000000,,
+72,06OA16,Olteanu,Andrei,9,copii,masculin,Schi,,,,41,4,ABD,52,,,,,achitata,georgi_bubu@yahoo.com,0000000000,Sinaia,2015-03-18
+73,61MC6J,Masek,Costin,54,forever_young,masculin,Snowboard,,,,1,80,1:00:00,71,,,,,achitata,,0000000000,,

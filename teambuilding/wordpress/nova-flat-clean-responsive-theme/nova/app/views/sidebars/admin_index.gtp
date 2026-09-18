@@ -1,0 +1,16 @@
+<?php
+if (!isset($sidebars)) return;
+if (!$sidebars || !is_array($sidebars)) return;
+?>
+
+
+<?php foreach ($sidebars as $sidebarId => $sidebar): ?>
+<?php if (!isset($sidebar['custom'])) $sidebar['custom'] = true; ?>
+    <div class="sidebar-block-demo lm-draggable-sidebar" title="<?php echo $sidebar['id']; ?>">
+        <?php
+        if ($sidebar['custom'] === true)
+            echo $this->Html->link('', array('controller' => 'sidebars', 'action' => 'delete', 'sidebarId' => $sidebar['id']), array('class' => 'close-button remove-custom-sidebar'));
+        ?>
+        <?php echo $sidebar['name']; ?>
+    </div>
+<?php endforeach; ?>

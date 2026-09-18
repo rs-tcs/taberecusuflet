@@ -1,0 +1,34 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu,pachet_vip,tricou,print_vip,locul,puncte,timp,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+2,07SSCH,Savin,Sara,8,copii,feminin,"Easy Run",,,,0,0,,,,0.00,,,neachitata,radusavin@gmail.com,0722302746,2015-08-01
+4,61LN4O,Lech,Nicolae,54,forever_young,masculin,"Hobby Run",vip,M,,0,0,,,,0.00,,,neachitata,miki.lech@novatravel.ro,0722308601,2015-08-01
+6,90GA8S,Gherasim,"Andrei Alexandru",25,adulti,masculin,"Hobby Run",,,,5,78,01:43:00,7,OP,50.00,,ok,achitata,gherasima27@gmail.com,0735197247,2015-08-01
+7,75BDCI,Benea,Dragos,40,seniori,masculin,"Hobby Run",,,,0,0,,,,0.00,,,neachitata,dragos.benea@gmail.com,0722584155,2015-08-01
+8,84MA6U,Mirica,Adrian,31,adulti,masculin,"Hobby Run",,,,0,0,,,,0.00,,,neachitata,mirica_adrian@yahoo.com,0726202135,2015-08-01
+9,77CA8M,Coman,Adrian,38,adulti,masculin,"Hobby Run",,,,0,0,,,,0.00,,,neachitata,adi.coman@gmail.com,0771272184,2015-08-01
+10,93PD27,"Preoteasa ","Dragos Marius",22,adulti,masculin,"Hobby Run",vip,L,,0,0,,,,0.00,,,neachitata,dragos07marius@yahoo.com,0744795551,2015-08-01
+11,73ML86,Motocel,Liliana,42,seniori,feminin,"Easy Run",,,,0,0,,,,0.00,,,neachitata,motocell@yahoo.com,0741015468,2015-08-01
+12,97FI5D,Funduc,"Iulia Florina",18,tineri,feminin,"Hobby Run",,,,0,0,,,,0.00,,,neachitata,iulia.florina7@yahoo.com,0767364775,2015-08-01
+14,73MV56,Mircea,Valentin,42,seniori,masculin,"Hobby Run",,,,6,72,01:46:00,10,OP,50.00,,ok,achitata,valentinmircea73@gmail.com,0744551018,2015-08-01
+15,82DR3S,Dinu,Rodica,33,adulti,feminin,"Easy Run",,,,0,0,,,,0.00,,,neachitata,rodikadinu@gmail.com,0720540248,2015-08-01
+16,71CO8O,Cristea,"Ovidiu Madalin",44,seniori,masculin,"Hobby Run",vip,S,,4,85,01:42:00,6,OP,85.00,,ok,achitata,madalin.cristea@yahoo.com,0724502170,2015-08-01
+17,77TR2G,Turtoi,Raducu,38,adulti,masculin,"Hobby Run",vip,M,RADO77,12,46,01:53:00,1,OP,85.00,,ok,achitata,turtoiradu@yahoo.com,0722390388,2015-08-01
+18,67AVAH,Alecu,Virgil,48,seniori,masculin,"Hobby Run",,,,3,94,01:34:00,2,OP,50.00,,ok,achitata,anticgraal@yahoo.com,0726688626,2015-08-01
+19,75IP2A,Iacob,Paula,40,seniori,feminin,"Hobby Run",vip,L,,0,0,,,,0.00,,,neachitata,nico_stiuca@yahoo.com,0727893650,2015-08-01
+20,67BV83,Barbu,Valentin,48,seniori,masculin,"Hobby Run",vip,L,,17,30,02:49:00,4,OP,85.00,,ok,achitata,barbuvalentin@yahoo.com,0722655455,2015-08-01
+23,74MM5M,Macarie,Mircea,41,seniori,masculin,"Hobby Run",,,,9,58,01:51:00,9,OP,50.00,,ok,achitata,macarie2000@yahoo.com,0763616019,2015-08-01
+24,81BVCE,Bolozan,Valentin,34,adulti,masculin,"Hobby Run",,,,13,42,02:00:00,5,OP,50.00,,ok,achitata,valentin.bolozan@gmail.com,0731999674,2015-08-01
+25,82GSB2,Ghimis,Sorin,33,adulti,masculin,"Hobby Run",,,,14,39,02:00:00,8,OP,50.00,,ok,achitata,sorin.ghimis@casapariurilor.ro,0730101975,2015-08-01
+26,98SR94,Stiuca,Roberta,17,tineri,feminin,"Easy Run",,,,0,0,,,,0.00,,,neachitata,nico_stiuca@yahoo.com,0727892650,2015-08-01
+27,80PBCC,Paun,Bogdan,35,adulti,masculin,"Hobby Run",,,,16,33,02:04:00,11,OP,50.00,,ok,achitata,paun_bogdan@yahoo.com,0721374362,2015-08-01
+28,78TV62,Topirceanu,Virgil,37,adulti,masculin,"Hobby Run",,,,1,120,01:20:00,15,OP,50.00,,ok,achitata,topirceanuvirgil@yahoo.fr,0723173712,2015-08-01
+29,80SDCO,Stanescu,Dan,35,adulti,masculin,"Hobby Run",,,,10,54,01:52:00,14,OP,50.00,,ok,achitata,dan.stanescu@casapariurilor.ro,0728131217,2015-08-01
+30,70BB82,Bacescu,Bogdan,45,seniori,masculin,"Hobby Run",,,,15,36,02:00:00,3,OP,50.00,,ok,achitata,iris_dancu@yahoo.com,0722610359,2015-08-01
+31,81RG1C,Roman-Tarciniu,George-Cosmin,34,adulti,masculin,"Hobby Run",vip,M,,7,67,01:47:00,13,OP,85.00,111344425,ok,achitata,cosmin.rt@gmail.com,0731364306,2015-08-01
+32,85VM7F,Voicu,Mara,30,adulti,feminin,"Hobby Run",,,,3,94,01:55:00,16,depunere,50.00,"16088 ",TBC,achitata,mara.voicu@yahoo.com,0727316329,2015-08-01
+33,82RO1G,"Rauta ","Oana ",33,adulti,feminin,"Hobby Run",,,,2,105,01:55:00,12,OP,50.00,,tbc,achitata,nicoloffoana@yahoo.com,0749334051,2015-08-01
+34,76SV47,Stefan,Valentin,39,adulti,masculin,"Hobby Run",,,,11,50,01:53:00,20,,0.00,,,neachitata,valentin_stefan@hotmail.com,0731040301,2015-08-01
+35,90TI53,Tempeanu,"Ilinca Maria ",25,adulti,feminin,"Hobby Run",,,,1,120,01:46:00,19,,0.00,,,neachitata,ilinca_tempeanu@yahoo.com,0723442571,2015-08-01
+36,74SA5G,Soare,Adrian,41,seniori,masculin,"Hobby Run",,,,7,67,01:47:00,21,,0.00,,,neachitata,adrian@syaa.ro,0721205045,2015-08-01
+37,81ZAA4,Zodie,Aida,34,adulti,feminin,"Easy Run",,,,0,0,,,,0.00,,,neachitata,aida_zod@yahoo.com,0723354450,2015-08-01
+38,72SL6F,Samoila,Liliana,43,seniori,feminin,"Hobby Run",,,,4,85,02:00:00,17,depunere,70.00,1,TBC,achitata,lianasport@gmail.com,0771300338,2015-08-01
+39,76EC39,Enoaie,"Cristian Florin",39,adulti,masculin,"Hobby Run",,,,1,120,01:20:00,18,depunere,70.00,1,TBC,achitata,predealbrasov@gmail.com,0771300338,2015-08-01

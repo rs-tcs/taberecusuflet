@@ -1,0 +1,11 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,categoria,pachet_vip,tricou,print_vip,locul,puncte,timp,numar_concurs,email,telefon,oras,data_competitiei,taxa,email,telefon,oras,data_competitiei
+1,07SSCH,Savin,Sara,8,copii,feminin,Schi,vip,XS,,3,15,,1,radusavin@gmail.com,0722302746,,2015-03-01
+4,06EM73,Ene,Mihai Lazar ,9,copii,masculin,Schi,vip,M,,3,15,,3,constanta.ene@mai.gov.ro,0740014925,,2015-03-01
+5,07JI73,Jiletcovici,Ioana,8,copii,feminin,Schi,,,,0,0,,,alinagabriela.jiletcovici@bcr.ro,0722532727,,2015-03-01
+6,09JMBN,Jiletcovici,Mihai,6,pitici,masculin,Schi,,,,0,0,,,alinagabriela.jiletcovici@bcr.ro,0722532727,,2015-03-01
+7,03SSCK,Savu,Stefan Alexandru ,12,uriasi,masculin,Snowboard,,,,0,0,,,delia.savu@itmconsulting.ro,0722655661,Bucuresti,2015-03-01
+8,99OI9V,Opris,Irina Gabriela ,16,tineri,feminin,Schi,,,,1,20,,4,ilopris@gmail.com,0723259436,Bucuresti,2015-03-01
+9,01OM4A,Opris,Maria Alexandra ,14,tineri,feminin,Schi,,,,2,17,,5,ilopris@gmail.com,0722758624,Bucuresti,2015-03-01
+10,10STCF,Savin,Ted,5,piticoti,masculin,Schi,,,,5,11,,2,office@taberecusuflet.ro,0722302746,Bucuresti,2015-03-01
+11,05IF8F,Iordachescu,Filip,10,spiridusi,masculin,Schi,,,,1,20,,6,catalin@romconsulting.ro,0722302746,,
+12,04SA2C,Stanescu,Albert,11,spiridusi,masculin,Schi,,,,2,17,,8,anastanescu13@yahoo.com,0722302746,,

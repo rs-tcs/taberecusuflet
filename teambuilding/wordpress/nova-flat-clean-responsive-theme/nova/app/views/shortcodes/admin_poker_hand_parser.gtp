@@ -1,0 +1,65 @@
+<?php
+if (!isset($PokerHand)):
+echo $this->Form->create(array(
+    'id' => 'gumm-poker-hand-parser-form',
+    'action' => array('admin' => true, 'controller' => 'shortcodes', 'action' => 'poker_hand_parser'),
+    'ajax' => true, 
+    '_wpnonce' => ShortcodesController::WPNONCE,
+));
+
+echo $this->Form->input('', array(
+    'name' => __('Paste the p2p code below'),
+    'type' => 'textarea',
+    'id' => '2p2_text'
+));
+echo $this->Form->end();
+elseif ($PokerHand !== false):
+?>
+<div class="poker-hand" data-potsize="<?php echo $PokerHand->currency . $PokerHand->pot; ?>" data-heroname="<?php echo $PokerHand->getHero()->name; ?>">
+    <div class="hand-info">
+        <p><strong><?php echo $PokerHand->room; ?></strong> <?php echo $PokerHand->game; ?></p>
+        <p><?php echo $PokerHand->smallBlind . '/' . $PokerHand->bigBlind  . ' - ' . $PokerHand->numPlayers . ' players';?>
+    </div>
+    <div class="players-info">
+        <?php foreach ($PokerHand->players as $player): ?>
+            <?php
+            $playerClass = array('player');
+            if ($player->isHero()) $playerClass[] = 'hero';
+            $positionString = '';
+            if ($player->isDealer()) {
+                $positionString = 'is at the button';
+            } elseif ($player->isSmallBlind()) {
+                $positionString = 'posts small blind (' . $PokerHand->smallBlind . ')';
+            } elseif ($player->isBigBlind()) {
+                $positionString = 'posts big blind (' . $PokerHand->bigBlind . ')';
+            }
+            ?>
+            <p class="<?php echo implode(' ', $playerClass); ?>"><?php echo $player->name; ?> <?php echo $positionString; ?></p>
+        <?php endforeach; ?>
+    </div>
+    <?php if ($PokerHand->getHero()): ?>
+    <?php $heroHand = $PokerHand->getHero()->getHand(); ?>
+    <div class="dealt-to-hero">
+        <p><?php _e('Dealt to', 'gummfw') . ' ' . $PokerHand->getHero()->name; ?>:</p>
+        <p class="hero-hand" data-herohand="<?php echo trim($PokerHand->handToString($heroHand, array('beforeCard' => '', 'afterCard' => '|')), '|'); ?>"><?php echo $PokerHand->handToString($heroHand); ?></p>
+    </div>
+    <?php endif; ?>
+    <?php foreach ($PokerHand->states as $state => $stateData): ?>
+        <div class="state-<?php echo $state; ?>">
+            <h4><?php echo $stateData['title']; ?>: (<?php echo 'Pot: ' . $stateData['pot']; ?>)</h4>
+            <?php echo $PokerHand->handToString($stateData['cards']); ?>
+        </div>
+        <?php foreach ($stateData['actions'] as $action): ?>
+            <?php
+            $playerClass = array('player', 'hand-action');
+            if ($player->isHero()) $playerClass[] = 'hero';
+            ?>
+            <p class="<?php echo implode(' ', $playerClass); ?>"><?php echo $action['text']?></p>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+</div>
+<?php else: ?>
+    <div class="parsing-error">
+        <?php _e('Error parsing input.', 'gummfw'); ?>
+    </div>
+<?php endif; ?>

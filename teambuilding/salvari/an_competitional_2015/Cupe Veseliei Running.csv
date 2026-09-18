@@ -1,0 +1,6 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu,insotitor,pachet_vip,tricou,print_vip,locul,puncte,timp,ture,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+1,07SSCH,Savin,Sara,8,copii,feminin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,gratuit,radusavin@gmail.com,0722302746,2015-09-13
+2,08GN26,Gligorea,Nadia,7,pitici,feminin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,gratuit,cgligorea@hotmail.com,0728700700,2015-09-13
+3,11DC2A,Dinica,Cristian,4,piticoti,masculin,"Crosul Copiilor",,,,,0,0,,0,,,0.00,,,gratuit,ovidiudinica@yahoo.com,0720941174,2015-09-13
+4,64CR29,Ciuca,Ruxandra,51,forever_young,feminin,Semimaraton,,,,,0,0,,0,,,0.00,,,neachitata,baabsfmcir@gmail.com,0744551156,2015-09-13
+5,88VM5U,Voicu,Mihaela,27,adulti,feminin,Cros,,,,,0,0,,0,,,0.00,,,neachitata,free_miki@yahoo.com,0734205850,2015-09-13

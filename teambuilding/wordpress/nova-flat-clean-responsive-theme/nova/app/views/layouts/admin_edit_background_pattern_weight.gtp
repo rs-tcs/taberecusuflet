@@ -1,0 +1,25 @@
+<?php
+if ($patternData && $patternData['scheme'] && $patternData['weight']) {
+    $radioInputOptions = array();
+    
+    foreach ($patternData['scheme']['weights'] as $weight) {
+        $radioInputOptions[$weight['value']] = $weight['url'];
+    }
+
+    echo $this->Form->input('', array(
+        'id' => 'layout-layer-opacity-slider-' . uniqid(),
+        'type' => 'number',
+        'inputOptions' => $radioInputOptions,
+    ), array(
+        'value' => $patternData['weight'],
+    ), array(
+        'slider' => array(
+            'step' => 25,
+            'min' => 25,
+            'max' => 100,
+            'numberType' => '%',
+        ),
+        'div' => false
+    ));
+}
+?>

@@ -1,0 +1,9 @@
+<?php $this->extend('elements/blog/single/view-standard'); ?>
+
+<?php
+$this->start('thumbnail');
+if ($post->Thumbnail) {
+    echo '<div>' . $this->Media->display($post->Thumbnail->guid) . '</div>';
+}
+$this->end();
+?>

@@ -1,0 +1,25 @@
+<?php $childClass = ($tab['parent_id']) ? 'child-tab' : ''; ?>
+<li id="tab-id-<?php echo $tab['id']; ?>" class="tab-item <?php echo $childClass; ?>">
+    <a class="remove-tab" href="#">X</a>
+    <?php
+    echo $this->Html->link($tab['title'], array('controller' => 'options', 'action' => 'admin_setup_edit_tab_options', 'tabId' => $tab['id'], 'ajax' => true), array('class' => 'tab-title'));
+    ?>
+    <span class="edit-tab">(<?php _e('edit', 'gummfw'); ?>)</span>
+    <!-- <p><?php echo $tab['title']; ?></p> -->
+    <ul class="tab-settings">
+        <?php
+        foreach ($_tabSchema as $key => $value) {
+            echo $this->Form->input('GummOptionSetup', array(
+                'name' => $key,
+                'id' => 'tabs.' . $tab['id'] . '.' . $key,
+                'type' => 'text',
+                'default' => (isset($tab[$key])) ? $tab[$key] : $value,
+            ), array(
+                'class' => $key
+            ), array(
+                'div' => false
+            ));
+        }
+        ?>
+    </ul>
+</li>

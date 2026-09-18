@@ -1,0 +1,47 @@
+<?php
+if (!$attachmentPost) return;
+if (!isset($model)) $model = '';
+?>
+<li class="media-upload-item admin-metabox-image">
+
+        <?php
+        
+        echo $gummHtmlHelper->link('×', '#', array(
+                'class' => 'admin-close-button close-parent remove-on-close'
+            ), array(
+                // 'confirm' => __('Are you sure you want to delete this media item?', 'gummfw'),
+            )
+        );
+        
+        echo $gummMediaHelper->display(wp_get_attachment_url($attachmentPost->ID), array('width' => 74, 'height' => 74, 'exact' => true));
+        
+        echo $gummHtmlHelper->link('',
+            array(
+                'admin' => true,
+                'ajax' => true,
+                'controller' => 'media',
+                'action' => 'edit',
+                'mediaId' => $attachmentPost->ID
+            ),
+            array(
+                'class' => 'icon-pencil admin-element-edit media-edit-button gumm-open-popup popup-height-420 popup-width-350 popup-onok-submit'
+            )
+        );
+        
+        if (isset($optionId) && $optionId) {
+            echo $form->input($model, array('id' => $optionId . '.{n}', 'type' => 'hidden'), array('value' => $attachmentPost->ID));
+        } else {
+            
+            echo $form->input('GummPostMeta',
+                array(
+                    'id' => '_gumm_attached_files.{n}',
+                    'type' => 'hidden'
+                    ),
+                array(
+                    'value' => $attachmentPost->ID
+                )
+            );
+        }
+        
+        ?>
+</li>

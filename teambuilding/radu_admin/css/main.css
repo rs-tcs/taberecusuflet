@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	font-size:14px;
+	background-color:#F2F2F2;
+	
+}
+
+
+#page_content{
+	background-color: #F5F5F5;
+	width:60%;
+	min-width:700px;
+	height:auto;
+	position:relative;
+	top:10%;
+	padding:30px;
+	margin:auto;
+	-moz-box-shadow: 0px 1px 8px #CCC;
+  	-webkit-box-shadow: 0px 1px 8px #CCC;
+ 	 box-shadow: 0px 1px 8px #030303;
+	 background-color:white;
+	overflow:hidden;
+}
+
+#text_top{
+	width:100%;
+	height:auto;
+	text-align:center;
+	font-size:36px;
+	color:#484848;
+}
+
+#login{
+	width:60%;
+	min-width:700px;
+	height:auto;
+	margin:auto;	
+}
+
+#login_text{
+	width:60%;
+	height:50px;
+	margin:auto;
+	text-align:center;
+    font-size:20px;
+}
+
+#tabel_login{
+	width:60%;
+	height:auto;
+	margin:auto;
+}
+
+#tabel_login table{
+	width:100%;
+	height:auto;
+	padding:25px;
+	margin:auto;
+}
+
+#tabel_login table .celule_tabel{
+	width:50%;
+	height:20px;
+	font-size:20px;
+	
+}
+
+input[type="text"], input[type="password"] {
+	width:100%;
+	height:100%;
+}
+
+input[type="submit"]{
+	background: #292929;
+	color:white;
+	height:auto;
+	font-size:18px;
+	border:none; !important
+	
+}
+
+#logo{
+	float:right;
+	width:25%;
+	height:auto;
+	
+}
+
+#logo img{
+	width:100%;
+	height:auto;
+}
+
+.eroare{
+	width:60%;
+	margin:auto;
+	height:auto;
+	background-color:#FBE3E4;
+	color:red;
+	padding:0 2px;
+	border-radius:5px;
+	border: solid 1px #FBC2C4;
+	
+}
+
+.eroare img{
+	padding-left:20px;
+	background: no-repeat 0px 3px;
+	color:red;
+	font-size:14px;
+}

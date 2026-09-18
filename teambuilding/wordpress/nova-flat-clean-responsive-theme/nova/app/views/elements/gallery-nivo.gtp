@@ -1,0 +1,9 @@
+<div class="nivo-wrap theme-default">
+	<div style="position: relative; width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;" class="nivoSlider">'
+	<?php
+	foreach ($galleryMedia as $galleryItem) {
+		echo $gummMediaHelper->display($galleryItem['url'], array('width' => $width, 'height' => $height), array('title' => $galleryItem['caption']));
+	}
+	?>
+	</div>
+</div>

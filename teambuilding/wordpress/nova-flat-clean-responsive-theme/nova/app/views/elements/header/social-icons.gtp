@@ -1,0 +1,56 @@
+<?php
+$social = Set::merge(array(
+    'twitter' => array(
+        'url' => null,
+    ),
+    'dribbble' => array(
+        'url' => null,
+    ),
+    'vimeo' => array(
+        'url' => null,
+    ),
+    'fb' => array(
+        'url' => null,
+    ),
+    'flickr' => array(
+        'url' => null,
+    ),
+), $gummWpHelper->getOption('social'));
+
+$headerInfo = $gummWpHelper->getOption('header_info');
+
+$twitterUrl = $social['twitter']['url'];
+$dribbbleUrl = $social['dribbble']['url'];
+$vimeoUrl = $social['vimeo']['url'];
+$fbUrl = $social['fb']['url'];
+$flickrUrl = $social['flickr']['url'];
+
+if ($headerInfo || $twitterUrl || $dribbbleUrl || $vimeoUrl || $fbUrl || $flickrUrl):
+?>
+
+<div class="social-icons">
+    <?php if ($headerInfo): ?>
+    <a id="header-info-icon" href="#" class="icon-info"></a>
+    <?php endif; ?>
+    
+    <?php if ($twitterUrl): ?>
+    <a href="<?php echo $twitterUrl; ?>" class="icon-twitter"></a>
+    <?php endif; ?>
+    
+    <?php if ($dribbbleUrl): ?>
+    <a href="<?php echo $dribbbleUrl; ?>" class="icon-dribbble"></a>
+    <?php endif; ?>
+    
+    <?php if ($vimeoUrl): ?>
+    <a href="<?php echo $vimeoUrl; ?>" class="icon-vimeo"></a>
+    <?php endif; ?>
+    
+    <?php if ($fbUrl): ?>
+    <a href="<?php echo $fbUrl; ?>" class="icon-facebook"></a>
+    <?php endif; ?>
+    
+    <?php if ($flickrUrl): ?>
+    <a href="<?php echo $flickrUrl; ?>" class="icon-flickr"></a>
+    <?php endif; ?>
+</div>
+<?php endif; ?>

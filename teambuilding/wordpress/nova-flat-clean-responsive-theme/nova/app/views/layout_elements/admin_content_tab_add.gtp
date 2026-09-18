@@ -1,0 +1,9 @@
+<?php
+echo $this->Form->input($modelName, array(
+    'id' => $optionId . '.' . uniqid(),
+    'type' => 'content-tab',
+    'name' => '',
+), array(
+    
+), Set::filter($inputSettings));
+?>

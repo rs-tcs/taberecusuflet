@@ -1,0 +1,28 @@
+<?php $cells = 9; ?>
+
+<div class="portf-admin-wrap gumm-table-setup">
+    <?php for ($i=0; $i<$cells; $i++): ?>
+    
+    <div class="single-square"></div>
+    
+    <?php endfor; ?>
+       
+    <div class="new-post-container">
+       <div class="dynamic hidden" style=""></div>
+    </div>
+    
+    <?php
+    if ($dimensions && is_array($dimensions)) {
+        foreach ($dimensions as $key => $value) {
+            echo $this->Form->input('GummPostMeta', array(
+                'id' => $metabox['id'] . '.' . $key,
+                'type' => 'hidden',
+            ), array(
+                'value' => $value,
+                'class' => 'gumm-table-setup-value gumm-table-' . $key,
+            ));
+        }
+    }
+    ?>
+
+</div>

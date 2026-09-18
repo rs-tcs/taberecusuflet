@@ -1,0 +1,16 @@
+id,cod_unic_participant,numele,prenumele,varsta,cat_varsta,sex,traseu_alergare,traseu_bicicleta,insotitor,pachet_vip,tricou,print_vip,locul,puncte,timp_bicicleta,timp_alergare,timp,dificultate,numar_concurs,modalitate_plata,suma,nr_chitanta,confirmare,taxa,email,telefon,data_competitiei
+1,78BR6U,blaga,Radu,36,adulti,masculin,Semimaraton,TeamXpert,,,,,1,,2:33:01,1:45:00,4:18:01,ProfiRide,,OP,78,op,ok,achitata,rblaga@yahoo.com,0000000000,
+2,76MC7E,Mihaescu,Cristian,38,adulti,masculin,Semimaraton,,,,,,,,,,,,,,,,,neachitata,mihaescu@software.ucv.ro,0000000000,2014-09-20
+3,77MM6G,Mihaescu,Madalina,37,adulti,feminin,Semimaraton,,,,,,,,,,,,,,,,,neachitata,mihaescu@software.ucv.ro,0000000000,2014-09-20
+4,80TACP,Tanasescu,Adrian,34,adulti,masculin,Semimaraton,,,,,,,,,,,,,,,,,neachitata,adriantanasescu@gmail.com,0000000000,2014-09-20
+5,62NA8T,Nestian,Alexandru,52,forever_young,masculin,Cros,Bujorilor,,vip,XL,,,,,,,,,,,,,neachitata,nestiandaniel@gmail.com,0000000000,2014-09-20
+6,73NG47,NECULA,GABRIEL,41,seniori,masculin,Semimaraton,TeamXpert,,vip,XS,,2,,4:07:58,1:38:00,5:45:58,ProfiRide,,Felt,80,"ridicat banii",OK,achitata,gnecula@bdt.ro,0000000000,2014-09-20
+7,65NF3X,Nimara,Florin,49,seniori,masculin,Cros,Bujorilor,,,,,1,,1:08:16,0:48:00,1:56:16,EasyRide,,depunere,80,cash,ok,achitata,florin_nimara@yahoo.com,0000000000,2014-09-20
+8,06SR3X,Stoica,"Robert Alexandru",8,copii,masculin,"Crosul Copiilor",Copiilor,,,,,1,,0:14:11,0:11:02,0:25:13,Copii,,,,,,neachitata,foxnoname@yahoo.com,0000000000,2014-09-20
+9,02SDAE,Stoica,"Diana Alexandra",12,uriasi,feminin,"Crosul Copiilor",Copiilor,,,,,1,,0:13:47,0:09:36,0:23:23,Uriasi,,,,,,neachitata,foxnoname@yahoo.com,0000000000,2014-09-20
+10,08SD6I,"Stoica ","David Gabriel",6,pitici,masculin,"Crosul Copiilor",Copiilor,,,,,1,,0:34:58,0:03:16,0:38:14,Pitici,,,,,,neachitata,foxnoname@yahoo.com,0000000000,2014-09-20
+11,70IA6I,Ilie,"Adrian Catalin",44,seniori,masculin,Cros,Bujorilor,,,,,2,,1:18:16,0:50:00,2:08:16,EasyRide,,OP,80,op,ok,achitata,bv88ctn@gmail.com,0000000000,2014-09-20
+12,03RT9F,Rocsin,Teo,11,spiridusi,masculin,"Crosul Copiilor",Copiilor,,,,,1,,0:14:46,0:11:29,0:26:15,Spiridusi,,Felt,80,"de confirmat",tbc,achitata,rdragos2002@yahoo.com,0000000000,2014-09-20
+13,74PB5J,Paunescu,Bogdan,40,seniori,masculin,Cros,,,,,,,,,,,,,OP,80,90954107,ok,achitata,bogdanpaunescu@yahoo.com,0000000000,2014-09-20
+14,88EG6J,"Epuras ","Gabriela ",26,adulti,feminin,Cros,,,,,,,,,,,,,depunere,80,1111,TBC,achitata,epurasg@gmail.com,0000000000,2014-09-20
+15,01DVA3,DINU,Vlad,13,uriasi,masculin,,Copiilor,,,,,,,,,,,,,,,,neachitata,sorindinu1971@yahoo.com,0000000000,2014-09-27

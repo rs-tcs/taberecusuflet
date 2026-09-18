@@ -1,0 +1,27 @@
+<div class="gumm-embed-video-wrapper">
+<?php
+
+echo $this->Form->create(array(
+    'id' => 'gumm-embed-video-form',
+    'action' => array('controller' => 'media', 'action' => 'save_embed_video'),
+    'admin' => true,
+    'ajax' => true,
+    '_wpnonce' => MediaController::WPNONCE,
+));
+
+$id = 'EmbedVideo';
+
+if ($optionId) echo $this->Form->input('', array('type' => 'hidden', 'id' => $id . '.optionId'), array('value' => $optionId));
+if ($postId) echo $this->Form->input('', array('type' => 'hidden', 'id' => $id . '.postId'), array('value' => $postId));
+
+echo '<h5>' . __('Embed code / url:', 'gummfw') . '</h5>';
+echo $this->Form->input('', array('type' => 'textarea', 'id' => $id . '.code'), array(), array('label' => false));
+
+// echo '<i class="icon-spinner icon-spin loading-icon"></i>';
+
+echo $this->Form->end();
+?>
+<div class="embed-video-data">
+    <p class="embed-video-msg"><?php _e('Currently supported service providers are Vimeo, YouTube and Screenr.', 'gummfw'); ?></p>
+</div>
+</div>

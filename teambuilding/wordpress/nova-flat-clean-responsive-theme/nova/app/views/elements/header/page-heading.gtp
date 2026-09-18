@@ -1,0 +1,122 @@
+<?php
+$renderPageHeading = is_page() || is_search() || is_home() || is_single() || is_category() || is_tag();
+$renderPageHeading = apply_filters('gumm_render_page_heading', $renderPageHeading);
+?>
+<?php if ($renderPageHeading): ?>
+
+<?php
+$post = GummRegistry::get('Model', 'Post')->getQueriedObject();
+
+$displayHeadingBox      = $this->Wp->getOption('heading_box_display', array('booleanize' => true));
+$headingBoxComponents   = $this->Wp->getOption('heading_box_components', array('booleanize' => true));
+
+$pageSubheading     = false;
+if (is_a($post, 'WP_POST')) {
+    if ($post->post_type === 'page' && $post->PostMeta['heading_box_settings'] === 'custom') {
+        $displayHeadingBox      = $post->PostMeta['heading_box_display'];
+        $headingBoxComponents   = $post->PostMeta['heading_box_components'];
+    } elseif (is_single()) {
+        if (isset($post->GummOption['heading_box_display'])) {
+            $displayHeadingBox = Set::booleanize($post->GummOption['heading_box_display']);
+        }
+        if (isset($post->GummOption['heading_box_components'])) {
+            $headingBoxComponents   = Set::booleanize($post->GummOption['heading_box_components']);
+        }
+    }
+    if (isset($post->PostMeta['subheading'])) {
+        $pageSubheading = $post->PostMeta['subheading'];        
+    }
+}
+$pageSubheading = apply_filters('gumm_page_subheading', $pageSubheading);
+
+if (!$displayHeadingBox) return '';
+
+$pageTitle = '';
+if (is_archive()) {
+    $pageTitle = single_cat_title('', false);
+} elseif (is_search()) {
+    $pageTitle = __('Search results for:', 'gummfw') . ' ' . get_search_query();
+} elseif (!is_singular('staff')) {
+    $pageTitle = get_the_title();
+}
+$pageTitle = apply_filters('gumm_page_title', $pageTitle);
+
+// Double check it
+if (!isset($headingBoxComponents['display'])) {
+    $headingBoxComponents['display'] = $this->Wp->getOption('heading_box_components.display', array('booleanize' => true));
+}
+if (!isset($headingBoxComponents['social'])) {
+    $headingBoxComponents['social'] = $this->Wp->getOption('heading_box_components.social', array('booleanize' => true));
+}
+
+// Get whether components to display available
+$displayComponents = (bool) Set::filter($headingBoxComponents['display']);
+?>
+<!-- BEGIN page heading wrap -->
+
+<div class="page-heading-wrap">
+    <div class="bluebox-container">
+    <h2>
+        <?php
+            // the_title();
+            echo $pageTitle;
+            if ($pageSubheading) {
+                echo '<span>' . $pageSubheading . '</span>';
+            }
+        ?>
+    </h2>
+    
+    <?php if ($displayComponents): ?>
+        <div class="bluebox-heading-details">
+            <?php
+            if (isset($headingBoxComponents['display']['directionnav']) && $headingBoxComponents['display']['directionnav']) {
+                $prevLink = $this->Wp->getPrevPostLink(array(
+                    'class' => 'bluebox-shadows icon-chevron-left'
+                ));
+                $nextLink = $this->Wp->getNextPostLink(array(
+                    'class' => 'bluebox-shadows icon-chevron-right',
+                ));
+                
+                $indexPageUrl = home_url();
+                if (is_a($post, 'WP_POST')) {
+                    if ($indexPageId = $this->Wp->getPageIdForPostType($post->post_type)) {
+                        $indexPageUrl = get_permalink($indexPageId);
+                    }
+                }
+                
+                
+                echo '<div class="bluebox-heading-arrows">';
+                    echo $nextLink;
+                    echo '<a class="bluebox-shadows icon-th" href="' . $indexPageUrl . '"></a>';
+                    echo $prevLink;
+                echo '</div>';
+            }
+            if ($headingBoxComponents['display']['breadcrumbs']) {
+                echo '<div class="bluebox-breadcrumbs">';
+                    echo GummRegistry::get('Helper', 'Breadcrumb')->display();
+                echo '</div>';
+                // echo '<div class="bluebox-breadcrumbs"><a href="#">Nova</a> / <a href="#">Home</a> / <a href="#">Portfolio</a></div>';
+            }
+            if ($headingBoxComponents['display']['social']) {
+                echo '<div class="bluebox-heading-social">';
+                $this->element('social-links', array(
+                    'networks' => $headingBoxComponents['social'],
+                    'additionalClass' => 'bluebox-shadows',
+                ));
+                echo '</div>';
+            }
+            if ($headingBoxComponents['display']['search']) {
+                echo '<div class="bluebox-heading-search">';
+                    get_search_form();
+                echo '</div>';
+            }
+            ?>
+        </div>
+
+    <?php endif; ?>
+    </div>
+</div>
+
+
+<!-- END page heading  wrap-->
+<?php endif; ?>

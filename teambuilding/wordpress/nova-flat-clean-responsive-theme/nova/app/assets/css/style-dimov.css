@@ -1,0 +1,36 @@
+.gumm-woocommerce-products-layout-element .row-fluid.products {
+    margin-bottom:40px;
+}
+.gumm-woocommerce-products-layout-element .attachment-shop_catalog {
+    width: 100% !important;
+}
+.gumm-woocommerce-products-layout-element .products .product .onsale {
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: -6px -6px 0 0;
+}
+.gumm-woocommerce-products-layout-element.gumm-layout-element-slider .slides-container-wrapper {
+    margin: -10px;
+}
+.gumm-woocommerce-products-layout-element.gumm-layout-element-slider .slides-container-wrap {
+    margin: 10px;
+}
+.gumm-woocommerce-products-layout-element .products .product h3 {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1em;
+}
+.gumm-woocommerce-products-layout-element .products .star-rating {
+    display: block;
+    margin: 0 0 .5em;
+    float: none;
+}
+.gumm-woocommerce-products-layout-element .price {
+    display: block;
+    font-weight: normal;
+    margin-bottom: .5em;
+}
+.gumm-woocommerce-cart-contents {
+    display:none;
+}

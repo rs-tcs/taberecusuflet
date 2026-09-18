@@ -1,0 +1,27 @@
+<?php
+echo '<h2>' . __('Background Images') . '</h2>';
+$this->requestAction(array(
+    'controller' => 'layouts',
+    'action' => 'admin_edit_block_background_images',
+    GUMM_THEME_PREFIX . '_styles.background_options.' . $metabox['inputStyleSelector'] . '.background-image',
+    'GummPostMeta'
+));
+
+echo '<h2>' . __('Background Color') . '</h2>';
+$this->requestAction(array(
+    'controller' => 'layouts',
+    'action' => 'admin_edit_block_background_colors',
+    GUMM_THEME_PREFIX . '_styles.background_options.' . $metabox['inputStyleSelector'] . '.background-color',
+    'GummPostMeta'
+));
+
+if ($metabox['contentSelector']) {
+    echo '<h2>' . __('Content Background Color') . '</h2>';
+    $this->requestAction(array(
+        'controller' => 'layouts',
+        'action' => 'admin_edit_block_background_colors',
+        GUMM_THEME_PREFIX . '_styles.background_options.content_wrap.background-color',
+        'GummPostMeta'
+    ));
+}
+?>

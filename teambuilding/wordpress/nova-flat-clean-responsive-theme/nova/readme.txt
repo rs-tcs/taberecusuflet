@@ -1,0 +1,1 @@
+Please refer to theme documentation.pdf in the download package Documentation folder.

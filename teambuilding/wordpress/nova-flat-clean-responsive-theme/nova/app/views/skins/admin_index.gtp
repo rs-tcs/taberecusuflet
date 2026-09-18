@@ -1,0 +1,80 @@
+<div class="row-fluid">
+    <div class="span12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                  <th><?php _e('Status', 'gummfw'); ?></th>
+                  <th><?php _e('Name', 'gummfw'); ?></th>
+                  <th><?php _e('Colors', 'gummfw'); ?></th>
+                  <th><?php _e('Actions', 'gummfw'); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($skins as $skinId => $skin) {
+                    $trAtts = array();
+                    $buttonAtts = array(
+                        'data-skin-id' => $skinId,
+                        'class' => 'icon-eye-close inactive activate-skin',
+                        'title' => __('Click to activate this skin', 'gummfw'),
+                        'href' => '#',
+                    );
+                    $buttonName = '';
+                    $removeButtonAtts = array(
+                        'class' => 'icon-remove gumm-remove-skin',
+                        'data-skin-id' => $skinId,
+                        'title' => __('Delete skin', 'gummfw'),
+                        'href' => '#',
+                    );
+                    if ($skinId == $activeSkinId) {
+                        $trAtts['class'] = 'info';
+                        
+                        $buttonAtts['class'] = 'icon-ok active';
+                        $buttonAtts['title'] = '';
+                        $buttonAtts['href'] = null;
+                        $buttonName = __('Active', 'gummfw');
+                        
+                        $removeButtonAtts['class'] = 'icon-remove inactive';
+                        $removeButtonAtts['title'] = null;
+                        $removeButtonAtts['href'] = null;
+                    }
+                    echo '<tr' . $this->Html->_constructTagAttributes($trAtts) . '>';
+                        echo '<td>';
+                            echo '<a' . $this->Html->_constructTagAttributes($buttonAtts) . '></a><span class="skin-status">' . $buttonName . '</span>';
+                        echo '</td>';
+                        echo '<td>';
+                            echo $skin['name'];
+                        echo '</td>';
+                        echo '<td>';
+                            foreach ($skin['color_options'] as $colorValue) {
+                                echo '<span class="admin-skin-color-preview" style="background-color:#' . $colorValue . '"></span>';
+                            }
+                        echo '</td>';
+                        echo '<td>';
+                            echo '<a class="icon-pencil gumm-edit-skin" data-skin-id="' . $skinId . '" href="#" title="' . __('Edit skin', 'gummfw') . '"></a>';
+                            echo '<a' . $this->Html->_constructTagAttributes($removeButtonAtts) . '></a>';
+                        echo '</td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
+        <?php
+        
+        echo $this->Html->link(__('Create New Skin', 'gummfw'),
+            array(
+                'controller' => 'skins',
+                'action' => 'edit',
+                'admin' => true,
+                'ajax' => true,
+                'optionId' => GUMM_THEME_PREFIX . '__activeThemeSkin',
+            ),
+            array(
+                'id' => 'gumm-add-new-skin',
+                'class' => 'btn btn-success',
+                'style' => 'margin-right:10px; margin-top:20px;'
+            )
+        );
+        ?>
+    </div>
+</div>

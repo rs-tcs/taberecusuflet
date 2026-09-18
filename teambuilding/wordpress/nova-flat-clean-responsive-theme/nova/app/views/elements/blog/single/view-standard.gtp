@@ -1,0 +1,75 @@
+    <div class="page-heading-wrap">
+    	<h1 class="page-heading"><?php the_title(); ?></h1>
+    	<?php
+    	$detailClass = array('single-post-format-icon');
+    	if ($postFormat = get_post_format()) {
+    	    $detailClass[] = 'format-' . $postFormat;
+    	}
+    	?>
+        <div class="<?php echo implode(' ', $detailClass); ?>">
+        	<div></div>
+        </div>
+    </div>
+    <div class="color-detail"></div>
+
+    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    	<div class="blog-post-pointer-detail"></div>
+    	<div class="post-content-meta">
+        	<p><span class="author"><?php the_author_link(); ?></span></p>
+            <div class="comments">
+                <?php
+                echo $this->Html->postDetails('comments', array(
+                    'formats' => array(
+                        'comments' => array(0, 1, '%'),
+                    ),
+                    'prefixes' => ''
+                ));
+                ?>
+            </div>
+    	</div>
+        <div class="post-content-wrap">
+            <?php $this->start('thumbnail'); ?>
+            
+            <?php
+            if ($post->Thumbnail) {
+                if (count($post->Media) > 1) {
+                    View::renderElement('sliders/post-media-slider', array('media' => $post->Media));
+                } else {
+                    echo '<div>' . $this->Media->display($post->Thumbnail->guid) . '<span></span></div>';
+                }
+            }
+            ?>
+            <?php $this->end(); ?>
+            
+            <?php echo $this->fetch('thumbnail'); ?>
+            <?php the_content(); ?>
+    	</div>
+        
+        <div class="date-n-post-format">
+        	<div class="post-format-details">
+            	<!-- user avatar -->
+                <!-- <a href="#"> -->
+                <?php echo get_avatar( get_the_author_meta('ID')); ?>
+                    <!-- <img src="img/roost/bc1a7748e202cfabf3c7f9dce75596bb.jpg" alt="user avatar"> -->
+                <!-- </a> -->
+            </div>
+            <div class="date-details">
+                <?php
+                echo $this->Html->postDetails('date', array(
+                    'beforeDetail' => '',
+                    'afterDetail' => '',
+                    'prefixes' => '',
+                    'formats' => array(
+                        'date' => '\<\s\p\a\n \c\l\a\s\s\=\"\d\a\y\"\>j\<\/\s\p\a\n\>\<\s\p\a\n \c\l\a\s\s\=\"\m\o\n\t\h\"\>M\<\/\s\p\a\n\>'
+                    ),
+                ));
+                ?>
+            </div>
+        </div>
+    </div>
+
+    <?php wp_link_pages(array('before' => '<div class="pagination">' . __( 'Pages: ', 'gummfw' ), 'after' => '</div>')); ?>
+    
+    <?php echo $this->fetch('content'); ?>
+
+<?php comments_template('', true); ?>

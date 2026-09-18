@@ -1,0 +1,6 @@
+<?php
+global $post;
+
+// debug($post);
+// debug(is_page());
+?>
