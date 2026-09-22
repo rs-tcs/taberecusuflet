@@ -1,6 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^race\.teamexpert\.ro$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.race\.teamexpert\.ro$
-RewriteRule ^/?$ "http\:\/\/teamexpert\.ro\/competitii\.html" [R=301,L]
-

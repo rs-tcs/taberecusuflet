@@ -1,3 +1,0 @@
-<?php
-    echo GummRegistry::get('Helper', 'Layout')->layerBackgroundImagesEditor($optionId, $layerId, array(), $model);
-?>

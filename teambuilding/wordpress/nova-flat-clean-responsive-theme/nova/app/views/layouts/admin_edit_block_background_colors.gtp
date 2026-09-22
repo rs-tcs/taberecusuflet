@@ -1,5 +1,0 @@
-<?php
-    $gummLayoutHelper = GummRegistry::get('Helper', 'Layout');
-
-    echo $gummLayoutHelper->blockBackgroundColorsEditor($optionId, $model);
-?>
